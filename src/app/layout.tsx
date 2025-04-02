@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import ClarityAnalytics from "@/components/extra/Clarity";
+import I18nProvider from "@/providers/I18nProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,7 +30,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
         <>
           <ClarityAnalytics />
-          {children}
+          <I18nProvider>{children}</I18nProvider>
         </>
       </body>
     </html>
