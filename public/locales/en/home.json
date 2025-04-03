@@ -1,0 +1,176 @@
+{
+  "hero": {
+    "heading": "Turn Employee Stories \n Into <span class='font-playfair italic'>Brand Power</span>",
+    "subheading": "Kreatoors helps you amplify your brand and culture with employee-driven content, professional branding, corporate influencing and AI-powered solutions.",
+    "primary-button": "Request early access",
+    "secondary-button": "Explore Our Services"
+  },
+  "line1": "{{value}} of <i class='font-playfair font-normal'>Consumers Trust</i> recommendations from individuals over brands.",
+  "EGC": {
+    "heading": "What's <b><i class='font-playfair font-normal'>Employee Generated Content (EGC)?</i></b>",
+    "subheading": "EGC is authentic content created by your team, including posts, product demos, and success stories, reflecting genuine employee experiences.",
+    "impact": {
+      "heading": "Impact:",
+      "points": [
+        "Creates trust through authentic employee voices",
+        "Shows real workplace culture, not just corporate messaging",
+        "Builds genuine connections with potential customers & talent",
+        "Scales content creation naturally through your employees"
+      ]
+    }
+  },
+  "corporate-influencing": {
+    "heading": "What is <b><i class='font-playfair'>Corporate Influencing?</i></b>",
+    "subheading": "Selected employees act as brand ambassadors, sharing insights and building trust, strengthening your brand's market position.",
+    "impact": {
+      "heading": "Impact:",
+      "points": [
+        "Leverages expertise of leaders & key employees to build thought leadership",
+        "Builds genuine brand authority in your industry",
+        "Reaches decision-makers through peer-to-peer influence",
+        "Drives quality leads through expert positioning"
+      ]
+    }
+  },
+  "services-section": {
+    "heading": "Our <i class='font-playfair'>Services</i>",
+    "subheading": "<i class='font-playfair'>Amplify</i> Your <i class='font-playfair'>Brand</i> and Culture",
+    "heading2": "Our <i class='font-playfair'>Services</i> <i class='font-playfair'>Amplify</i> Your <i class='font-playfair'>Brand</i> and Culture",
+    "services": [
+      {
+        "id": 1,
+        "slug": "corporate-influencing",
+        "heading": "Corporate \n Influencing",
+        "subheading": "Inspire Thought Leadership, \n Shape Conversations"
+      },
+      {
+        "id": 3,
+        "slug": "employer-content-creation",
+        "heading": "Employee Content \n Creation",
+        "subheading": "Harness Authentic \n Employee Voices"
+      },
+      {
+        "id": 5,
+        "slug": "advocacy-content-governance",
+        "heading": "Advocacy & Content \n Governance",
+        "subheading": "Safeguarding Your \n Brand's Integrity "
+      },
+      {
+        "id": 2,
+        "slug": "employee-brand-development",
+        "heading": "Employer Brand \n Development",
+        "subheading": "Craft a Brand That \n People Love"
+      },
+      {
+        "id": 4,
+        "slug": "internal-communications-culture",
+        "heading": "Internal Communications \n & Culture",
+        "subheading": "Break Your Silos & \n Connect Teams"
+      },
+      {
+        "id": 6,
+        "slug": "community-building-management",
+        "heading": "Community Building \n & Management",
+        "subheading": "Foster Communities, \n Ignite Collaboration"
+      }
+    ]
+  },
+  "empower": {
+    "heading": "Who Do We <i class='font-playfair'>Empower</i>?",
+
+    "list": [
+      {
+        "heading": "Marketing & Communications Teams",
+        "details": {
+          "heading": "Marketing & Communications Teams",
+          "subheading": "Drive growth and trust through authentic employee stories. Our services & solutions helps expand your reach and deliver real business impact.",
+          "points": {
+            "heading": "What This Looks Like:",
+            "list": [
+              "Strategic Content Programs: Implement company-wide content frameworks",
+              "Advocacy Measurement: Track engagement, reach, and business impact",
+              "Communications Integration: Align internal and external messaging",
+              "Platform Optimization: Leverage technology for scalable engagement"
+            ],
+            "button": "Book a Free Consultation"
+          }
+        }
+      },
+      {
+        "heading": "People & Culture Teams",
+        "details": {
+          "heading": "People & Culture Teams",
+          "subheading": "Employee voices are your strongest cultural asset. Power your employer brand through authentic employee voices. Turn internal experiences into compelling stories that attract and retain top talent.",
+          "points": {
+            "heading": "What This Looks Like:",
+            "list": [
+              "Culture Amplification: Showcase authentic workplace stories",
+              "Employee Experience: Create engaging internal content programs",
+              "Talent Attraction: Build compelling employer brand narratives",
+              "Team Brand: Build your personal brand as a trusted leader and the professional brand of your team"
+            ],
+            "button": "Book a Free Consultation"
+          }
+        }
+      },
+      {
+        "heading": "Corporate Leaders",
+        "details": {
+          "heading": "Corporate Leaders",
+          "subheading": "Elevate your personal brand to amplify organizational impact. Transform leadership visibility into a catalyst for business growth and team advocacy.",
+          "points": {
+            "heading": "What This Looks Like:",
+            "list": [
+              "Thought Leadership: Position yourself as a trusted industry voice",
+              "Strategic Alignment: Unite personal and organizational branding",
+              "Team Amplification: Lead and inspire employee advocacy",
+              "Executive Presence: Build visibility through speaking and content",
+              "Impact Measurement: Track how leadership visibility drives growth"
+            ],
+            "button": "Book a Free Consultation"
+          }
+        }
+      },
+      {
+        "heading": "Employees",
+        "details": {
+          "heading": "Employees",
+          "subheading": "Elevate your career and personal brand while driving company success. Share your unique expertise through authentic content to build lasting professional influence and meaningful industry connections.",
+          "points": {
+            "heading": "What This Looks Like:",
+            "list": [
+              "Personal Growth: Develop your professional voice and industry presence",
+              "Content Creation: Learn to share compelling workplace stories and insights",
+              "Career Development: Position yourself as a subject matter expert",
+              "Network Building: Connect with peers and industry leaders authentically",
+              "Impact Measurement: Track how your content drives engagement and growth"
+            ],
+            "button": "Book a Free Consultation"
+          }
+        }
+      }
+    ]
+  },
+  "engagement": {
+    "heading": "The Power of Authentic <i class='font-playfair'>Engagement</i> and <i class='font-playfair'>Advocacy</i>",
+    "list": [
+      {
+        "heading": "8x",
+        "subheading": "Employee-shared content gets 8 times more engagement than content from brand channels"
+      },
+      {
+        "heading": "10x",
+        "subheading": "Employee social profiles have 10 times the followers than that of brand accounts"
+      },
+      {
+        "heading": "79%",
+        "subheading": "Companies with employee advocacy programs have greater visibility and brand recognition"
+      }
+    ]
+  },
+  "coming-soon": {
+    "heading": "Join Our Beta Community: AI-Powered <i class='font-playfair'>Employee Advocacy</i> With Tailored <i class='font-playfair'>Personal Branding</i>",
+    "subheading": "Redefine and build your brand's influence with our AI-driven Employee Advocacy Platform.",
+    "waitlist": "Your Email Address"
+  }
+}

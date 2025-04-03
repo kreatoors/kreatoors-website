@@ -1,14 +1,6 @@
 "use client";
 // import Button from "./Button";
 import React, { useState, useRef, useEffect } from "react";
-
-// import service_1 from "../../assets/images/services/1.png";
-// import service_2 from "../../assets/images/services/2.png";
-// import service_3 from "../../assets/images/services/3.png";
-// import service_4 from "../../assets/images/services/4.png";
-// import service_5 from "../../assets/images/services/5.png";
-// import service_6 from "../../assets/images/services/6.png";
-// import LanguageSwitcher from "../LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 import { X } from "lucide-react";
 
@@ -112,9 +104,7 @@ export default function Header() {
   return (
     <header className="absolute top-5 md:top-10 left-0 right-0 z-50 md:max-w-[87%] mx-2 md:mx-10 lg:mx-10 xl:mx-auto" ref={menuRef}>
       <nav className="z-[999] relative flex items-center justify-between p-2 md:py-5 md:px-5 bg-white rounded-full">
-        {/* <div className="flex items-center justify-between"> */}
         <Logo />
-
         <ul className="hidden xl:flex items-center space-x-8 absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
           {menuItems.map((item, index) =>
             item.name === t("services") ? (
@@ -189,7 +179,6 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <div className="hidden xl:block">
             <Link
-              // to="/contact-us"
               href="https://calendly.com/coachingwitharzo/free-discovery-call"
               target="_blank"
               rel="noopener noreferrer"

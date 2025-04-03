@@ -1,0 +1,186 @@
+{
+  "hero": {
+    "heading": "Verwandeln Sie Mitarbeitergeschichten \n in <span class='font-playfair italic'>Markenstärke</span>",
+    "subheading": "Kreatoors hilft Ihnen, Ihre Marke und Unternehmenskultur durch mitarbeitergenerierten Content, Personal Branding, Corporate Influencing und KI-gestützte Lösungen zu verstärken.",
+    "primary-button": "Kostenloses Audit buchen",
+    "secondary-button": "Unsere Dienstleistungen entdecken"
+  },
+  "line1": "{{value}}% der <i class='font-playfair font-normal pr-3'>Verbraucher vertrauen</i> Empfehlungen von Einzelpersonen mehr als Marken.",
+  "EGC": {
+    "heading": "Was ist <b><i class='font-playfair font-normal'>Employee Generated Content (EGC)?</i></b>",
+    "subheading": "EGC ist authentischer Content, der von Ihrem Team erstellt wird, einschließlich Posts, Produktdemos und Erfolgsgeschichten, die echte Mitarbeitererfahrungen widerspiegeln.",
+    "impact": {
+      "heading": "Auswirkungen:",
+      "points": [
+        "Schafft Vertrauen durch authentische Mitarbeiterstimmen",
+        "Zeigt echte Unternehmenskultur, nicht nur Unternehmenskommunikation",
+        "Baut echte Verbindungen zu potenziellen Kunden & Talenten auf",
+        "Skaliert Content-Erstellung natürlich durch Ihre Mitarbeiter"
+      ]
+    }
+  },
+  "corporate-influencing": {
+    "heading": "Was ist <b><i class='font-playfair'>Corporate Influencing?</i></b>",
+    "subheading": "Ausgewählte Mitarbeiter agieren als Markenbotschafter, teilen Einblicke und bauen Vertrauen auf, wodurch die Marktposition Ihrer Marke gestärkt wird.",
+    "impact": {
+      "heading": "Auswirkungen:",
+      "points": [
+        "Nutzt das Fachwissen von Führungskräften & Schlüsselmitarbeitern zum Aufbau von Thought Leadership",
+        "Baut echte Markenautorität in Ihrer Branche auf",
+        "Erreicht Entscheidungsträger durch Peer-to-Peer-Einfluss",
+        "Generiert qualifizierte Leads durch Expertenpositionierung"
+      ]
+    }
+  },
+  "services-section": {
+    "heading": "Unsere <i class='font-playfair'>Dienstleistungen</i>",
+    "subheading": "<i class='font-playfair'>Verstärken</i> Sie Ihre <i class='font-playfair'>Marke</i> und Kultur",
+    "services": [
+      {
+        "slug": "corporate-influencing",
+        "heading": "Unternehmensbeeinflussung",
+        "subheading": "Werden Sie zum Thought Leader"
+      },
+      {
+        "slug": "advocacy-content-governance",
+        "heading": "Mitarbeiter-Content-Erstellung & Advocacy",
+        "subheading": "Entwickeln Sie Ihre EGC-Strategie"
+      },
+      {
+        "slug": "employer-brand-development",
+        "heading": "Arbeitgebermarken-Entwicklung",
+        "subheading": "Bauen Sie Ihre Mitarbeitermarke auf"
+      },
+      {
+        "slug": "community-building-management",
+        "heading": "Community-Design & Entwicklung",
+        "subheading": "Bauen Sie Ihre Community auf"
+      },
+      {
+        "slug": "internal-communications-culture",
+        "heading": "Interne Kommunikation",
+        "subheading": "Brechen Sie Ihre Silos auf"
+      },
+      {
+        "slug": "employer-content-creation",
+        "heading": "Arbeitgeber Inhaltserstellung",
+        "subheading": "Verstärken Sie Ihre Präsenz"
+      }
+    ]
+  },
+  "empower": {
+    "heading": "Wen <i class='font-playfair'>unterstützen</i> wir?",
+    "list": [
+      {
+        "heading": "Marketing- & Kommunikationsteams",
+        "details": {
+          "heading": "Marketing- & Kommunikationsteams",
+          "subheading": "Fördern Sie Wachstum und Vertrauen durch authentische Mitarbeitergeschichten. Unsere Dienstleistungen & Lösungen helfen Ihnen, Ihre Reichweite zu erweitern und echte Geschäftswirkung zu erzielen.",
+          "points": {
+            "heading": "Was bedeutet das konkret:",
+            "list": [
+              "<b>Strategische Content-Programme:</b> Implementieren Sie unternehmensweite Content-Frameworks",
+              "<b>Advocacy-Messung:</b> Verfolgen Sie Engagement, Reichweite und Geschäftswirkung",
+              "<b>Kommunikationsintegration:</b> Stimmen Sie interne und externe Botschaften ab",
+              "<b>Plattform-Optimierung:</b> Nutzen Sie Technologie für skalierbares Engagement"
+            ],
+            "button": "Kostenloses Audit buchen"
+          }
+        }
+      },
+      {
+        "heading": "Personal- & Kulturteams",
+        "details": {
+          "heading": "Personal- & Kulturteams",
+          "subheading": "Mitarbeiterstimmen sind Ihr stärkstes kulturelles Kapital. Stärken Sie Ihre Arbeitgebermarke durch authentische Mitarbeiterstimmen. Verwandeln Sie interne Erfahrungen in überzeugende Geschichten, die Top-Talente anziehen und binden.",
+          "points": {
+            "heading": "Was bedeutet das konkret:",
+            "list": [
+              "<b>Kulturverstärkung:</b> Präsentieren Sie authentische Workplace-Stories",
+              "<b>Mitarbeitererfahrung:</b> Erstellen Sie ansprechende interne Content-Programme",
+              "<b>Talentgewinnung:</b> Entwickeln Sie überzeugende Arbeitgebermarken-Narrative",
+              "<b>Team-Marke:</b> Bauen Sie Ihre persönliche Marke als vertrauenswürdige Führungskraft und die professionelle Marke Ihres Teams auf"
+            ],
+            "button": "Kostenloses Audit buchen"
+          }
+        }
+      },
+      {
+        "heading": "Unternehmensführung",
+        "details": {
+          "heading": "Unternehmensführung",
+          "subheading": "Stärken Sie Ihre persönliche Marke, um die organisatorische Wirkung zu verstärken. Verwandeln Sie Führungssichtbarkeit in einen Katalysator für Unternehmenswachstum und Team-Advocacy.",
+          "points": {
+            "heading": "Was bedeutet das konkret:",
+            "list": [
+              "<b>Thought Leadership:</b> Positionieren Sie sich als vertrauenswürdige Branchenstimme",
+              "<b>Strategische Ausrichtung:</b> Vereinen Sie persönliches und organisatorisches Branding",
+              "<b>Team-Verstärkung:</b> Führen und inspirieren Sie Mitarbeiter-Advocacy",
+              "<b>Führungspräsenz:</b> Bauen Sie Sichtbarkeit durch Vorträge und Content auf",
+              "<b>Wirkungsmessung:</b> Verfolgen Sie, wie Führungssichtbarkeit Wachstum vorantreibt"
+            ],
+            "button": "Kostenloses Audit buchen"
+          }
+        }
+      },
+      {
+        "heading": "Unternehmer & Coaches",
+        "details": {
+          "heading": "Unternehmer & Coaches",
+          "subheading": "Bauen Sie Autorität durch strategischen Content auf, der Expertise in eine magnetische Marktpräsenz verwandelt. Skalieren Sie Ihren Einfluss, während Sie sich darauf konzentrieren, außergewöhnlichen Wert und erstklassige Kundenergebnisse zu liefern.",
+          "points": {
+            "heading": "Was bedeutet das konkret:",
+            "list": [
+              "<b>Strategischer Content:</b> Erstellen Sie Content, der Expertise in Leads umwandelt",
+              "<b>Zeitersparnis durch Automatisierung:</b> Bauen Sie Systeme für konstantes Wachstum ohne Zeitverschwendung",
+              "<b>Autoritätsaufbau:</b> Positionieren Sie Ihre einzigartige Methodik durch Thought Leadership",
+              "<b>Kundengewinnung:</b> Entwickeln Sie eine Marke, die Premium-Chancen anzieht",
+              "<b>Community-Wachstum:</b> Bauen Sie engagierte Netzwerke auf, die Empfehlungen generieren"
+            ],
+            "button": "Kostenloses Audit buchen"
+          }
+        }
+      },
+      {
+        "heading": "Mitarbeiter",
+        "details": {
+          "heading": "Mitarbeiter",
+          "subheading": "Fördern Sie Ihre Karriere und persönliche Marke und treiben Sie gleichzeitig den Unternehmenserfolg voran. Teilen Sie Ihre einzigartige Expertise durch authentischen Content, um nachhaltigen beruflichen Einfluss und bedeutungsvolle Branchenverbindungen aufzubauen.",
+          "points": {
+            "heading": "Was bedeutet das konkret:",
+            "list": [
+              "<b>Persönliche Entwicklung:</b> Entwickeln Sie Ihre professionelle Stimme und Branchenpräsenz",
+              "<b>Content-Erstellung:</b> Lernen Sie, überzeugende Workplace-Stories und Einblicke zu teilen",
+              "<b>Karriereentwicklung:</b> Positionieren Sie sich als Fachexperte",
+              "<b>Netzwerkaufbau:</b> Vernetzen Sie sich authentisch mit Kollegen und Branchenführern",
+              "<b>Wirkungsmessung:</b> Verfolgen Sie, wie Ihr Content Engagement und Wachstum vorantreibt"
+            ],
+            "button": "Kostenloses Audit buchen"
+          }
+        }
+      }
+    ]
+  },
+  "engagement": {
+    "heading": "Entfesseln Sie die Kraft \n des <i class='font-playfair'>authentischen Engagements</i>",
+    "list": [
+      {
+        "heading": "8x",
+        "subheading": "Von Mitarbeitern geteilte Inhalte erhalten 8-mal mehr Engagement als Inhalte, die über Markenkanäle geteilt werden"
+      },
+      {
+        "heading": "10x",
+        "subheading": "Mitarbeiter-Social-Profile haben 10-mal mehr Follower als Markenkonten"
+      },
+      {
+        "heading": "79%",
+        "subheading": "Der Unternehmen, die Mitarbeiter-Advocacy-Programme fördern, haben eine verbesserte Online-Sichtbarkeit und verstärkte Markenerkennung festgestellt"
+      }
+    ]
+  },
+  "coming-soon": {
+    "heading": "Demnächst: KI-gestützte Mitarbeiter-Advocacy trifft auf <i class='font-playfair'>Personal Branding</i>",
+    "subheading": "Revolutionieren Sie den Aufbau und die Verwaltung Ihrer persönlichen Marke mit unserer KI-gestützten Personal Branding Plattform",
+    "waitlist": "Jetzt der Warteliste beitreten"
+  }
+}
