@@ -13,6 +13,7 @@ i18n
     // init i18next
     .init({
         fallbackLng: 'en',
+        supportedLngs: ['en', 'de'],
         debug: process.env.NODE_ENV === 'development',
         interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
@@ -20,6 +21,8 @@ i18n
         backend: {
             loadPath: '/locales/{{lng}}/{{ns}}.json',
         },
+        ns: ['navbar'],
+        defaultNS: 'navbar',
         react: {
             useSuspense: false, // Set to false to avoid issues with SSR
         },
