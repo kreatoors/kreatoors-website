@@ -13,7 +13,6 @@ const BrandSolutionsLanding = ({ isPage }: { isPage: boolean }) => {
   const { t } = useTranslation("home");
 
   // Fetching services from the JSON
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const services: any = t("services-section.services", { returnObjects: true });
 
   // Mapping the services to the solutions array
@@ -26,7 +25,6 @@ const BrandSolutionsLanding = ({ isPage }: { isPage: boolean }) => {
     SERVICES_ICONS.services["6"],
   ];
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const solutions = services.map((service: any, index: any) => ({
     id: service.id,
     slug: service.slug,
