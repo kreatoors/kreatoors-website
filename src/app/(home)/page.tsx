@@ -6,6 +6,13 @@ import Stats from "./components/Stats";
 import BrandSolutionsLanding from "./components/StrategicSolution";
 import ValueStats from "./components/Values";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home - Kreatoors AI",
+  description: "Kreatoors AI - Your AI-Powered Creative Assistant",
+};
+
 export default function Home() {
   return (
     <>

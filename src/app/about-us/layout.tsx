@@ -1,12 +1,12 @@
 import Header from "@/components/layout/Header";
 
-export default function HomeLayout({
+export default function AboutUsLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <div className="bg-[#F8F0FD]">
+    <div className="bg-blue-to-white-gradient ">
       <Header />
       {children}
     </div>
