@@ -159,6 +159,19 @@ export default function Header() {
                   {item.name}
                 </a>
               </li>
+            ) : item.name === t("blog") ? (
+              <li key={index}>
+                <Link
+                  href={item.path}
+                  className={` text-lg font-normal ${
+                    pathname.includes(item.path)
+                      ? "text-transparent bg-clip-text bg-primary-gradient font-semibold md:text-base lg:text-lg text-center"
+                      : "text-sub-gray hover:text-[#6B5B95] md:text-base lg:text-lg text-center"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              </li>
             ) : (
               <li key={index}>
                 <Link
