@@ -4,6 +4,7 @@ import "./globals.css";
 import ClarityAnalytics from "@/components/extra/Clarity";
 import I18nProvider from "@/providers/I18nProvider";
 import { Toaster } from "react-hot-toast";
+import Footer from "@/components/layout/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -66,7 +67,10 @@ export default function RootLayout({
             }}
           />
           <ClarityAnalytics />
-          <I18nProvider>{children}</I18nProvider>
+          <I18nProvider>
+            {children}
+            <Footer />
+          </I18nProvider>
         </>
       </body>
     </html>
