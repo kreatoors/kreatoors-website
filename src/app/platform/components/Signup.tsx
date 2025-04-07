@@ -63,34 +63,37 @@ const SignUpSection = () => {
     setLoading(true);
     setStatus("");
 
-    // try {
-    //   const response = await axiosInstance.post(
-    //     `/mailchimp/waitlist`,
-    //     {
-    //       email,
-    //       firstName,
-    //       lastName,
-    //       role,
-    //     },
-    //   );
-    //   console.log(response);
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          firstName,
+          lastName,
+          role,
+        }),
+      });
+      console.log(response);
 
-    //   if (response.status === 200) {
-    //     toast.success("Thank you for subscribing!");
-    //     setEmail("");
-    //     setRole("");
-    //     setFirstName("");
-    //     setLastName("");
-    //   } else {
-    //     // handle error
-    //     toast.error("An error occurred. Please try again.");
-    //   }
-    // } catch (error) {
-    //   console.error("Subscription error:", error);
-    //   toast.error(error?.response?.data?.message);
-    // } finally {
-    //   setLoading(false);
-    // }
+      if (response.status === 200) {
+        toast.success("Thank you for subscribing!");
+        setEmail("");
+        setRole("");
+        setFirstName("");
+        setLastName("");
+      } else {
+        // handle error
+        toast.error("An error occurred. Please try again.");
+      }
+    } catch (error: any) {
+      console.error("Subscription error:", error);
+      toast.error(error?.response?.data?.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
