@@ -19,6 +19,7 @@ const config = {
       },
       colors: {
         tsecondary: "gray",
+        veryLightPurple: "#F8F6FF",
         "sub-gray-500": "#5B5A6C",
         "blue-custom-400": "rgba(245, 244, 254, 1)",
         "blue-custom-500": "rgba(245, 244, 254, 1)",
@@ -31,6 +32,8 @@ const config = {
         "cta-gradient": "linear-gradient(180deg, #E7E5FF 0%, #FAF9FF 100%)",
         "blue-to-white-gradient": "linear-gradient(180deg, #F5F2FB 0%, #FFFFFF 100%)",
         "border-gradient": "linear-gradient(180deg, #E7E5FF 0%, #FAF9FF 100%)",
+        "primary-gradient2": "linear-gradient(180deg, #DFDDFF 0%, #F8F7FF 100%)",
+        "purple-gradient": "linear-gradient(to right, #6A67AF, #9996DE)",
       },
       keyframes: {
         "fade-in-up": {

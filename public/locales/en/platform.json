@@ -26,14 +26,14 @@
         "subheading": "Build influence that matters.",
         "description": ["Brand Strategy Creator", "Development pathway ", "Goal & Progress tracking", "Impact metrics"],
         "button": "Empower Your Teams Now ",
-        "image": "/images/one_employee.png"
+        "image": "/images/platform/features/one.png"
       },
       {
         "title": "AI Ghostwriter & Content Studio",
         "subheading": "Create impactful content in minutes. ",
         "description": ["One-click content generation ", "Brand-aligned templates", "Topic ideas & suggestions ", "Company content library"],
         "button": "Start Your EGC Journey",
-        "image": "/images/two_employee.png"
+        "image": "/images/platform/features/two.png"
       },
       {
         "title": "Content Governance & Employer Brand Amplification",
@@ -44,21 +44,21 @@
           "Intelligent Content Scheduling & Distribuiton"
         ],
         "button": "Amplify Your Brand",
-        "image": "/images/three_employee.png"
+        "image": "/images/platform/features/three.png"
       },
       {
         "title": "Community & Safe Space",
         "subheading": "Help your employees build confidence in content creation and collaborate.",
         "description": ["Safe practice environment", "Feedback system", "Learning community", "Team engagement"],
         "button": "Build Your Community",
-        "image": "/images/four_employee.png"
+        "image": "/images/platform/features/four.png"
       },
       {
         "title": "Analytics Center",
         "subheading": "Measure impact and ROI",
         "description": ["Influence tracking", "Content performance", "Program analytics", "Business impact"],
         "button": "Build Your Community",
-        "image": "/images/five_employee.png"
+        "image": "/images/platform/features/five.png"
       }
     ]
   },
@@ -69,22 +69,22 @@
       {
         "title": "Boost your Brand",
         "text": "Reduce content creation time by 60% with AI-powered assistance",
-        "icon": "/images/benefits/a.svg"
+        "icon": "/images/platform/benefits/a.svg"
       },
       {
         "title": "Save time",
         "text": "Drive 3x more engagement than traditional corporate content",
-        "icon": "/images/benefits/b.svg"
+        "icon": "/images/platform/benefits/b.svg"
       },
       {
         "title": "Deliver Results",
         "text": "Save 15+ hours per week on advocacy program management",
-        "icon": "/images/benefits/c.svg"
+        "icon": "/images/platform/benefits/c.svg"
       },
       {
         "title": "Increase Engagement",
         "text": "Get real-time insights into content performance and ROI",
-        "icon": "/images/benefits/d.svg"
+        "icon": "/images/platform/benefits/d.svg"
       }
     ]
   },
@@ -142,25 +142,25 @@
         "title": "High Costs and Low Returns on Digital Ads",
         "text": "Ad costs continue to climb while engagement rates plummet. Your marketing budget deserves better.",
         "subtext": "Unlock the authentic reach of employee voices that outperform paid advertising.",
-        "icon": "/images/EA.svg"
+        "icon": "/images/platform/benefits/EA.svg"
       },
       {
         "title": "Content Fatigue Is Real",
         "text": "In a world of AI-generated sameness, generic corporate content gets scrolled past and forgotten.",
         "subtext": "Stand out with genuine employee stories that capture attention and build trust.",
-        "icon": "/images/EB.svg"
+        "icon": "/images/platform/benefits/EB.svg"
       },
       {
         "title": "Employer Branding That Actually Works",
         "text": "Staged career pages and stock photos can't convey your true culture—and top talent knows it.",
         "subtext": "Showcase authentic workplace stories that attract candidates who truly fit your values.",
-        "icon": "/images/EC.svg"
+        "icon": "/images/platform/benefits/EC.svg"
       },
       {
         "title": "Your Untapped Marketing Force",
         "text": "Your employees' networks represent your most powerful and trusted marketing channel.",
         "subtext": "Transform team members into confident brand advocates without adding to their workload.",
-        "icon": "/images/ED.svg"
+        "icon": "/images/platform/benefits/ED.svg"
       }
     ],
     "button": "Unlock Authentic Reach Now"

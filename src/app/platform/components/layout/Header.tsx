@@ -50,7 +50,7 @@ export function Header() {
           </button> */}
           <button
             onClick={(e) => scrollToComponent(e, "contact")}
-            className="bg-purple-gradient hover:bg-purple-gradient2 text-white px-6 py-3 rounded-full transition-colors"
+            className="bg-primary-gradient hover:bg-purple-gradient2 text-white px-6 py-3 rounded-full transition-colors"
           >
             {t("A.Get Early Access")}
           </button>
@@ -101,13 +101,13 @@ export function Header() {
                 {t("A.Mission")}
               </div>
 
-              <a href="https://kreatoors.com/#solutions" target="_blank" className="block px-3 py-2 text-gray-800 hover:text-gray-900">
+              <Link href="/#solutions" className="block px-3 py-2 text-gray-800 hover:text-gray-900">
                 {t("Services")}
-              </a>
+              </Link>
 
-              <a href="https://kreatoors.com/about-us" target="_blank" className="block px-3 py-2 text-gray-800 hover:text-gray-900">
+              <Link href="/about-us" className="block px-3 py-2 text-gray-800 hover:text-gray-900">
                 {t("About us")}
-              </a>
+              </Link>
             </div>
             <div className="w-[90%] pt-4 space-y-4 absolute bottom-[150px] left-[5%]">
               {/* <button
@@ -117,7 +117,7 @@ export function Header() {
                 {t("A.Sign up")}
               </button> */}
               <button
-                className="w-full bg-purple-gradient hover:bg-purple-gradient2 text-white px-6 py-4 rounded-full transition-colors"
+                className="w-full bg-primary-gradient hover:bg-purple-gradient2 text-white px-6 py-4 rounded-full transition-colors"
                 onClick={(e) => {
                   setIsMenuOpen(false);
                   scrollToComponent(e, "contact");

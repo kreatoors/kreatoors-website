@@ -30,7 +30,7 @@
           "Bauen Sie starke Mitarbeiternetzwerke auf"
         ],
         "button": "Stärken Sie Ihre Teams jetzt",
-        "image": "/images/one_employee.png"
+        "image": "/images/platform/features/one.png"
       },
       {
         "title": "Medien-Atelier",
@@ -41,7 +41,7 @@
           "Optimieren Sie den Content-Freigabeprozess"
         ],
         "button": "Starten Sie Ihre EGC-Reise",
-        "image": "/images/two_employee.png"
+        "image": "/images/platform/features/two.png"
       },
       {
         "title": "Markenverbreitungs-Hub",
@@ -52,21 +52,21 @@
           "Optimieren Sie die Content-Verteilung"
         ],
         "button": "Verstärken Sie Ihre Marke",
-        "image": "/images/three_employee.png"
+        "image": "/images/platform/features/three.png"
       },
       {
         "title": "Team-Community-Hub & Geschützter Raum",
         "subheading": "Fördern Sie die Zusammenarbeit und feiern Sie Erfolge in Ihrer Organisation",
         "description": ["Ermöglichen Sie Wissensaustausch", "Fördern Sie Teamzusammenarbeit", "Feiern Sie Advocacy-Erfolge"],
         "button": "Bauen Sie Ihre Community auf",
-        "image": "/images/four_employee.png"
+        "image": "/images/platform/features/four.png"
       },
       {
         "title": "Analytik & Spielifizierung",
         "subheading": "Verfolgen Sie ROI und optimieren Sie Ihre Strategie mit umfassenden Engagement-Metriken",
         "description": ["Messen Sie den Programm-ROI", "Verfolgen Sie Engagement-Metriken", "Überwachen Sie Leistungen mit Bestenlisten"],
         "button": "Bauen Sie Ihre Community auf",
-        "image": "/images/five_employee.png"
+        "image": "/images/platform/features/five.png"
       }
     ]
   },
@@ -76,19 +76,19 @@
     "points": [
       {
         "text": "Reduzieren Sie die Zeit für die Inhaltserstellung um 60 % mit KI-gestützter Unterstützung",
-        "icon": "/images/benefits/a.png"
+        "icon": "/images/platform/benefits/a.png"
       },
       {
         "text": "Erzielen Sie 3-mal mehr Engagement als mit traditionellem Unternehmensinhalt",
-        "icon": "/images/benefits/b.png"
+        "icon": "/images/platform/benefits/b.png"
       },
       {
         "text": "Sparen Sie über 15 Stunden pro Woche bei der Verwaltung von Advocacy-Programmen",
-        "icon": "/images/benefits/c.png"
+        "icon": "/images/platform/benefits/c.png"
       },
       {
         "text": "Erhalten Sie Echtzeit-Einblicke in die Leistung und den ROI von Inhalten",
-        "icon": "/images/benefits/d.png"
+        "icon": "/images/platform/benefits/d.png"
       }
     ]
   },
@@ -143,25 +143,25 @@
         "title": "Hohe Kosten und geringe Rendite bei digitalen Anzeigen",
         "text": "Die Kosten für Anzeigen steigen weiter, während die Engagement-Raten sinken. Ihr Marketingbudget verdient eine bessere Lösung.",
         "subtext": "Nutzen Sie die authentische Reichweite der Stimmen Ihrer Mitarbeiter, die bezahlte Werbung übertreffen.",
-        "icon": "/images/benefits/a.svg"
+        "icon": "/images/platform/benefits/a.svg"
       },
       {
         "title": "Content-Müdigkeit ist real",
         "text": "In einer Welt voller KI-generierter Einheitsinhalte werden generische Unternehmensbotschaften einfach übersehen und vergessen.",
         "subtext": "Heben Sie sich mit echten Mitarbeitergeschichten hervor, die Aufmerksamkeit erregen und Vertrauen schaffen.",
-        "icon": "/images/benefits/b.svg"
+        "icon": "/images/platform/benefits/b.svg"
       },
       {
         "title": "Employer Branding, das wirklich funktioniert",
         "text": "Gestellte Karriereseiten und Stockfotos können Ihre echte Unternehmenskultur nicht vermitteln – und Top-Talente wissen das.",
         "subtext": "Zeigen Sie authentische Geschichten aus Ihrem Unternehmen, um Kandidaten anzuziehen, die wirklich zu Ihren Werten passen.",
-        "icon": "/images/benefits/c.svg"
+        "icon": "/images/platform/benefits/c.svg"
       },
       {
         "title": "Ihre ungenutzte Marketingkraft",
         "text": "Die Netzwerke Ihrer Mitarbeiter sind Ihr mächtigster und vertrauenswürdigster Marketingkanal.",
         "subtext": "Machen Sie Ihre Mitarbeiter zu überzeugenden Markenbotschaftern, ohne ihre Arbeitsbelastung zu erhöhen.",
-        "icon": "/images/benefits/d.svg"
+        "icon": "/images/platform/benefits/d.svg"
       }
     ],
     "button": "Beta-Zugang anfordern"

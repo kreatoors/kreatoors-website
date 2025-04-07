@@ -1,12 +1,12 @@
-import { Header } from "./components/layout/Header";
+import Header from "@/components/layout/Header";
 
-export default function PlatformLayout({
+export default function PrivacyLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <div className="">
+    <div className="bg-[#F8F0FD]">
       <Header />
       {children}
     </div>

@@ -1,7 +1,19 @@
+import Benefits from "./components/BenefitsSection";
+import CTASection1 from "./components/CTASection1";
+import EmployeeStories from "./components/EmployeeStories";
+import Hero from "./components/Hero";
+import SignUpSection from "./components/Signup";
+import WhyEmployeeAdvocacy from "./components/WhyEmployeeAdvocacy";
+
 export default function Platform() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="text-3xl font-bold underline">This is platform page</h1>
-    </div>
+    <>
+      <Hero />
+      <WhyEmployeeAdvocacy />
+      <CTASection1 />
+      <EmployeeStories />
+      <Benefits />
+      <SignUpSection />
+    </>
   );
 }
