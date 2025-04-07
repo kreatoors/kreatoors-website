@@ -1,0 +1,168 @@
+{
+  "A": {
+    "Mission": "Mission",
+    "Features": "Features",
+    "Benefits": "Benefits",
+    "Sign up": "Sign up",
+    "Get Early Access": "Get Early Access",
+    "Language": "Language"
+  },
+  "B": {
+    "heading": "Grow Your Brand Equity Through",
+    "subheading": "AI-Powered Employee Content",
+    "subheading2": "",
+    "paragraph": "Our AI-powered platform seamlessly connects personal and professional branding, content \n creation, and analytics to turn employee stories into measurable brand impact.",
+    "button1": "Find Out What’s Inside",
+    "button2": "Book a Demo"
+  },
+  "C": {
+    "heading": "ROI Tracking Made Simple: Custom Metrics & Clear Comparisons"
+  },
+  "D": {
+    "heading": "Key Features",
+    "sections": [
+      {
+        "title": "Personal Growth Hub",
+        "subheading": "Build influence that matters.",
+        "description": ["Brand Strategy Creator", "Development pathway ", "Goal & Progress tracking", "Impact metrics"],
+        "button": "Empower Your Teams Now ",
+        "image": "/images/one_employee.png"
+      },
+      {
+        "title": "AI Ghostwriter & Content Studio",
+        "subheading": "Create impactful content in minutes. ",
+        "description": ["One-click content generation ", "Brand-aligned templates", "Topic ideas & suggestions ", "Company content library"],
+        "button": "Start Your EGC Journey",
+        "image": "/images/two_employee.png"
+      },
+      {
+        "title": "Content Governance & Employer Brand Amplification",
+        "subheading": "Streamline campaign management and amplify your reach with intelligent content distribution",
+        "description": [
+          "Streamline advocacy campaign management",
+          "Approval Workflows for Brand & Content Governance",
+          "Intelligent Content Scheduling & Distribuiton"
+        ],
+        "button": "Amplify Your Brand",
+        "image": "/images/three_employee.png"
+      },
+      {
+        "title": "Community & Safe Space",
+        "subheading": "Help your employees build confidence in content creation and collaborate.",
+        "description": ["Safe practice environment", "Feedback system", "Learning community", "Team engagement"],
+        "button": "Build Your Community",
+        "image": "/images/four_employee.png"
+      },
+      {
+        "title": "Analytics Center",
+        "subheading": "Measure impact and ROI",
+        "description": ["Influence tracking", "Content performance", "Program analytics", "Business impact"],
+        "button": "Build Your Community",
+        "image": "/images/five_employee.png"
+      }
+    ]
+  },
+  "E": {
+    "heading": "Our Benefits",
+    "subheading": "Why Leading Organizations <br/> Choose Our Platform",
+    "points": [
+      {
+        "title": "Boost your Brand",
+        "text": "Reduce content creation time by 60% with AI-powered assistance",
+        "icon": "/images/benefits/a.svg"
+      },
+      {
+        "title": "Save time",
+        "text": "Drive 3x more engagement than traditional corporate content",
+        "icon": "/images/benefits/b.svg"
+      },
+      {
+        "title": "Deliver Results",
+        "text": "Save 15+ hours per week on advocacy program management",
+        "icon": "/images/benefits/c.svg"
+      },
+      {
+        "title": "Increase Engagement",
+        "text": "Get real-time insights into content performance and ROI",
+        "icon": "/images/benefits/d.svg"
+      }
+    ]
+  },
+  "F": {
+    "heading": "Our Mission",
+    "paragraph": "We help organizations harness authenticity at scale, empowering professionals to build distinctive voices that AI cannot replicate. The future of brand building is less about competing with AI and more about amplifying what makes us uniquely human. This realization sparked <b>Kreatoors</b>."
+  },
+  "G": {
+    "heading": "Sign Up",
+    "Name": "Name",
+    "Nplaceholder": "Enter your name",
+    "Email": "Email Address",
+    "Eplaceholder": "Enter your email address",
+    "Role": "Role",
+    "Rplaceholder": "Enter role",
+    "button": "Request Beta Access"
+  },
+  "H": {
+    "heading1": "Company",
+    "title1": {
+      "point1": "Contact Us",
+      "point2": "Features",
+      "point3": "Platform Benefits",
+      "point4": "Consultancy",
+      "point5": "About us"
+    },
+    "heading2": "Quick Links",
+    "title2": "Privacy Policy",
+    "heading3": "Contact Us",
+    "title3": {
+      "point1": "AI Loves HR Ltd",
+      "point2": "128 City Road, London EC1V<br/>2NX, United Kingdom",
+      "point3": "128 City Road London EC1V 2NX, United Kingdom"
+    }
+  },
+  "I": {
+    "heading": " Email: info@kreatoors.com",
+    "paragraph": " Copyright © 2024 Kreatoors an AI Loves HR Ltd Company. All Rights Reserved"
+  },
+  "J": {
+    "heading": "Join 500+ HR professionals who are eager to elevate their brands with cutting-edge AI tools.",
+    "heading2": "Supercharge your Employer Brand. <br /> Get Early Access.",
+    "subtext": "Get Early Access.",
+    "button": "Get Early Access"
+  },
+  "K": {
+    "heading": "How Does Kreatoors Solve This?",
+    "heading2": "Our platform makes it effortless for employees to create authentic, on-brand content that drives measurable business results – no writing skills required.",
+    "button": "Request Beta Access"
+  },
+  "L": {
+    "heading": "Why Smart Businesses Choose <br/> Employee Advocacy",
+    "sections": [
+      {
+        "title": "High Costs and Low Returns on Digital Ads",
+        "text": "Ad costs continue to climb while engagement rates plummet. Your marketing budget deserves better.",
+        "subtext": "Unlock the authentic reach of employee voices that outperform paid advertising.",
+        "icon": "/images/EA.svg"
+      },
+      {
+        "title": "Content Fatigue Is Real",
+        "text": "In a world of AI-generated sameness, generic corporate content gets scrolled past and forgotten.",
+        "subtext": "Stand out with genuine employee stories that capture attention and build trust.",
+        "icon": "/images/EB.svg"
+      },
+      {
+        "title": "Employer Branding That Actually Works",
+        "text": "Staged career pages and stock photos can't convey your true culture—and top talent knows it.",
+        "subtext": "Showcase authentic workplace stories that attract candidates who truly fit your values.",
+        "icon": "/images/EC.svg"
+      },
+      {
+        "title": "Your Untapped Marketing Force",
+        "text": "Your employees' networks represent your most powerful and trusted marketing channel.",
+        "subtext": "Transform team members into confident brand advocates without adding to their workload.",
+        "icon": "/images/ED.svg"
+      }
+    ],
+    "button": "Unlock Authentic Reach Now"
+  }
+}

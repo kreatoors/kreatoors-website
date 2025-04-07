@@ -1,0 +1,169 @@
+{
+  "A": {
+    "Mission": "Mission",
+    "Features": "Funktionen",
+    "Benefits": "Vorteile",
+    "Sign up": "Registrieren",
+    "Get Early Access": "Erhalten Sie frühen Zugang",
+    "Language": "Sprache"
+  },
+  "B": {
+    "heading": "Steigern Sie Ihren Markenwert",
+    "subheading": "Durch KI-gesteuerte ",
+    "subheading2": "Mitarbeiter-Inhalte",
+    "paragraph": "Unsere KI-gestützte Plattform verbindet nahtlos persönliches und professionelles Branding, Content-Erstellung und Analysen, um jede Mitarbeitergeschichte in messbaren Markeneinfluss zu verwandeln.",
+    "button1": "Erfahren Sie heute mehr",
+    "button2": "Der Warteliste beitreten"
+  },
+  "C": {
+    "heading": "ROI-Tracking leicht gemacht: Individuelle Kennzahlen & Klare Vergleiche"
+  },
+  "D": {
+    "heading": "KI-gesteuerte Mitarbeitergeschichten",
+    "sections": [
+      {
+        "title": "Zentrum für persönliche Entwicklung & Unternehmenseinfluss",
+        "subheading": "KI-gestützte Entwicklung der persönlichen Marke und Fähigkeiten",
+        "description": [
+          "Steigern Sie Ihren Einfluss & Ihre professionelle Marke mit KI-Unterstützung",
+          "Verfolgen Sie den professionellen Einfluss teamübergreifend",
+          "Bauen Sie starke Mitarbeiternetzwerke auf"
+        ],
+        "button": "Stärken Sie Ihre Teams jetzt",
+        "image": "/images/one_employee.png"
+      },
+      {
+        "title": "Medien-Atelier",
+        "subheading": "Erstellen, individualisieren und verwalten Sie markengerechte Inhalte im großen Umfang mit KI-Unterstützung",
+        "description": [
+          "Skalieren Sie Ihre Content-Erstellung mit KI",
+          "Gewährleisten Sie Markenkonformität",
+          "Optimieren Sie den Content-Freigabeprozess"
+        ],
+        "button": "Starten Sie Ihre EGC-Reise",
+        "image": "/images/two_employee.png"
+      },
+      {
+        "title": "Markenverbreitungs-Hub",
+        "subheading": "Optimieren Sie Ihr Kampagnenmanagement und erweitern Sie Ihre Reichweite durch intelligente Content-Verteilung",
+        "description": [
+          "Starten und verwalten Sie Advocacy-Kampagnen",
+          "Verfolgen Sie Markenauswirkungen in Echtzeit",
+          "Optimieren Sie die Content-Verteilung"
+        ],
+        "button": "Verstärken Sie Ihre Marke",
+        "image": "/images/three_employee.png"
+      },
+      {
+        "title": "Team-Community-Hub & Geschützter Raum",
+        "subheading": "Fördern Sie die Zusammenarbeit und feiern Sie Erfolge in Ihrer Organisation",
+        "description": ["Ermöglichen Sie Wissensaustausch", "Fördern Sie Teamzusammenarbeit", "Feiern Sie Advocacy-Erfolge"],
+        "button": "Bauen Sie Ihre Community auf",
+        "image": "/images/four_employee.png"
+      },
+      {
+        "title": "Analytik & Spielifizierung",
+        "subheading": "Verfolgen Sie ROI und optimieren Sie Ihre Strategie mit umfassenden Engagement-Metriken",
+        "description": ["Messen Sie den Programm-ROI", "Verfolgen Sie Engagement-Metriken", "Überwachen Sie Leistungen mit Bestenlisten"],
+        "button": "Bauen Sie Ihre Community auf",
+        "image": "/images/five_employee.png"
+      }
+    ]
+  },
+  "E": {
+    "heading": "Vorteile",
+    "subheading": "Warum führende Organisationen unsere Plattform wählen",
+    "points": [
+      {
+        "text": "Reduzieren Sie die Zeit für die Inhaltserstellung um 60 % mit KI-gestützter Unterstützung",
+        "icon": "/images/benefits/a.png"
+      },
+      {
+        "text": "Erzielen Sie 3-mal mehr Engagement als mit traditionellem Unternehmensinhalt",
+        "icon": "/images/benefits/b.png"
+      },
+      {
+        "text": "Sparen Sie über 15 Stunden pro Woche bei der Verwaltung von Advocacy-Programmen",
+        "icon": "/images/benefits/c.png"
+      },
+      {
+        "text": "Erhalten Sie Echtzeit-Einblicke in die Leistung und den ROI von Inhalten",
+        "icon": "/images/benefits/d.png"
+      }
+    ]
+  },
+  "F": {
+    "heading": "Unsere Mission",
+    "paragraph": "Wir helfen Organisationen, Authentizität in großem Maßstab zu nutzen und Fachleute zu befähigen, unverwechselbare Stimmen zu entwickeln, die KI nicht nachahmen kann. Die Zukunft des Markenaufbaus besteht weniger darin, mit KI zu konkurrieren, sondern vielmehr darin, das zu verstärken, was uns einzigartig menschlich macht. Diese Erkenntnis war der Auslöser für Kreatoors."
+  },
+  "G": {
+    "heading": "Registrieren",
+    "Name": "Name",
+    "Nplaceholder": "Geben Sie Ihren Namen ein",
+    "Email": "E-Mail-Adresse",
+    "Eplaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "Role": "Rolle",
+    "Rplaceholder": "Geben Sie Ihre Rolle ein",
+    "button": "Frühen Zugriff erhalten"
+  },
+  "H": {
+    "heading1": "Unternehmen",
+    "title1": {
+      "point1": "Mission",
+      "point2": "Funktionen",
+      "point3": "Vorteile",
+      "point4": "Mitglieder"
+    },
+    "heading2": "Schnellzugriff",
+    "title2": "Datenschutzerklärung",
+    "heading3": "Kontakt",
+    "title3": {
+      "point1": "AI Loves HR GmbH",
+      "point2": "128 City Road",
+      "point3": "London EC1V 2NX, United Kingdom"
+    }
+  },
+  "I": {
+    "heading": "E-Mail: hello@kreatoors.com",
+    "paragraph": "Urheberrecht © 2024 Kreatoors, eine AI Loves HR Ltd Firma. Alle Rechte vorbehalten."
+  },
+  "J": {
+    "heading": "Schließen Sie sich über 500 HR-Profis an, die ihre Marken mit innovativen KI-Tools auf das nächste Level bringen möchten.",
+    "button": "Erhalten Sie frühzeitigen Zugang"
+  },
+  "K": {
+    "heading": "Wie löst Kreatoors dieses Problem?",
+    "heading2": "Unsere Plattform ermöglicht es Mitarbeitern mühelos, authentische, markengerechte Inhalte zu erstellen, die messbare Geschäftsergebnisse liefern – ganz ohne Schreibkenntnisse.",
+    "button": "Beta-Zugang anfordern"
+  },
+  "L": {
+    "heading": "Warum kluge Unternehmen auf Employee <br/> Advocacy setzen",
+    "sections": [
+      {
+        "title": "Hohe Kosten und geringe Rendite bei digitalen Anzeigen",
+        "text": "Die Kosten für Anzeigen steigen weiter, während die Engagement-Raten sinken. Ihr Marketingbudget verdient eine bessere Lösung.",
+        "subtext": "Nutzen Sie die authentische Reichweite der Stimmen Ihrer Mitarbeiter, die bezahlte Werbung übertreffen.",
+        "icon": "/images/benefits/a.svg"
+      },
+      {
+        "title": "Content-Müdigkeit ist real",
+        "text": "In einer Welt voller KI-generierter Einheitsinhalte werden generische Unternehmensbotschaften einfach übersehen und vergessen.",
+        "subtext": "Heben Sie sich mit echten Mitarbeitergeschichten hervor, die Aufmerksamkeit erregen und Vertrauen schaffen.",
+        "icon": "/images/benefits/b.svg"
+      },
+      {
+        "title": "Employer Branding, das wirklich funktioniert",
+        "text": "Gestellte Karriereseiten und Stockfotos können Ihre echte Unternehmenskultur nicht vermitteln – und Top-Talente wissen das.",
+        "subtext": "Zeigen Sie authentische Geschichten aus Ihrem Unternehmen, um Kandidaten anzuziehen, die wirklich zu Ihren Werten passen.",
+        "icon": "/images/benefits/c.svg"
+      },
+      {
+        "title": "Ihre ungenutzte Marketingkraft",
+        "text": "Die Netzwerke Ihrer Mitarbeiter sind Ihr mächtigster und vertrauenswürdigster Marketingkanal.",
+        "subtext": "Machen Sie Ihre Mitarbeiter zu überzeugenden Markenbotschaftern, ohne ihre Arbeitsbelastung zu erhöhen.",
+        "icon": "/images/benefits/d.svg"
+      }
+    ],
+    "button": "Beta-Zugang anfordern"
+  }
+}

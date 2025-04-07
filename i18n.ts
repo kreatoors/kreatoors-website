@@ -21,8 +21,7 @@ i18n
         backend: {
             loadPath: '/locales/{{lng}}/{{ns}}.json',
         },
-        ns: ['navbar', 'home', 'about', 'service', 'footer'],
-        defaultNS: 'navbar',
+        ns: ['navbar', 'home', 'about', 'platform', 'service', 'footer'],
         react: {
             useSuspense: false, // Set to false to avoid issues with SSR
         },
