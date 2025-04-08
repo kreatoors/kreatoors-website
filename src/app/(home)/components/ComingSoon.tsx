@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import React, { FormEventHandler, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -19,26 +20,35 @@ const ComingSoonSection = () => {
     setLoading(true);
     setStatus("");
 
-    // try {
-    //   const response = await axiosInstance.post(`/mailchimp/waitlist`, { email });
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+        }),
+      });
+      console.log(response);
 
-    //   if (response.status === 200) {
-    //     toast.success("Thank you for subscribing!");
-    //     // setStatus("success");
-    //     setEmail("");
-    //   } else {
-    //     // toast.error("Something went wrong!");
-    //     setErrorMessage("Something went wrong!");
-    //     setStatus("error");
-    //   }
-    // } catch (error) {
-    //   console.error("Subscription error:", error);
-    //   setErrorMessage(error?.response?.data?.message);
-    //   // toast.error(error?.response?.data?.message);
-    //   setStatus("error");
-    // } finally {
-    //   setLoading(false);
-    // }
+      if (response.status === 200) {
+        toast.success("Thank you for subscribing!");
+        // setStatus("success");
+        setEmail("");
+      } else {
+        // toast.error("Something went wrong!");
+        setErrorMessage("Something went wrong!");
+        setStatus("error");
+      }
+    } catch (error: any) {
+      console.error("Subscription error:", error);
+      setErrorMessage(error?.response?.data?.message);
+      // toast.error(error?.response?.data?.message);
+      setStatus("error");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

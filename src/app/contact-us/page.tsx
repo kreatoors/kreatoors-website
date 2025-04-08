@@ -8,7 +8,7 @@ const linkedIn = "/images/linkedin2.png";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
-// import { toast } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 
 const ContactForm = () => {
   const { t } = useTranslation("contact-us");
@@ -41,26 +41,33 @@ const ContactForm = () => {
 
     setLoading(true);
 
-    // try {
-    //   const response = await axiosInstance.post(`/mailchimp/waitlist`, formData);
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      console.log(response);
 
-    //   if (response.status === 200) {
-    //     toast.success("Thank you for contacting us!");
-    //     setFormData({
-    //       fullName: "",
-    //       email: "",
-    //       companyName: "",
-    //       jobTitle: "",
-    //       message: "",
-    //     });
-    //   } else {
-    //     toast.error("An error occurred. Please try again.");
-    //   }
-    // } catch (error) {
-    //   toast.error(error?.response?.data?.message || "Submission failed.");
-    // } finally {
-    //   setLoading(false);
-    // }
+      if (response.status === 200) {
+        toast.success("Thank you for contacting us!");
+        setFormData({
+          fullName: "",
+          email: "",
+          companyName: "",
+          jobTitle: "",
+          message: "",
+        });
+      } else {
+        toast.error("An error occurred. Please try again.");
+      }
+    } catch (error: any) {
+      toast.error(error?.response?.data?.message || "Submission failed.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   // const handleSubmit = async (e) => {
