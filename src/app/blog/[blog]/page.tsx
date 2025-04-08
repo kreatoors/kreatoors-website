@@ -3,7 +3,7 @@ import { blogData } from "../BlogData";
 import BlogContent from "./components/BlogContent";
 import { BlogHeader } from "./components/BlogHeader";
 
-export default function SingleBlogPage({ params }: { params: { blog: string } }) {
+export default async function SingleBlogPage({ params }: any) {
   const blog = blogData[params.blog as keyof typeof blogData];
 
   if (!blog) {
