@@ -25,7 +25,7 @@ const playfairDisplay = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Kreatoors AI",
-  description: "Kreatoors AI - Your AI-Powered Creative Assistant",
+  description: "Kreatoors AI - AI-powered Employee Content Creation",
 };
 
 export default function RootLayout({
