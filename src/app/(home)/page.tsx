@@ -10,7 +10,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Home - Kreatoors AI",
-  description: "Kreatoors AI - Your AI-Powered Creative Assistant",
+  description: "Kreatoors AI - AI-powered Employee Content Creation",
 };
 
 export default function Home() {
