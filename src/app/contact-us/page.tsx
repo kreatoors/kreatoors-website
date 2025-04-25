@@ -42,7 +42,7 @@ const ContactForm = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/newsletter", {
+      const response = await fetch("https://api.kreatoors.com/mailchimp/waitlist", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

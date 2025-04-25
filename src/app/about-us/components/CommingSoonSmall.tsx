@@ -18,7 +18,7 @@ const ComingSoonSmallSection = () => {
     setStatus("");
 
     try {
-      const response = await fetch("/api/newsletter", {
+      const response = await fetch("https://api.kreatoors.com/mailchimp/waitlist", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -34,11 +34,12 @@ const ComingSoonSmallSection = () => {
         // setStatus("success");
         setEmail("");
       } else {
-        // toast.error("Something went wrong!");
+        toast.error("Something went wrong!");
         setErrorMessage("Something went wrong!");
         setStatus("error");
       }
     } catch (error: any) {
+      toast.error("Something went wrong!");
       console.error("Subscription error:", error);
       setErrorMessage(error?.response?.data?.message);
       // toast.error(error?.response?.data?.message);
