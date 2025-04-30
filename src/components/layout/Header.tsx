@@ -80,10 +80,6 @@ export default function Header() {
       path: "https://kreatoors.ai/platform",
     },
     { name: t("services"), path: "#" },
-    {
-      name: "Community",
-      path: "/community",
-    },
     { name: t("aboutUs"), path: "/about-us" },
     { name: t("blog"), path: "/blog" },
     { name: t("Request Demo"), path: "https://calendly.com/coachingwitharzo/free-discovery-call" },
@@ -163,8 +159,8 @@ export default function Header() {
                   href={item.path}
                   className={` text-lg font-normal ${
                     pathname.includes(item.path)
-                      ? "text-transparent bg-clip-text bg-primary-gradient font-semibold md:text-base lg:text-lg text-center"
-                      : "text-sub-gray hover:text-[#6B5B95] md:text-base lg:text-lg text-center"
+                      ? "text-transparent bg-clip-text bg-primary-gradient font-semibold md:text-base lg:text-lg text-center whitespace-nowrap"
+                      : "text-sub-gray hover:text-[#6B5B95] md:text-base lg:text-lg text-center whitespace-nowrap"
                   }`}
                 >
                   {item.name}
@@ -176,7 +172,7 @@ export default function Header() {
                   href={item.path}
                   className={` text-lg font-normal ${
                     pathname === item.path
-                      ? "text-transparent bg-clip-text bg-primary-gradient font-semibold md:text-base lg:text-lg text-center "
+                      ? "text-transparent bg-clip-text bg-primary-gradient font-semibold md:text-base lg:text-lg text-center whitespace-nowrap"
                       : "text-sub-gray hover:text-[#6B5B95] md:text-base lg:text-lg text-center whitespace-nowrap"
                   }`}
                 >
