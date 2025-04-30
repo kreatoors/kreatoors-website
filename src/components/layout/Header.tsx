@@ -75,15 +75,20 @@ export default function Header() {
   };
   const menuItems = [
     { name: t("home"), path: "/" },
+    {
+      name: "Platform",
+      path: "https://kreatoors.ai/platform",
+    },
     { name: t("services"), path: "#" },
+    {
+      name: "Community",
+      path: "/community",
+    },
     { name: t("aboutUs"), path: "/about-us" },
-    // {
-    //   name: t("navbar.aiPlatform"),
-    //   path: "https://kreatoors.ai/",
-    // },
     { name: t("blog"), path: "/blog" },
-    // { name: t("navbar.contactUs"), path: "/contactus" },
+    { name: t("Request Demo"), path: "https://calendly.com/coachingwitharzo/free-discovery-call" },
   ];
+  
 
   const handleServiceClick = () => {
     const servicesSection = document.getElementById("services-section");
@@ -102,10 +107,12 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className="absolute top-5 md:top-10 left-0 right-0 z-50 md:max-w-[87%] mx-2 md:mx-10 lg:mx-10 xl:mx-auto  " ref={menuRef}>
+    <header className="sticky z-50 top-5 md:top-10 left-0 right-0 z-50 md:max-w-[87%] mx-2 md:mx-10 lg:mx-10 xl:mx-auto  " ref={menuRef}>
       <nav className="z-[999] relative flex items-center justify-between p-2 md:py-5 md:px-5 bg-white rounded-full ">
         <Logo />
-        <ul className="hidden xl:flex items-center space-x-8 absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <ul className="hidden xl:flex items-center gap-8 absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
+
+
           {menuItems.map((item, index) =>
             item.name === t("services") ? (
               <li key={index} className="relative" onMouseEnter={() => setIsServicesHovered(true)} onMouseLeave={() => setIsServicesHovered(false)}>
@@ -141,25 +148,16 @@ export default function Header() {
                         }`}
                       >
                         <div className="bg-blue-custom-400 p-3 rounded-full">{subItem.icon}</div>
-                        <span className="font-normal max-w-40 text-sub-gray">{i18n.language === "de" ? subItem.nameDe : subItem.name}</span>
+                        <span className="font-normal max-w-40 text-sub-gray break-words leading-snug">
+  {i18n.language === "de" ? subItem.nameDe : subItem.name}
+</span>
+
                       </Link>
                     ))}
                   </div>
                 )}
               </li>
-            ) : item.name === "AI Platform" ? (
-              <li key={index}>
-                <a
-                  href={item.path}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-base font-normal bg-[#D6D1FE] px-[6px] py-1 2xl:px-[11px] 2xl:py-[4px] rounded-[41px] flex items-center text-[#3B3885] hover:text-[#6B5B95] md:text-base 2xl:text-lg text-center"
-                >
-                  <Image src={"/images/ai.svg"} alt="ai" className="2xl:mr-2 mr-1" />
-                  {item.name}
-                </a>
-              </li>
-            ) : item.name === t("blog") ? (
+            )  : item.name === t("blog") ? (
               <li key={index}>
                 <Link
                   href={item.path}
@@ -178,13 +176,14 @@ export default function Header() {
                   href={item.path}
                   className={` text-lg font-normal ${
                     pathname === item.path
-                      ? "text-transparent bg-clip-text bg-primary-gradient font-semibold md:text-base lg:text-lg text-center"
-                      : "text-sub-gray hover:text-[#6B5B95] md:text-base lg:text-lg text-center"
+                      ? "text-transparent bg-clip-text bg-primary-gradient font-semibold md:text-base lg:text-lg text-center "
+                      : "text-sub-gray hover:text-[#6B5B95] md:text-base lg:text-lg text-center whitespace-nowrap"
                   }`}
                 >
                   {item.name}
                 </Link>
               </li>
+              
             )
           )}
         </ul>
