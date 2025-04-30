@@ -110,7 +110,7 @@ export default function Header() {
     <header className="sticky z-50 top-5 md:top-10 left-0 right-0 z-50 md:max-w-[87%] mx-2 md:mx-10 lg:mx-10 xl:mx-auto  " ref={menuRef}>
       <nav className="z-[999] relative flex items-center justify-between p-2 md:py-5 md:px-5 bg-white rounded-full ">
         <Logo />
-        <ul className="hidden xl:flex items-center gap-8 absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <ul className="hidden xl:flex items-center space-x-8 absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
 
 
           {menuItems.map((item, index) =>
