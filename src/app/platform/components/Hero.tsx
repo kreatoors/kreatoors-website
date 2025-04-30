@@ -11,27 +11,28 @@ export default function Hero() {
   return (
     <section className="w-full h-full max-w-7xl mx-auto lg:px-2.5 ">
       <div className="lg:rounded-[40px] bg-[url(/images/platform/heroBackground.svg)] pt-10 lg:pt-0 min-h-screen md:min-h-[300px] lg:h-[700px] xl:min-h-full max-h-full mt-14 lg:mt-[120px]">
-        <div className="text-center lg:pt-[60px] lg:px-0 px-3">
+      <div className="text-center lg:pt-[60px] lg:px-0 px-3">
           <h1 className="down-slide-in-animation text-[25px] sm:text-[34px] font-[500] md:tracking-auto leading-[48px] lg:leading-[58px] sm:leading-[58px] md:text-3xl lg:text-[42px] tracking-[-0.42px] text-black mb-0 sm:mb-6 max-w-[42rem] mx-auto">
-            {t("B.heading")} <span className="md:block">{t("B.subheading")}</span> <span className="block my-3">{t("B.subheading2")}</span>
+            {t("B.heading")}{" "}
+            <span className="md:block">{t("B.subheading")}</span>{" "}
+            <span className="block my-3">{t("B.subheading2")}</span>
           </h1>
-          <p className="down-slide-in-animation font-normal text-[14px] sm:text-[14px] md:text-lg text-[#667085] mb-3 sm:mb-8 mx-auto">
+
+          <p className="down-slide-in-animation font-normal text-[14px] sm:text-[14px] md:text-lg text-[#667085] mb-2 sm:mb-3 mx-auto">
             {renderText(t("B.paragraph"))}
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <button
-              onClick={(e) => scrollToComponent(e, "features")}
-              className="bg-primary-gradient hover:bg-purple-gradient2 text-white up-slide-in-animation duration-200 px-5 py-2 sm:px-6 sm:py-2 md:px-8 md:py-3 rounded-full transition-colors"
+
+          <p className="down-slide-in-animation font-normal text-[14px] sm:text-[14px] md:text-lg text-[#667085] mb-2 sm:mb-3 mx-auto">
+            Join 500+ businesses leveraging employee stories at scale.
+          </p>
+
+          <div className="flex justify-center mt-4">
+            <a
+              href="/request-demo"
+              className="bg-purple-gradient hover:bg-purple-gradient2 text-white px-8 py-3 rounded-full transition-colors text-[16px] sm:text-[17px] font-medium"
             >
-              {t("B.button1")}
-            </button>
-            <button
-              onClick={(e) => scrollToComponent(e, "contact")}
-              className="up-slide-in-animation group hover:bg-cta-gradient duration-200 border border-blue-custom-600 text-blue-custom-600 px-5 py-2 sm:px-6 sm:py-2 md:px-8 md:py-3 rounded-full transition-colors flex items-center gap-2"
-            >
-              {t("B.button2")}
-              <ArrowRight className="group-hover:translate-x-[5px] transform duration-200" />
-            </button>
+              Get Early Access
+            </a>
           </div>
         </div>
         <div className="relative flex items-center justify-center mt-10 lg:mt-20 md:max-w-[50rem] mx-auto lg:max-w-full">
