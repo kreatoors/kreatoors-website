@@ -6,7 +6,7 @@ import { X } from "lucide-react";
 
 import { SERVICES_ICONS } from "@/assets/icons/ServicesIcons";
 import Logo from "../extra/Logo";
-import Image from "next/image";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
