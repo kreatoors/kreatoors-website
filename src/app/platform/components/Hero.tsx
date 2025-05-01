@@ -35,7 +35,8 @@ export default function Hero() {
         
       </div>
     </div>
-        <div className="relative flex items-center justify-center mt-10 lg:mt-20 md:max-w-[50rem] mx-auto lg:max-w-full">
+
+<div className="relative flex items-center justify-center mt-10 lg:mt-20 md:max-w-[50rem] mx-auto lg:max-w-full overflow-hidden">
           <Image
             height={208}
             width={304}
@@ -53,7 +54,7 @@ export default function Hero() {
           <Image
             height={151}
             width={406}
-            src="/images/platform/hero/bot-left.svg"
+            src="/images/platform/hero/bot-left.png"
             alt="Bottom Left"
             className="hidden md:block right-slide-in-animation absolute top-0 lg:top-[1%] right-1 lg:right-[-1%] xl:right-[4%] lg:w-[330px] h-[180px] lg:h-[180px] xl:h-[200px] object-contain z-10"
           />
