@@ -77,7 +77,7 @@ export default function Header() {
     { name: t("home"), path: "/" },
     {
       name: "Platform",
-      path: "https://kreatoors.ai/platform",
+      path: "/platform",
     },
     { name: t("services"), path: "#" },
     { name: t("aboutUs"), path: "/about-us" },
