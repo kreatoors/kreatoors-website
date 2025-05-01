@@ -38,7 +38,7 @@ const EmployeeStories = () => {
       id="features"
       className="max-w-7xl mx-auto md:py-16 pt-[7em] pb-[4em] flex flex-col justify-center space-y-10 md:space-y-20 px-4 mt-[1rem] lg:mt-[5rem]"
     >
-      <h2 className="text-[25px] sm:text-[34px] font-medium md:text-3xl lg:text-[42px] mx-auto text-center mb-0 text-black">{t("D.heading")}</h2>
+      <h2 className="text-[25px] sm:text-[34px] font-medium md:text-3xl lg:text-[42px] mx-auto text-center mb-20 text-black">{t("D.heading")}</h2>
       {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
       {sections.map((section: any, index: number) => (
         <div

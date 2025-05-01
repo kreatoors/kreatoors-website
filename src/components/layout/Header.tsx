@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { X } from "lucide-react";
-
+import Image from "next/image";
 import { SERVICES_ICONS } from "@/assets/icons/ServicesIcons";
 import Logo from "../extra/Logo";
 
@@ -76,13 +76,12 @@ export default function Header() {
   const menuItems = [
     { name: t("home"), path: "/" },
     {
-      name: "Platform",
+      name: "AI Platform",
       path: "/platform",
     },
     { name: t("services"), path: "#" },
     { name: t("aboutUs"), path: "/about-us" },
     { name: t("blog"), path: "/blog" },
-    { name: t("Request Demo"), path: "https://calendly.com/coachingwitharzo/free-discovery-call" },
   ];
   
 
@@ -165,6 +164,24 @@ export default function Header() {
                 >
                   {item.name}
                 </Link>
+              </li>
+            ) : item.name === "AI Platform" ? (
+              <li key={index}>
+                <a
+                  href={item.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base font-normal px-[6px] py-1 2xl:px-[11px] 2xl:py-[4px] rounded-[41px] flex items-center text-[#3B3885] hover:text-[#6B5B95] md:text-base 2xl:text-lg text-center"
+                >
+                  <Image 
+                    src="/images/platform.png"
+                    alt="ai" 
+                    width={24}  // Specify the width
+                    height={24} // Specify the height
+                    className="2xl:mr-2 mr-1" 
+                  />
+                  {item.name}
+                </a>
               </li>
             ) : (
               <li key={index}>
