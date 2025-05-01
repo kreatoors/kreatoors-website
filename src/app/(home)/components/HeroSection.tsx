@@ -39,7 +39,7 @@ export default function Hero() {
             <Link href={"/platform"} className="min-w-[250px] md:w-auto hover:scale-95 flex items-center gap-x-2 relative">
               <div className="relative z-10 flex items-center gap-x-1 md:gap-x-2  text-white font-medium rounded-full px-6 py-4 bg-primary-gradient">
                 <Image src={"/images/ai.svg"} color="white" height={25} width={25} alt="ai" className="w-[18px] h-[17px]" />
-                <span className="whitespace-nowrap pr-1 md:pr-0 capitalize font-medium">{renderText(t("hero.primary-button"))}</span>
+                <span className="whitespace-nowrap pr-1 md:pr-0 capitalize font-medium">Discover Platform Features</span>
               </div>
               {/* <div className="absolute inset-0 rounded-full pointer-events-none bg-gradient-to-r from-[#D4D3F9] to-[#F5F2FB] to-100% -m-1.5"></div> */}
             </Link>
