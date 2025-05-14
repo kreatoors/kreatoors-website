@@ -34,7 +34,7 @@ const ComingSoonSection = () => {
 
       if (response.status === 200) {
         toast.success("Thank you for subscribing!");
-        // setStatus("success");
+         setStatus("success");
         setEmail("");
       } else {
         // toast.error("Something went wrong!");
