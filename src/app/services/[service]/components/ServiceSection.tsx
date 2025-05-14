@@ -124,7 +124,7 @@ const ServiceSection = ({ h1, description, heroImage, coreServices, buttontxt, i
             </div>
             <Link
               href={"/contact-us"}
-              className="w-full py-3 px-6 bg-primary-gradient text-white rounded-full transition-colors duration-500 hover:scale-95"
+              className="w-full py-3 text-center px-6 bg-primary-gradient text-white rounded-full transition-colors duration-500 hover:scale-95"
             >
               {buttontxt}
             </Link>

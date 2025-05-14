@@ -102,7 +102,7 @@ const ComingSoonSection = () => {
                     {loading ? renderText(t("Loading...")) : renderText(t("join"))}
                   </button>
                 </form>
-                {status === "success" && <p className="text-white">Thank you for subscribing!</p>}
+                {status === "success" && <p className="text-black">Thank you for subscribing!</p>}
                 {status === "error" && <p className="text-white">{errorMessage}</p>}
               </div>
             </div>
