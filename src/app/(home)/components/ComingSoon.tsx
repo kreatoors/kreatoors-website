@@ -33,11 +33,19 @@ const ComingSoonSection = () => {
       console.log(response);
 
       if (response.status === 200) {
-        toast.success("Thank you for subscribing!");
+        toast.success("Thank you for subscribing!", {
+  style: {
+    color: "#333",
+  },
+});
+
          setStatus("success");
         setEmail("");
       } else {
-        // toast.error("Something went wrong!");
+
+        toast.error("Something went wrong!", { style: {
+    color: "#333",
+  },});
         setErrorMessage("Something went wrong!");
         setStatus("error");
       }
@@ -102,8 +110,7 @@ const ComingSoonSection = () => {
                     {loading ? renderText(t("Loading...")) : renderText(t("join"))}
                   </button>
                 </form>
-                {status === "success" && <p className="text-black">Thank you for subscribing!</p>}
-                {status === "error" && <p className="text-white">{errorMessage}</p>}
+              
               </div>
             </div>
 
