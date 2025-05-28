@@ -9,7 +9,7 @@ import Image from "next/image";
 const ComingSoonSection = () => {
   const { t } = useTranslation("home");
 
- 
+
 
   return (
     <div>
