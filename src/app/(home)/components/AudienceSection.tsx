@@ -149,7 +149,7 @@ const AudienceSection = () => {
             <p className="text-sub-gray mb-6 max-w-4xl">{tabContent[activeTab]?.description}</p>
 
             <div className="mb-8">
-              <h3 className="text-blue-custom-600 font-medium mb-4 text-[20px]">{t("whatItLooksLike")}</h3>
+              <h3 className="text-blue-custom-600 font-medium mb-4 text-[20px]">{t("what It Looks Like")}</h3>
               <ul className="space-y-3">
                 {tabContent[activeTab]?.features?.map((feature, index) => (
                   <li key={index} className={`text-sub-gray px-3 transform transition-all duration-300 ease-in-out delay-${index * 100}`}>
