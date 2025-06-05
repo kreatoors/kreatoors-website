@@ -19,7 +19,7 @@ export default function Home() {
       <Hero />
       <ComingSoonSection />
       <BrandSolutionsLanding isPage={false} />
-      <ValueStats />
+       <ValueStats />
       <EGCSection />
       <Stats />
       <AudienceSection />
