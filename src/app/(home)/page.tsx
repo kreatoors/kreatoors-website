@@ -17,9 +17,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <ComingSoonSection />
+      <ValueStats />
       <BrandSolutionsLanding isPage={false} />
-       <ValueStats />
+      <ComingSoonSection />
       <EGCSection />
       <Stats />
       <AudienceSection />

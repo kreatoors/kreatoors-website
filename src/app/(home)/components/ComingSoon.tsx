@@ -12,12 +12,8 @@ const ComingSoonSection = () => {
 
 
   return (
-
-    <div
-    // className={`w-full ${isAboutUs ? "bg-cta-gradient" : "bg-white"} py-20`}
-    >
-      <div className="mx-auto mt-20">
-
+    <div>
+      <div className="mx-auto">
         <div className="relative bg-primary-gradient p-2 md:p-8 md:p-12">
           <div className="relative mx-auto max-w-7xl">
             <div className="img1 md:absolute top-10 left-0 mb-2 md:mb-0">
