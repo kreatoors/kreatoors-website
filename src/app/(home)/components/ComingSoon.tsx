@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import React, { useState, useEffect, useRef, FormEventHandler } from "react";
+import React, { useState, FormEventHandler } from "react";
 import { useTranslation } from "react-i18next";
 import { toast } from "react-hot-toast";
 
