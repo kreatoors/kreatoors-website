@@ -83,7 +83,6 @@ export default function Header() {
     { name: t("aboutUs"), path: "/about-us" },
     { name: t("blog"), path: "/blog" },
   ];
-  
 
   const handleServiceClick = () => {
     const servicesSection = document.getElementById("services-section");
@@ -102,33 +101,56 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className="sticky z-50 top-5 md:top-10 left-0 right-0 z-50 md:max-w-[87%] mx-2 md:mx-10 lg:mx-10 xl:mx-auto  " ref={menuRef}>
+    <header
+      className="sticky z-50 top-5 md:top-10 left-0 right-0 md:max-w-[87%] mx-2 md:mx-10 lg:mx-10 xl:mx-auto  "
+      ref={menuRef}
+    >
       <nav className="z-[999] relative flex items-center justify-between p-2 md:py-5 md:px-5 bg-white rounded-full ">
         <Logo />
         <ul className="hidden xl:flex items-center space-x-8 absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
-
-
           {menuItems.map((item, index) =>
             item.name === t("services") ? (
-              <li key={index} className="relative" onMouseEnter={() => setIsServicesHovered(true)} onMouseLeave={() => setIsServicesHovered(false)}>
+              <li
+                key={index}
+                className="relative"
+                onMouseEnter={() => setIsServicesHovered(true)}
+                onMouseLeave={() => setIsServicesHovered(false)}
+              >
                 <button
                   onClick={() => handleServiceClick}
                   className={`text-lg font-normal text-sub-gray hover:text-[#6B5B95] md:text-base lg:text-lg flex items-center space-x-1 ${
-                    pathname.startsWith("/services") ? "text-transparent bg-clip-text bg-primary-gradient font-semibold" : ""
+                    pathname.startsWith("/services")
+                      ? "text-transparent bg-clip-text bg-primary-gradient font-semibold"
+                      : ""
                   }`}
                 >
-                  <span className={`flex-1 ${pathname.startsWith("/services") ? "text-transparent" : "text-gray-900 hover:text-[#6B5B95]"}`}>
+                  <span
+                    className={`flex-1 ${
+                      pathname.startsWith("/services")
+                        ? "text-transparent"
+                        : "text-gray-900 hover:text-[#6B5B95]"
+                    }`}
+                  >
                     {item.name}
                   </span>
                   <svg
-                    className={`w-4 h-4 transform transition-transform ${isServicesHovered ? "rotate-180" : ""} ${
-                      pathname.startsWith("/services") ? "text-[#6B5B95]" : "text-gray-600"
+                    className={`w-4 h-4 transform transition-transform ${
+                      isServicesHovered ? "rotate-180" : ""
+                    } ${
+                      pathname.startsWith("/services")
+                        ? "text-[#6B5B95]"
+                        : "text-gray-600"
                     }`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
                   </svg>
                 </button>
 
@@ -139,20 +161,25 @@ export default function Header() {
                         key={subItem.path}
                         href={subItem.path}
                         className={` flex items-center space-x-3 px-4 py-1.5 text-sm transition-colors ${
-                          pathname === subItem.path ? "text-[#6B5B95] bg-purple-50" : "text-gray-700 hover:bg-purple-50 hover:text-[#6B5B95]"
+                          pathname === subItem.path
+                            ? "text-[#6B5B95] bg-purple-50"
+                            : "text-gray-700 hover:bg-purple-50 hover:text-[#6B5B95]"
                         }`}
                       >
-                        <div className="bg-blue-custom-400 p-3 rounded-full">{subItem.icon}</div>
+                        <div className="bg-blue-custom-400 p-3 rounded-full">
+                          {subItem.icon}
+                        </div>
                         <span className="font-normal max-w-40 text-sub-gray break-words leading-snug">
-  {i18n.language === "de" ? subItem.nameDe : subItem.name}
-</span>
-
+                          {i18n.language === "de"
+                            ? subItem.nameDe
+                            : subItem.name}
+                        </span>
                       </Link>
                     ))}
                   </div>
                 )}
               </li>
-            )  : item.name === t("blog") ? (
+            ) : item.name === t("blog") ? (
               <li key={index}>
                 <Link
                   href={item.path}
@@ -173,12 +200,12 @@ export default function Header() {
                   rel="noopener noreferrer"
                   className="text-base font-normal px-[6px] py-1 2xl:px-[11px] 2xl:py-[4px] rounded-[41px] flex items-center text-[#3B3885] hover:text-[#6B5B95] md:text-base 2xl:text-lg text-center"
                 >
-                  <Image 
+                  <Image
                     src="/images/platform.png"
-                    alt="ai" 
-                    width={24}  // Specify the width
+                    alt="ai"
+                    width={24} // Specify the width
                     height={24} // Specify the height
-                    className="2xl:mr-2 mr-1" 
+                    className="2xl:mr-2 mr-1"
                   />
                   {item.name}
                 </a>
@@ -196,7 +223,6 @@ export default function Header() {
                   {item.name}
                 </Link>
               </li>
-              
             )
           )}
         </ul>
@@ -223,8 +249,18 @@ export default function Header() {
             {isMobileMenuOpen ? (
               <X />
             ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
             )}
           </button>
@@ -245,17 +281,26 @@ export default function Header() {
                   {item.name === t("navbar.services") ? (
                     <div key={index} className="">
                       <button
-                        onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                        onClick={() =>
+                          setIsMobileServicesOpen(!isMobileServicesOpen)
+                        }
                         className="flex items-center justify-center gap-3 w-full text-gray-600"
                       >
                         <span className="text-[22px]">{item.name}</span>
                         <svg
-                          className={`w-4 h-4 transform transition-transform ${isMobileServicesOpen ? "rotate-180" : ""}`}
+                          className={`w-4 h-4 transform transition-transform ${
+                            isMobileServicesOpen ? "rotate-180" : ""
+                          }`}
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
                         >
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M19 9l-7 7-7-7"
+                          />
                         </svg>
                       </button>
                       {isMobileServicesOpen && (
@@ -269,11 +314,14 @@ export default function Header() {
                                 setIsMobileServicesOpen(false);
                               }}
                               className={`flex items-center space-x-3 px-4 py-2 text-sm rounded-lg ${
-                                pathname === subItem.path ? "text-[#6B5B95] bg-purple-50" : "text-gray-600 hover:bg-purple-50 hover:text-[#6B5B95]"
+                                pathname === subItem.path
+                                  ? "text-[#6B5B95] bg-purple-50"
+                                  : "text-gray-600 hover:bg-purple-50 hover:text-[#6B5B95]"
                               }`}
                             >
                               <div className="bg-blue-custom-400 p-3 rounded-full">
-                                {subItem.icon} {/* <img src={subItem.icon} className="w-6 h-6" /> */}
+                                {subItem.icon}{" "}
+                                {/* <img src={subItem.icon} className="w-6 h-6" /> */}
                               </div>
                               <span>{subItem.name}</span>
                             </Link>
@@ -287,7 +335,11 @@ export default function Header() {
                       href={item.path}
                       onClick={() => setIsMobileMenuOpen(false)}
                       //   className={({ isActive }) => `block text-[22px] ${isActive ? "text-[#6B5B95]" : "text-gray-600 hover:text-[#6B5B95]"}`}
-                      className={`block text-[22px] ${pathname === item.path ? "text-[#6B5B95]" : "text-gray-600 hover:text-[#6B5B95]"}`}
+                      className={`block text-[22px] ${
+                        pathname === item.path
+                          ? "text-[#6B5B95]"
+                          : "text-gray-600 hover:text-[#6B5B95]"
+                      }`}
                     >
                       {item.name}
                     </Link>
