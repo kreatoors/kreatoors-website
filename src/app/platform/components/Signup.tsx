@@ -64,7 +64,7 @@ const SignUpSection = () => {
     setStatus("");
 
     try {
-      const response = await fetch("https://api.kreatoors.com/mailchimp/waitlist", {
+      const response = await fetch("api/newsletter", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -79,18 +79,27 @@ const SignUpSection = () => {
       console.log(response);
 
       if (response.status === 200) {
-        toast.success("Thank you for subscribing!");
+        toast.success("Thank you for subscribing!", {
+          style: { color: "#333" },
+        });
         setEmail("");
         setRole("");
         setFirstName("");
         setLastName("");
       } else {
         // handle error
-        toast.error("An error occurred. Please try again.");
+        toast.error("Something went wrong!", {
+          style: { color: "#333" },
+        });
       }
     } catch (error: any) {
       console.error("Subscription error:", error);
-      toast.error(error?.response?.data?.message);
+      toast.error(
+        error?.response?.data?.message || "Unexpected error occurred.",
+        {
+          style: { color: "#333" },
+        }
+      );
     } finally {
       setLoading(false);
     }
@@ -98,20 +107,28 @@ const SignUpSection = () => {
 
   return (
     <>
-      <section id="contact" className="bg-very-light-purple w-full mx-auto p-4 py-6 md:px-4 md:py-10">
+      <section
+        id="contact"
+        className="bg-very-light-purple w-full mx-auto p-4 py-6 md:px-4 md:py-10"
+      >
         <div className="rounded-xl max-w-4xl mx-auto md:p-10 space-y-20">
           <h2 className="text-[25px] sm:text-[34px] lg:text-[42px] font-medium mx-auto text-center mb-8">
             {/* <div className="hidden md:block leading-[60px] ">
               {renderText(t("J.heading"))}
             </div> */}
-            <div className=" leading-[60px] ">{renderText(t("J.heading2"))}</div>
+            <div className=" leading-[60px] ">
+              {renderText(t("J.heading2"))}
+            </div>
             {/* <span className="playfair">{t("J.subtext")}</span> */}
           </h2>
 
           <form className="space-y-12">
             <div className="flex flex-wrap -mx-2">
               <div className="w-1/2 px-2">
-                <label htmlFor="fname" className="block text-sm text-black font-semibold mb-1">
+                <label
+                  htmlFor="fname"
+                  className="block text-sm text-black font-semibold mb-1"
+                >
                   {t("First Name")}
                 </label>
                 <input
@@ -126,7 +143,10 @@ const SignUpSection = () => {
                 />
               </div>
               <div className="w-1/2 px-2">
-                <label htmlFor="lname" className="block text-sm text-black font-semibold mb-1">
+                <label
+                  htmlFor="lname"
+                  className="block text-sm text-black font-semibold mb-1"
+                >
                   {t("Last Name")}
                 </label>
                 <input
@@ -143,7 +163,10 @@ const SignUpSection = () => {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm text-black font-semibold mb-1">
+              <label
+                htmlFor="email"
+                className="block text-sm text-black font-semibold mb-1"
+              >
                 {t("G.Email")}
               </label>
               <input
@@ -159,7 +182,10 @@ const SignUpSection = () => {
             </div>
 
             <div>
-              <label htmlFor="role" className="block text-sm text-black font-semibold mb-1">
+              <label
+                htmlFor="role"
+                className="block text-sm text-black font-semibold mb-1"
+              >
                 {t("G.Role")}
               </label>
               <select
@@ -171,26 +197,43 @@ const SignUpSection = () => {
                 onChange={(e) => setRole(e.target.value)}
               >
                 <option value="">Your Role</option>
-                <option value="Individual Contributor">Individual Contributor</option>
+                <option value="Individual Contributor">
+                  Individual Contributor
+                </option>
                 <option value="Manager">Manager</option>
-                <option value="Senior Leader (Director/VP/C-Suite)">Senior Leader (Director/VP/C-Suite)</option>
+                <option value="Senior Leader (Director/VP/C-Suite)">
+                  Senior Leader (Director/VP/C-Suite)
+                </option>
                 <option value="HR Professional">HR Professional</option>
-                <option value="Marketing Professional">Marketing Professional</option>
-                <option value="Communications Professional">Communications Professional</option>
-                <option value="Freelancer/Consultant">Freelancer/Consultant</option>
+                <option value="Marketing Professional">
+                  Marketing Professional
+                </option>
+                <option value="Communications Professional">
+                  Communications Professional
+                </option>
+                <option value="Freelancer/Consultant">
+                  Freelancer/Consultant
+                </option>
                 <option value="Other">Other</option>
               </select>
             </div>
 
-            <label htmlFor="agree" className="text-sm text-sub-gray-500 text-center w-full block">
+            <label
+              htmlFor="agree"
+              className="text-sm text-sub-gray-500 text-center w-full block"
+            >
               By submitting, you agree to our
               <a href="/terms-conditions" target="_blank">
-                <span className="font-bold text-blue-custom-600 px-1">Terms and Conditions.</span>
+                <span className="font-bold text-blue-custom-600 px-1">
+                  Terms and Conditions.
+                </span>
               </a>
               <br />
               Read our
               <a href="/privacy" target="_blank">
-                <span className="font-bold text-blue-custom-600 px-1">Privacy Policy</span>
+                <span className="font-bold text-blue-custom-600 px-1">
+                  Privacy Policy
+                </span>
               </a>
             </label>
 
@@ -201,13 +244,19 @@ const SignUpSection = () => {
                 type="submit"
                 className="bg-purple-gradient hover:bg-blue-custom-700 text-white py-4 px-8 rounded-full hover:opacity-90 transition-opacity"
               >
-                {loading ? renderText(t("Loading...")) : renderText(t("G.button"))}
+                {loading
+                  ? renderText(t("Loading..."))
+                  : renderText(t("G.button"))}
               </button>
             </div>
           </form>
           <div className="text-center">
-            {status === "success" && <p className="text-black">Thank you for subscribing!</p>}
-            {status === "error" && <p className="text-red-400">{errorMessage}</p>}
+            {status === "success" && (
+              <p className="text-black">Thank you for subscribing!</p>
+            )}
+            {status === "error" && (
+              <p className="text-red-400">{errorMessage}</p>
+            )}
           </div>
         </div>
       </section>

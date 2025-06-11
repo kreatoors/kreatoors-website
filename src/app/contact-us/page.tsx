@@ -42,7 +42,7 @@ const ContactForm = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("https://api.kreatoors.com/mailchimp/waitlist", {
+      const response = await fetch("api/newsletter", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -112,9 +112,12 @@ const ContactForm = () => {
       <div className="mx-auto ">
         <div className="text-center md:mb-12 rounded-b-[50px] md:py-10">
           <h1 className="text-[24px] md:text-4xl mb-4">
-            <span className="font-playfair">{t("getInTouch")}</span> {t("withUs")}
+            <span className="font-playfair">{t("getInTouch")}</span>{" "}
+            {t("withUs")}
           </h1>
-          <p className="text-sm md:text-lg text-sub-gray">{t("justFewClicksAway")}</p>
+          <p className="text-sm md:text-lg text-sub-gray">
+            {t("justFewClicksAway")}
+          </p>
         </div>
         <div className="bg-white py-6 md:py-16 px-2 md:px-5">
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -173,7 +176,9 @@ const ContactForm = () => {
                     <button
                       type="submit"
                       className={`w-full md:w-1/4 bg-primary-gradient text-white py-3 rounded-full transition-color duration-500 ${
-                        !isFormValid || loading ? "opacity-50 cursor-not-allowed" : "hover:scale-105"
+                        !isFormValid || loading
+                          ? "opacity-50 cursor-not-allowed"
+                          : "hover:scale-105"
                       }`}
                       disabled={!isFormValid || loading}
                     >
@@ -181,15 +186,30 @@ const ContactForm = () => {
                     </button>
                   </div>
 
-                  <label htmlFor="agree" className="text-sm text-sub-gray-500 text-center w-full block">
+                  <label
+                    htmlFor="agree"
+                    className="text-sm text-sub-gray-500 text-center w-full block"
+                  >
                     By submitting, you agree to our
-                    <Link href="/terms-conditions" target="_blank" rel="noopener noreferrer">
-                      <span className="font-bold text-blue-custom-600 px-1">Terms and Conditions.</span>
+                    <Link
+                      href="/terms-conditions"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="font-bold text-blue-custom-600 px-1">
+                        Terms and Conditions.
+                      </span>
                     </Link>
                     <br />
                     Read our
-                    <Link href="/privacy" target="_blank" rel="noopener noreferrer">
-                      <span className="font-bold text-blue-custom-600 px-1">Privacy Policy</span>
+                    <Link
+                      href="/privacy"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="font-bold text-blue-custom-600 px-1">
+                        Privacy Policy
+                      </span>
                     </Link>
                   </label>
                 </form>
@@ -200,14 +220,22 @@ const ContactForm = () => {
               <div className="space-y-4 px-4 md:px-auto">
                 <div className="flex  items-center space-x-3 py-3">
                   <div className=" bg-primary-gradient p-2 rounded-full h-10 w-10">
-                    <Image height={50} width={50} alt="uk flag" src={location} className=" h-6 w-5 mx-auto" />
+                    <Image
+                      height={50}
+                      width={50}
+                      alt="uk flag"
+                      src={location}
+                      className=" h-6 w-5 mx-auto"
+                    />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg ">United Kingdom</h3>
                   </div>
                 </div>
 
-                <p className="text-sub-gray-500">128 City Road London ECIV 2NX, United Kingdom</p>
+                <p className="text-sub-gray-500">
+                  128 City Road London ECIV 2NX, United Kingdom
+                </p>
                 <div className=" py-3  border-t   border-x-stone-500">
                   <p className="font-semibold mb-3">{t("followUs")}:</p>
 
@@ -219,7 +247,13 @@ const ContactForm = () => {
                       className="text-gray-600 hover:text-gray-900 transition-colors p-4 bg-blue-custom-400 rounded-full"
                       // className="text-pink-500 hover:text-pink-600"
                     >
-                      <Image height={50} width={50} alt="linkedin" src={linkedIn} className=" h-6 w-6 mx-auto" />
+                      <Image
+                        height={50}
+                        width={50}
+                        alt="linkedin"
+                        src={linkedIn}
+                        className=" h-6 w-6 mx-auto"
+                      />
                     </a>
                   </div>
                 </div>
