@@ -37,10 +37,19 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body className={`${inter.variable} ${poppins.variable} ${playfairDisplay.variable} antialiased`}>
+      <body
+        className={`${inter.variable} ${poppins.variable} ${playfairDisplay.variable} antialiased`}
+      >
         <>
           <Toaster
             position="bottom-right"
@@ -57,7 +66,7 @@ export default function RootLayout({
                 className: "bg-green-500",
                 duration: 3000,
                 style: {
-                  color: "#fff",
+                  color: "#333",
                 },
                 iconTheme: {
                   primary: "white",
@@ -68,7 +77,7 @@ export default function RootLayout({
                 className: "bg-red-500",
                 duration: 3000,
                 style: {
-                  color: "#fff",
+                  color: "#333",
                 },
                 iconTheme: {
                   primary: "white",
