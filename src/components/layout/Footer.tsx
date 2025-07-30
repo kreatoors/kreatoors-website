@@ -154,16 +154,20 @@ const Footer = () => {
                 {t("H.heading3")}
               </h3>
               <ul className="space-y-3 text-customGray">
-                <li className="font-semibold">{t("H.title3.point1")}</li>
+                <li className="font-semibold">{t("H.title3.point5")}</li>
 
                 <li className="hidden md:block">
-                  {renderText(t("H.title3.point11"))}
+                  {renderText(t("H.title3.point4"))}
+                </li>
+                <li className="hidden md:block">
+                  {renderText(t("H.title3.point1"))}
                 </li>
                 <li className="hidden md:block">
                   {renderText(t("H.title3.point2"))}
                 </li>
+
                 <li className="block md:hidden">
-                  {renderText(t("H.title3.point11"))}
+                  {renderText(t("H.title3.point4"))}
                 </li>
                 <li className="block md:hidden">
                   {renderText(t("H.title3.point3"))}
