@@ -155,8 +155,15 @@ const Footer = () => {
               </h3>
               <ul className="space-y-3 text-customGray">
                 <li className="font-semibold">{t("H.title3.point1")}</li>
+
+                <li className="hidden md:block">
+                  {renderText(t("H.title3.point11"))}
+                </li>
                 <li className="hidden md:block">
                   {renderText(t("H.title3.point2"))}
+                </li>
+                <li className="block md:hidden">
+                  {renderText(t("H.title3.point11"))}
                 </li>
                 <li className="block md:hidden">
                   {renderText(t("H.title3.point3"))}
