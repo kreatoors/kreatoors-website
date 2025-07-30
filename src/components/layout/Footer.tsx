@@ -71,12 +71,12 @@ const Footer = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="flex flex-col space-y-8 md:space-y-0 md:flex-row md:space-x-20">
+          <div className="flex flex-col mb-10 md:mb-0 space-y-8 md:space-y-0 md:flex-row md:space-x-20">
             <div>
               <h3 className="font-semibold text-black mb-4">
                 {t("H.heading1")}
               </h3>
-              <ul className="grid grid-cols-3 md:block md:space-y-3">
+              <ul className="grid sm:grid-cols-3 grid-cols-1 gap-2.5 md:block md:space-y-3">
                 <li>
                   <Link
                     href={"/platform/#features"}
@@ -154,20 +154,24 @@ const Footer = () => {
                 {t("H.heading3")}
               </h3>
               <ul className="space-y-3 text-customGray">
-                <li className="font-semibold">{t("H.title3.point1")}</li>
+                <li className="font-semibold">{t("H.title3.point5")}</li>
 
-                <li className="hidden md:block">
-                  {renderText(t("H.title3.point11"))}
+                <li className=" md:block">
+                  {renderText(t("H.title3.point4"))}
                 </li>
-                <li className="hidden md:block">
+                <li className=" md:block">
+                  {renderText(t("H.title3.point1"))}
+                </li>
+                <li className=" md:block">
                   {renderText(t("H.title3.point2"))}
                 </li>
-                <li className="block md:hidden">
-                  {renderText(t("H.title3.point11"))}
+
+                {/* <li className="block md:hidden">
+                  {renderText(t("H.title3.point4"))}
                 </li>
                 <li className="block md:hidden">
                   {renderText(t("H.title3.point3"))}
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
