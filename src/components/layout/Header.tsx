@@ -274,12 +274,12 @@ export default function Header() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="xl:hidden overflow-auto pt-[100px] w-full h-screen bg-white fixed top-0 left-0 z-[19] rounded-b-2xl">
-          <div className="flex flex-col justify-between h-full p-4 space-y-3 mt-4">
-            <div className="flex flex-col items-center space-y-11">
+          <div className="flex flex-col  justify-between h-full p-4 space-y-3 mt-4">
+            <div className="flex flex-col  items-center space-y-11">
               {menuItems.map((item, index) => (
                 <div key={index}>
-                  {item.name === t("navbar.services") ? (
-                    <div key={index} className="">
+                  {item.name === t("services") ? (
+                    <div key={index} className="bg-white">
                       <button
                         onClick={() =>
                           setIsMobileServicesOpen(!isMobileServicesOpen)
@@ -352,7 +352,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="w-full text-center capitalize bg-primary-gradient text-white px-6 py-3 rounded-full ease-out hover:scale-105 transition-all duration-300 inline-block font-medium !mb-[70px]"
             >
-              {t("navbar.contactUs")}
+              {t("contactUs")}
             </Link>
           </div>
         </div>

@@ -76,7 +76,7 @@ const SignUpSection = () => {
           role,
         }),
       });
-      console.log(response);
+
 
       if (response.status === 200) {
         toast.success("Thank you for subscribing!", {

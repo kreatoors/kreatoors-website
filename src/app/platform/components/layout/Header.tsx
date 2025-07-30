@@ -26,7 +26,10 @@ export function Header() {
           >
             {t("A.Features")}
           </span>
-          <span onClick={(e) => scrollToComponent(e, "benefits")} className="text-gray-800 hover:text-gray-900 cursor-pointer">
+          <span
+            onClick={(e) => scrollToComponent(e, "benefits")}
+            className="text-gray-800 hover:text-gray-900 cursor-pointer"
+          >
             {t("Platform Benefits")}
           </span>
           {/* <span
@@ -35,10 +38,16 @@ export function Header() {
           >
             {t("A.Mission")}
           </span> */}
-          <Link href="/" className="text-gray-800 hover:text-gray-900 cursor-pointer">
+          <Link
+            href="/"
+            className="text-gray-800 hover:text-gray-900 cursor-pointer"
+          >
             {t("Consultancy")}
           </Link>
-          <Link href="/about-us" className="text-gray-800 hover:text-gray-900 cursor-pointer">
+          <Link
+            href="/about-us"
+            className="text-gray-800 hover:text-gray-900 cursor-pointer"
+          >
             {t("About us")}
           </Link>
         </div>
@@ -58,7 +67,10 @@ export function Header() {
 
         {/* Mobile Menu Button */}
         <div className="lg:hidden flex items-center">
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-gray-600 hover:text-gray-900">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="text-gray-600 hover:text-gray-900"
+          >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -101,11 +113,17 @@ export function Header() {
                 {t("A.Mission")}
               </div>
 
-              <Link href="/#solutions" className="block px-3 py-2 text-gray-800 hover:text-gray-900">
+              <Link
+                href="/#solutions"
+                className="block px-3 py-2 text-gray-800 hover:text-gray-900"
+              >
                 {t("Services")}
               </Link>
 
-              <Link href="/about-us" className="block px-3 py-2 text-gray-800 hover:text-gray-900">
+              <Link
+                href="/about-us"
+                className="block px-3 py-2 text-gray-800 hover:text-gray-900"
+              >
                 {t("About us")}
               </Link>
             </div>
