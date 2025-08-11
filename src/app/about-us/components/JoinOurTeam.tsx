@@ -1,12 +1,4 @@
 "use client";
-import {
-  Select,
-  SelectTrigger,
-  SelectContent,
-  SelectItem,
-  SelectValue,
-} from "@/components/ui/select";
-import { CloudUpload } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
@@ -24,28 +16,33 @@ export default function JoinOurTeam() {
         The <span className="font-playfair">People</span> Behind the Magic
       </p>
       <div className="grid grid-cols-4 max-[1100px]:grid-cols-2 max-sm:grid-cols-1 gap-8 mb-20">
-        {Array.from({ length: 4 }).map((_, index) => (
-          <div className="w-full h-[374px] rounded-3xl relative">
-            <Image
-              alt="team"
-              fill
-              src={"/images/team.png"}
-              className="object-cover"
-            />
-            <div className="flex items-center gap-1">
+        {Array.from({ length: 4 }).map(
+          (
+            _,
+            index //@typescript-eslint/no-unused-vars
+          ) => (
+            <div key={index} className="w-full h-[374px] rounded-3xl relative">
               <Image
-                width={50}
-                height={50}
-                alt="social"
-                src={"/images/linkedin3.svg"}
+                alt="team"
+                fill
+                src={"/images/team.png"}
+                className="object-cover"
               />
-              <div className="flex flex-col ">
-                <p className="font-medium text-xl">Robin Williams</p>
-                <p className="text-[#5B5A6C]">HR Director</p>
+              <div className="flex items-center gap-1">
+                <Image
+                  width={50}
+                  height={50}
+                  alt="social"
+                  src={"/images/linkedin3.svg"}
+                />
+                <div className="flex flex-col ">
+                  <p className="font-medium text-xl">Robin Williams</p>
+                  <p className="text-[#5B5A6C]">HR Director</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          )
+        )}
       </div>
       <div className="flex flex-col items-center justify-center space-y-8">
         <div className="w-full flex flex-col items-center text-center md:pt-8">

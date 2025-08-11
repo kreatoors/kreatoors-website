@@ -25,11 +25,11 @@ import Image from "next/image";
 import { SERVICES_ICONS } from "@/assets/icons/ServicesIcons";
 
 const service_1 = "/images/services/hero1.png";
-const service_2 = "/images/services/hero2.png";
+// const service_2 = "/images/services/hero2.png";
 const service_3 = "/images/services/hero3.png";
-const service_4 = "/images/services/hero4.png";
+// const service_4 = "/images/services/hero4.png";
 const service_5 = "/images/services/hero5.png";
-const service_6 = "/images/services/hero6.png";
+// const service_6 = "/images/services/hero6.png";
 const service_7 = "/images/services/hero7.png";
 
 const ServiceSection = ({
@@ -170,7 +170,7 @@ const ServiceSection = ({
   );
 
   const OtherServices = ({ slug }: { slug: string }) => {
-    const currentIndex = parseInt(slug);
+    //const currentIndex = parseInt(slug);
     const scrollContainerRef = useRef<HTMLDivElement>(null);
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [isScrolling, setIsScrolling] = useState(false);
