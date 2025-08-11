@@ -12,39 +12,45 @@ import { usePathname } from "next/navigation";
 
 const servicesDropdownItems = [
   {
-    name: "Corporate Influencing",
+    name: "Executive Thought Leadership Development",
     nameDe: "Unternehmens-beeinflussung",
     path: "/services/corporate-influencing",
     icon: SERVICES_ICONS.services["1"],
   },
+  // {
+  //   name: "Employer Brand Development",
+  //   nameDe: "Mitarbeiter-Markenentwicklung",
+  //   path: "/services/employee-brand-development",
+  //   icon: SERVICES_ICONS.services["2"],
+  // },
   {
-    name: "Employer Brand Development",
-    nameDe: "Mitarbeiter-Markenentwicklung",
-    path: "/services/employee-brand-development",
-    icon: SERVICES_ICONS.services["2"],
-  },
-  {
-    name: "Employee Content Creation",
+    name: "Employee Content Enablement",
     nameDe: "Mitarbeiter-Inhaltserstellung",
     path: "/services/employer-content-creation",
     icon: SERVICES_ICONS.services["3"],
   },
+  // {
+  //   name: "Internal Communications & Culture",
+  //   nameDe: "Interne Kommunikation & Kultur",
+  //   path: "/services/internal-communications-culture",
+  //   icon: SERVICES_ICONS.services["4"],
+  // },
   {
-    name: "Internal Communications & Culture",
-    nameDe: "Interne Kommunikation & Kultur",
-    path: "/services/internal-communications-culture",
-    icon: SERVICES_ICONS.services["4"],
-  },
-  {
-    name: "Advocacy & Content Governance",
+    name: "Governance & Brand Safety",
     nameDe: "Befürwortung & Inhaltsgovernance",
     path: "/services/advocacy-content-governance",
     icon: SERVICES_ICONS.services["5"],
   },
+  // {
+  //   name: "Community Building & Management",
+  //   nameDe: "Gemeinschaftsaufbau & -management",
+  //   path: "/services/community-building-management",
+  //   icon: SERVICES_ICONS.services["6"],
+  // },
   {
-    name: "Community Building & Management",
-    nameDe: "Gemeinschaftsaufbau & -management",
-    path: "/services/community-building-management",
+    name: "Employee Advocacy Programme Design",
+    nameDe: "Employee Advocacy Programme Design",
+    path: "/services/employee-advocacy-programme-design",
     icon: SERVICES_ICONS.services["6"],
   },
 ];
@@ -112,7 +118,7 @@ export default function Header() {
             item.name === t("services") ? (
               <li
                 key={index}
-                className="relative"
+                className="relative "
                 onMouseEnter={() => setIsServicesHovered(true)}
                 onMouseLeave={() => setIsServicesHovered(false)}
               >
@@ -155,7 +161,7 @@ export default function Header() {
                 </button>
 
                 {isServicesHovered && (
-                  <div className="absolute top-full md:-left-40 w-[35rem] bg-white rounded-2xl shadow-xl p-4 grid grid-cols-2 gap-3">
+                  <div className="absolute top-full md:-left-40 w-fit bg-white rounded-2xl shadow-xl p-4 grid grid-cols-1 gap-3">
                     {servicesDropdownItems.map((subItem) => (
                       <Link
                         key={subItem.path}

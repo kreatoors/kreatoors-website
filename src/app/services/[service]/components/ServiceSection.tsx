@@ -30,8 +30,18 @@ const service_3 = "/images/services/hero3.png";
 const service_4 = "/images/services/hero4.png";
 const service_5 = "/images/services/hero5.png";
 const service_6 = "/images/services/hero6.png";
+const service_7 = "/images/services/hero7.png";
 
-const ServiceSection = ({ h1, description, heroImage, coreServices, buttontxt, impactItems, ctaTitle, slug }: any) => {
+const ServiceSection = ({
+  h1,
+  description,
+  heroImage,
+  coreServices,
+  buttontxt,
+  impactItems,
+  ctaTitle,
+  slug,
+}: any) => {
   const { t, i18n } = useTranslation("service");
   const [openSection, setOpenSection] = useState(coreServices[0]?.id || "");
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -55,18 +65,26 @@ const ServiceSection = ({ h1, description, heroImage, coreServices, buttontxt, i
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
           <div className="flex flex-col justify-between space-y-10">
             <div
-              className={`space-y-4 md:space-y-10 lg:pr-8 ${!hasAnimated ? "animate-slideInFromTop" : ""}`}
+              className={`space-y-4 md:space-y-10 lg:pr-8 ${
+                !hasAnimated ? "animate-slideInFromTop" : ""
+              }`}
               style={{
                 animation: !hasAnimated ? "slideInFromTop 1s ease-out" : "none",
               }}
             >
               {h1}
-              <p className="text-sub-gray text-base md:text-lg max-w-xl">{description}</p>
+              <p className="text-sub-gray text-base md:text-lg max-w-xl">
+                {description}
+              </p>
             </div>
             <div
-              className={`relative md:mr-10  ${!hasAnimated ? "animate-slideInFromBottom" : ""}`}
+              className={`relative md:mr-10  ${
+                !hasAnimated ? "animate-slideInFromBottom" : ""
+              }`}
               style={{
-                animation: !hasAnimated ? "slideInFromBottom 1s ease-out" : "none",
+                animation: !hasAnimated
+                  ? "slideInFromBottom 1s ease-out"
+                  : "none",
               }}
             >
               <Image
@@ -74,7 +92,9 @@ const ServiceSection = ({ h1, description, heroImage, coreServices, buttontxt, i
                 alt={description}
                 width={600}
                 height={400}
-                className={`w-full object-cover rounded-xl ${slug === 1 || slug === 3 ? "h-72 " : "h-full"}`}
+                className={`w-full object-cover rounded-xl ${
+                  slug === 1 || slug === 3 ? "h-72 " : "h-full"
+                }`}
                 style={{
                   boxShadow: "16px 16px 0px 0px rgba(219, 216, 246, 1)",
                 }}
@@ -86,12 +106,20 @@ const ServiceSection = ({ h1, description, heroImage, coreServices, buttontxt, i
               {coreServices.map((service: any) => (
                 <div key={service.id} className="bg-white rounded-2xl">
                   <button
-                    onClick={() => setOpenSection(openSection === service.id ? "" : service.id)}
+                    onClick={() =>
+                      setOpenSection(
+                        openSection === service.id ? "" : service.id
+                      )
+                    }
                     className="w-full py-4 px-2 md:px-8 flex justify-between items-center text-left transition-colors"
                   >
-                    <span className="text-lg mr-8 font-medium text-gray-900">{service.title}</span>
+                    <span className="text-lg mr-8 font-medium text-gray-900">
+                      {service.title}
+                    </span>
                     {
-                      openSection === service.id ? SERVICES_ICONS.minus : SERVICES_ICONS.plus
+                      openSection === service.id
+                        ? SERVICES_ICONS.minus
+                        : SERVICES_ICONS.plus
                       // <img
                       //   src={minus}
                       //   className="h-6 w-6"
@@ -102,15 +130,22 @@ const ServiceSection = ({ h1, description, heroImage, coreServices, buttontxt, i
                   </button>
                   <div
                     className={`grid transition-all duration-200 ease-in-out ${
-                      openSection === service.id ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                      openSection === service.id
+                        ? "grid-rows-[1fr] opacity-100"
+                        : "grid-rows-[0fr] opacity-0"
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <p className="pb-4 text-sub-gray p-2 md:px-10">{service.description}</p>
+                      <p className="pb-4 text-sub-gray p-2 md:px-10">
+                        {service.description}
+                      </p>
                       {service.content && (
                         <div className="p-2 md:px-10 pb-6 space-y-2">
                           {service.content.map((item: any, index: number) => (
-                            <div key={index} className="flex max-w-lg md:max-w-sm">
+                            <div
+                              key={index}
+                              className="flex max-w-lg md:max-w-sm"
+                            >
                               <span className="text-sub-gray mr-2">•</span>
                               <p className="text-sub-gray-500">{item}</p>
                             </div>
@@ -143,49 +178,58 @@ const ServiceSection = ({ h1, description, heroImage, coreServices, buttontxt, i
     const services = [
       {
         id: 1,
-        title: "Corporate Influencing",
+        title: "Executive Thought Leadership Development",
         titleDe: "Unternehmensbeeinflussung",
         image: service_1,
         link: "/services/corporate-influencing",
       },
+      // {
+      //   id: 2,
+      //   title: "Employee Brand Development",
+      //   titleDe: "Mitarbeiter-Markenentwicklung",
+      //   image: service_2,
+      //   link: "/services/employee-brand-development",
+      // },
       {
         id: 2,
-        title: "Employee Brand Development",
-        titleDe: "Mitarbeiter-Markenentwicklung",
-        image: service_2,
-        link: "/services/employee-brand-development",
-      },
-      {
-        id: 3,
-        title: "Employee Content Creation",
+        title: "Employee Content Enablement",
         titleDe: "Mitarbeiter-Content-Erstellung",
         image: service_3,
         link: "/services/employer-content-creation",
       },
+      // {
+      //   id: 4,
+      //   title: "Internal Communications & Culture",
+      //   titleDe: "Interne Kommunikation & Kultur",
+      //   image: service_4,
+      //   link: "/services/internal-communications-culture",
+      // },
       {
-        id: 4,
-        title: "Internal Communications & Culture",
-        titleDe: "Interne Kommunikation & Kultur",
-        image: service_4,
-        link: "/services/internal-communications-culture",
-      },
-      {
-        id: 5,
-        title: "Advocacy & Content Governance",
+        id: 3,
+        title: "Governance & Brand Safety",
         titleDe: "Advocacy & Content-Governance",
         image: service_5,
         link: "/services/advocacy-content-governance",
       },
+      // {
+      //   id: 6,
+      //   title: "Community Building & Management",
+      //   titleDe: "Community-Aufbau & Management",
+      //   image: service_6,
+      //   link: "/services/community-building-management",
+      // },
       {
-        id: 6,
-        title: "Community Building & Management",
-        titleDe: "Community-Aufbau & Management",
-        image: service_6,
-        link: "/services/community-building-management",
+        id: 4,
+        title: "Employee Advocacy Programme Design",
+        titleDe: "Employee Advocacy Programme Design",
+        image: service_7,
+        link: "/services/employee-advocacy-programme-design",
       },
     ];
 
-    const otherServices = services.filter((service) => service.id !== currentIndex);
+    const otherServices = services.filter(
+      (service) => !service.link.includes(slug)
+    );
 
     useEffect(() => {
       const container = scrollContainerRef.current;
@@ -224,7 +268,9 @@ const ServiceSection = ({ h1, description, heroImage, coreServices, buttontxt, i
           </div>
           <div className="py-2 md:py-7">
             <div className="flex justify-between w-full">
-              <h3 className="text-xl font-normal max-w-[200px] md:max-w-[80%]">{i18n.language === "de" ? service.titleDe : service.title}</h3>
+              <h3 className="text-xl font-normal max-w-[200px] md:max-w-[80%]">
+                {i18n.language === "de" ? service.titleDe : service.title}
+              </h3>
               <div
                 className="shadow-lg p-2 cursor-pointer rounded-full w-12 h-12 flex items-center justify-center bg-white
                       transition-transform duration-300 transform hover:scale-110 hover:bg-blue-custom-100"
@@ -241,12 +287,17 @@ const ServiceSection = ({ h1, description, heroImage, coreServices, buttontxt, i
       <div className="w-full py-7 md:py-16">
         <div className="mx-auto px-4">
           <h2 className="text-4xl mb-6 md:mb-12 text-left max-w-6xl mx-auto">
-            {t("other")} <span className="font-playfair italic">{t("services")}</span>
+            {t("other")}{" "}
+            <span className="font-playfair italic">{t("services")}</span>
           </h2>
 
           <div className="relative overflow-hidden w-full">
-            <div className="hidden md:flex flex-row gap-10 animate-marquee w-full">{Array(50).fill(otherServices).flat().map(renderComponent)}</div>
-            <div className="flex flex-col md:hidden gap-10 w-full">{otherServices.map(renderComponent)}</div>
+            <div className="hidden md:flex flex-row gap-10 animate-marquee w-full">
+              {Array(50).fill(otherServices).flat().map(renderComponent)}
+            </div>
+            <div className="flex flex-col md:hidden gap-10 w-full">
+              {otherServices.map(renderComponent)}
+            </div>
           </div>
 
           <style jsx>{`
@@ -300,15 +351,25 @@ const ServiceSection = ({ h1, description, heroImage, coreServices, buttontxt, i
     }, []);
 
     return (
-      <section ref={sectionRef} className="impact-section md:py-10 px-4 md:px-8 w-full bg-white overflow-hidden">
+      <section
+        ref={sectionRef}
+        className="impact-section md:py-10 px-4 md:px-8 w-full bg-white overflow-hidden"
+      >
         <div className="container mx-auto max-w-6xl">
-          <div className="arrow flex justify-center h-48">
-            <Image height={602} width={31} src={"/images/Arrow 2.png"} className="py-10" alt="Arrow" />
+          <div className=" flex justify-center mb-10">
+            <Image
+              height={90}
+              width={16}
+              src={"/images/services/arrow.svg"}
+              className="py-1 object-center"
+              alt="Arrow"
+            />
           </div>
 
           <div className="content">
             <h2 className="text-3xl md:text-4xl text-center mb-12">
-              <span className="font-playfair ">{t("impact")}</span> {t("andROI")}
+              <span className="font-playfair ">{t("impact")}</span>{" "}
+              {t("andROI")}
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -356,13 +417,20 @@ const ServiceSection = ({ h1, description, heroImage, coreServices, buttontxt, i
     }, []);
 
     return (
-      <div ref={sectionRef} className="w-full py-16 px-4 md:p-0 rounded-t-[50px] mb-16">
+      <div
+        ref={sectionRef}
+        className="w-full bg-white py-16 px-4 md:p-0  mb-16"
+      >
         <div className="max-w-6xl mx-auto">
           <div
             className={`gap-y-3 flex-col bg-primary-gradient rounded-3xl 
               p-4 flex items-center text-center 
               transition-all duration-100 ease-out md:px-8 md:py-12 
-                            ${isVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-10 scale-95"}
+                            ${
+                              isVisible
+                                ? "opacity-100 translate-y-0 scale-100"
+                                : "opacity-0 translate-y-10 scale-95"
+                            }
                         `}
           >
             {ctaTitle}
@@ -372,19 +440,31 @@ const ServiceSection = ({ h1, description, heroImage, coreServices, buttontxt, i
                                  w-full text-white/90 text-sm md:text-base 
                                 md:max-w-xl mx-auto text-center
                                 transition-all duration-700 ease-out delay-200 py-4
-                                ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
+                                ${
+                                  isVisible
+                                    ? "opacity-100 translate-y-0"
+                                    : "opacity-0 translate-y-5"
+                                }
                             `}
             >
               {t("serviceCta.subheading")}
             </p>
-            <Link href="https://calendly.com/coachingwitharzo/free-discovery-call" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://calendly.com/coachingwitharzo/free-discovery-call"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button
                 className={`  p-4
                                 bg-white text-blue-custom-700 px-6 
                                 rounded-full font-semibold hover:bg-purple-50 
                                 transition-all duration-700 ease-out delay-400
                                hover:scale-105 
-                                ${isVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-5 scale-95"}
+                                ${
+                                  isVisible
+                                    ? "opacity-100 translate-y-0 scale-100"
+                                    : "opacity-0 translate-y-5 scale-95"
+                                }
                             `}
               >
                 {t("serviceCta.button")}

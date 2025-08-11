@@ -236,6 +236,24 @@ const ContactForm = () => {
                 <p className="text-sub-gray-500">
                   128 City Road London ECIV 2NX, United Kingdom
                 </p>
+                <div className="flex  items-center space-x-3 py-3">
+                  <div className=" bg-primary-gradient p-2 rounded-full h-10 w-10">
+                    <Image
+                      height={50}
+                      width={50}
+                      alt="uk flag"
+                      src={location}
+                      className=" h-6 w-5 mx-auto"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg ">Germany</h3>
+                  </div>
+                </div>
+
+                <p className="text-sub-gray-500">
+                  Tresckowstr. 1, 22525 Hamburg
+                </p>
                 <div className=" py-3  border-t   border-x-stone-500">
                   <p className="font-semibold mb-3">{t("followUs")}:</p>
 

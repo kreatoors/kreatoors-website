@@ -42,7 +42,7 @@ export function Header() {
             href="/"
             className="text-gray-800 hover:text-gray-900 cursor-pointer"
           >
-            {t("Consultancy")}
+            {t("Services")}
           </Link>
           <Link
             href="/about-us"

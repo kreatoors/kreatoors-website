@@ -1,4 +1,13 @@
 "use client";
+import {
+  Select,
+  SelectTrigger,
+  SelectContent,
+  SelectItem,
+  SelectValue,
+} from "@/components/ui/select";
+import { CloudUpload } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
@@ -7,12 +16,45 @@ export default function JoinOurTeam() {
 
   return (
     <div className="w-full max-w-6xl px-5 md:mx-auto py-16">
+      <p className="text-[#140C74] font-medium text-xl tracking-wide mb-6 text-center">
+        MEET OUR TEAM
+      </p>
+      <p className="sm:text-5xl text-3xl mb-16  text-center leading-[160%]">
+        {" "}
+        The <span className="font-playfair">People</span> Behind the Magic
+      </p>
+      <div className="grid grid-cols-4 max-[1100px]:grid-cols-2 max-sm:grid-cols-1 gap-8 mb-20">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <div className="w-full h-[374px] rounded-3xl relative">
+            <Image
+              alt="team"
+              fill
+              src={"/images/team.png"}
+              className="object-cover"
+            />
+            <div className="flex items-center gap-1">
+              <Image
+                width={50}
+                height={50}
+                alt="social"
+                src={"/images/linkedin3.svg"}
+              />
+              <div className="flex flex-col ">
+                <p className="font-medium text-xl">Robin Williams</p>
+                <p className="text-[#5B5A6C]">HR Director</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
       <div className="flex flex-col items-center justify-center space-y-8">
         <div className="w-full flex flex-col items-center text-center md:pt-8">
           <h1 className="text-4xl mb-4">
             {t("joinOur")} <span className="font-playfair">{t("team")}</span>
           </h1>
-          <p className="text-sub-gray text-base max-w-2xl">{t("joinOurTeamDescription")}</p>
+          <p className="text-sub-gray text-base max-w-2xl">
+            {t("joinOurTeamDescription")}
+          </p>
         </div>
 
         <div className="w-full flex flex-col items-center text-center">

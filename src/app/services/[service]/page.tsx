@@ -8,7 +8,6 @@ import BrandSolutionsLanding from "@/app/(home)/components/StrategicSolution";
 export default function SingleService({ params }: any) {
   const { i18n } = useTranslation("service");
   const slug = params.service;
-
   const currentData = i18n.language === "de" ? servicesDataDe : servicesData;
 
   const renderContent = (slug: string) => {
@@ -27,5 +26,9 @@ export default function SingleService({ params }: any) {
     );
   };
 
-  return <div className={`service-page md:pt-32 ${slug !== undefined ? "" : ""}`}>{renderContent(slug)}</div>;
+  return (
+    <div className={`service-page md:pt-32 ${slug !== undefined ? "" : ""}`}>
+      {renderContent(slug)}
+    </div>
+  );
 }
