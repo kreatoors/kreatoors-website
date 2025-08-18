@@ -9,16 +9,16 @@ export default function JoinOurTeam() {
     {
       name: "Arzo Nadi",
       role: "CEO & Founder",
-      image: "/images/team.png",
+      image: "/images/team/member.png",
       socialIcon: "/images/linkedin3.svg",
-      linkedinprofile:
-        "https://www.linkedin.com/in/mitra-kohnesheen-15693a122/",
+      linkedinprofile: "#",
     },
     {
       name: "Rameez Rayok",
       role: " Growth Marketing Lead",
-      image: "/images/team.png",
+      image: "/images/team/member.png",
       socialIcon: "/images/linkedin3.svg",
+      linkedinprofile: "#",
     },
     {
       name: "Mitra Kohnesheen",
