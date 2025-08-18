@@ -204,7 +204,7 @@ export default function Header() {
                   href={item.path}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base font-normal px-[6px] py-1 2xl:px-[11px] 2xl:py-[4px] rounded-[41px] flex items-center text-[#3B3885] hover:text-[#6B5B95] md:text-base 2xl:text-lg text-center"
+                  className="text-base font-normal px-[6px] py-1 2xl:px-[11px] 2xl:py-[4px] rounded-[41px] flex items-center  hover:text-[#6B5B95] md:text-base 2xl:text-lg text-center"
                 >
                   <Image
                     src="/images/platform.png"

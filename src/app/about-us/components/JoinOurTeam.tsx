@@ -5,7 +5,30 @@ import { useTranslation } from "react-i18next";
 
 export default function JoinOurTeam() {
   const { t } = useTranslation("about");
-
+  const teamMembers = [
+    {
+      name: "Arzo Nadi",
+      role: "CEO & Founder",
+      image: "/images/team/member.png",
+      socialIcon: "/images/linkedin3.svg",
+      linkedinprofile: "#",
+    },
+    {
+      name: "Rameez Rayok",
+      role: " Growth Marketing Lead",
+      image: "/images/team/member.png",
+      socialIcon: "/images/linkedin3.svg",
+      linkedinprofile: "#",
+    },
+    {
+      name: "Mitra Kohnesheen",
+      role: "Socials & Design",
+      image: "/images/team/Mitra.jpg",
+      socialIcon: "/images/linkedin3.svg",
+      linkedinprofile:
+        "https://www.linkedin.com/in/mitra-kohnesheen-15693a122/",
+    },
+  ];
   return (
     <div className="w-full max-w-6xl px-5 md:mx-auto py-16">
       <p className="text-[#140C74] font-medium text-xl tracking-wide mb-6 text-center">
@@ -16,30 +39,32 @@ export default function JoinOurTeam() {
         The <span className="font-playfair">People</span> Behind the Magic
       </p>
       <div className="grid grid-cols-4 max-[1100px]:grid-cols-2 max-sm:grid-cols-1 gap-8 mb-20">
-        {Array.from({ length: 4 }).map(
+        {teamMembers.map(
           (
-            _,
+            member,
             index //@typescript-eslint/no-unused-vars
           ) => (
             <div key={index} className="w-full h-[374px] rounded-3xl relative">
               <Image
                 alt="team"
                 fill
-                src={"/images/team.png"}
-                className="object-cover"
+                src={member.image}
+                className="object-cover w-full rounded-xl"
               />
-              <div className="flex items-center gap-1">
-                <Image
-                  width={50}
-                  height={50}
-                  alt="social"
-                  src={"/images/linkedin3.svg"}
-                />
-                <div className="flex flex-col ">
-                  <p className="font-medium text-xl">Robin Williams</p>
-                  <p className="text-[#5B5A6C]">HR Director</p>
+              <Link target="_blank" href={member.linkedinprofile || "#"}>
+                <div className="flex items-center gap-3 bg-white absolute bottom-3 left-3 right-0 p-4 rounded-l-2xl">
+                  <Image
+                    width={45}
+                    height={45}
+                    alt="social"
+                    src={member.socialIcon}
+                  />
+                  <div className="flex flex-col ">
+                    <p className="font-medium text-[18px]">{member.name}</p>
+                    <p className="text-[#5B5A6C]">{member.role}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           )
         )}
