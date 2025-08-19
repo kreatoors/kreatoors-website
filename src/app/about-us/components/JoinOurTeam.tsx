@@ -34,10 +34,10 @@ export default function JoinOurTeam() {
       <p className="text-[#140C74] font-medium text-xl tracking-wide mb-6 text-center">
         MEET OUR TEAM
       </p>
-      <p className="sm:text-5xl text-3xl mb-16  text-center leading-[160%]">
+      <h1 className="sm:text-4xl text-3xl mb-16  text-center leading-[160%]">
         {" "}
         The <span className="font-playfair">People</span> Behind the Magic
-      </p>
+      </h1>
       <div className="grid grid-cols-4 max-[1100px]:grid-cols-2 max-sm:grid-cols-1 gap-8 mb-20">
         {teamMembers.map(
           (
