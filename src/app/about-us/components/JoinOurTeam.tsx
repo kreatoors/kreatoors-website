@@ -9,14 +9,14 @@ export default function JoinOurTeam() {
     {
       name: "Arzo Nadi",
       role: "CEO & Founder",
-      image: "/images/team/member.png",
+      image: "/images/team/arzo.png",
       socialIcon: "/images/linkedin3.svg",
       linkedinprofile: "#",
     },
     {
-      name: "Rameez Rayok",
+      name: "Rameez Okpalaugo",
       role: " Growth Marketing Lead",
-      image: "/images/team/member.png",
+      image: "/images/team/rameez.png",
       socialIcon: "/images/linkedin3.svg",
       linkedinprofile: "#",
     },
@@ -38,7 +38,7 @@ export default function JoinOurTeam() {
         {" "}
         The <span className="font-playfair">People</span> Behind the Magic
       </h1>
-      <div className="grid grid-cols-4 max-[1100px]:grid-cols-2 max-sm:grid-cols-1 gap-8 mb-20">
+      <div className="grid grid-cols-3 max-[1100px]:grid-cols-2 max-sm:grid-cols-1 gap-8 mb-20">
         {teamMembers.map(
           (
             member,
