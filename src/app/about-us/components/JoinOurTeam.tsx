@@ -11,14 +11,14 @@ export default function JoinOurTeam() {
       role: "CEO & Founder",
       image: "/images/team/arzo.png",
       socialIcon: "/images/linkedin3.svg",
-      linkedinprofile: "#",
+      linkedinprofile: "https://www.linkedin.com/in/arzonadi/",
     },
     {
       name: "Rameez Okpalaugo",
       role: " Growth Marketing Lead",
       image: "/images/team/rameez.png",
       socialIcon: "/images/linkedin3.svg",
-      linkedinprofile: "#",
+      linkedinprofile: "https://www.linkedin.com/in/rameez-ok/",
     },
     {
       name: "Mitra Kohnesheen",
