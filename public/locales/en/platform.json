@@ -24,14 +24,24 @@
       {
         "title": "Personal Growth Hub",
         "subheading": "Build influence that matters.",
-        "description": ["Brand Strategy Creator", "Development pathway ", "Goal & Progress tracking", "Impact metrics"],
+        "description": [
+          "Brand Strategy Creator",
+          "Development pathway ",
+          "Goal & Progress tracking",
+          "Impact metrics"
+        ],
         "button": "Empower Your Teams Now ",
         "image": "/images/platform/features/one.png"
       },
       {
         "title": "AI Ghostwriter & Content Studio",
         "subheading": "Create impactful content in minutes. ",
-        "description": ["One-click content generation ", "Brand-aligned templates", "Topic ideas & suggestions ", "Company content library"],
+        "description": [
+          "One-click content generation ",
+          "Brand-aligned templates",
+          "Topic ideas & suggestions ",
+          "Company content library"
+        ],
         "button": "Start Your EGC Journey",
         "image": "/images/platform/features/two.png"
       },
@@ -49,14 +59,24 @@
       {
         "title": "Community & Safe Space",
         "subheading": "Help your employees build confidence in content creation and collaborate.",
-        "description": ["Safe practice environment", "Feedback system", "Learning community", "Team engagement"],
+        "description": [
+          "Safe practice environment",
+          "Feedback system",
+          "Learning community",
+          "Team engagement"
+        ],
         "button": "Build Your Community",
         "image": "/images/platform/features/four.png"
       },
       {
         "title": "Analytics Center",
         "subheading": "Measure impact and ROI",
-        "description": ["Influence tracking", "Content performance", "Program analytics", "Business impact"],
+        "description": [
+          "Influence tracking",
+          "Content performance",
+          "Program analytics",
+          "Business impact"
+        ],
         "button": "Build Your Community",
         "image": "/images/platform/features/five.png"
       }
@@ -108,7 +128,7 @@
       "point1": "Contact Us",
       "point2": "Features",
       "point3": "Platform Benefits",
-      "point4": "Consultancy",
+      "point4": "Services",
       "point5": "About us"
     },
     "heading2": "Quick Links",

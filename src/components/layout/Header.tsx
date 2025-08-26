@@ -12,39 +12,45 @@ import { usePathname } from "next/navigation";
 
 const servicesDropdownItems = [
   {
-    name: "Corporate Influencing",
+    name: "Executive Thought Leadership Development",
     nameDe: "Unternehmens-beeinflussung",
     path: "/services/corporate-influencing",
     icon: SERVICES_ICONS.services["1"],
   },
+  // {
+  //   name: "Employer Brand Development",
+  //   nameDe: "Mitarbeiter-Markenentwicklung",
+  //   path: "/services/employee-brand-development",
+  //   icon: SERVICES_ICONS.services["2"],
+  // },
   {
-    name: "Employer Brand Development",
-    nameDe: "Mitarbeiter-Markenentwicklung",
-    path: "/services/employee-brand-development",
-    icon: SERVICES_ICONS.services["2"],
-  },
-  {
-    name: "Employee Content Creation",
+    name: "Employee Content Enablement",
     nameDe: "Mitarbeiter-Inhaltserstellung",
     path: "/services/employer-content-creation",
     icon: SERVICES_ICONS.services["3"],
   },
+  // {
+  //   name: "Internal Communications & Culture",
+  //   nameDe: "Interne Kommunikation & Kultur",
+  //   path: "/services/internal-communications-culture",
+  //   icon: SERVICES_ICONS.services["4"],
+  // },
   {
-    name: "Internal Communications & Culture",
-    nameDe: "Interne Kommunikation & Kultur",
-    path: "/services/internal-communications-culture",
-    icon: SERVICES_ICONS.services["4"],
-  },
-  {
-    name: "Advocacy & Content Governance",
+    name: "Governance & Brand Safety",
     nameDe: "Befürwortung & Inhaltsgovernance",
     path: "/services/advocacy-content-governance",
     icon: SERVICES_ICONS.services["5"],
   },
+  // {
+  //   name: "Community Building & Management",
+  //   nameDe: "Gemeinschaftsaufbau & -management",
+  //   path: "/services/community-building-management",
+  //   icon: SERVICES_ICONS.services["6"],
+  // },
   {
-    name: "Community Building & Management",
-    nameDe: "Gemeinschaftsaufbau & -management",
-    path: "/services/community-building-management",
+    name: "Employee Advocacy Programme Design",
+    nameDe: "Employee Advocacy Programme Design",
+    path: "/services/employee-advocacy-programme-design",
     icon: SERVICES_ICONS.services["6"],
   },
 ];
@@ -102,7 +108,7 @@ export default function Header() {
 
   return (
     <header
-      className="sticky top-5 md:top-10 left-0 right-0 z-50 md:max-w-[87%] mx-2 md:mx-10 lg:mx-10 xl:mx-auto  "
+      className="sticky z-50 top-5 md:top-10 left-0 right-0 md:max-w-[87%] mx-2 md:mx-10 lg:mx-10 xl:mx-auto  "
       ref={menuRef}
     >
       <nav className="z-[999] relative flex items-center justify-between p-2 md:py-5 md:px-5 bg-white rounded-full ">
@@ -112,7 +118,7 @@ export default function Header() {
             item.name === t("services") ? (
               <li
                 key={index}
-                className="relative"
+                className="relative "
                 onMouseEnter={() => setIsServicesHovered(true)}
                 onMouseLeave={() => setIsServicesHovered(false)}
               >
@@ -155,7 +161,7 @@ export default function Header() {
                 </button>
 
                 {isServicesHovered && (
-                  <div className="absolute top-full md:-left-40 w-[35rem] bg-white rounded-2xl shadow-xl p-4 grid grid-cols-2 gap-3">
+                  <div className="absolute top-full md:-left-40 w-fit bg-white rounded-2xl shadow-xl p-4 grid grid-cols-1 gap-3">
                     {servicesDropdownItems.map((subItem) => (
                       <Link
                         key={subItem.path}
@@ -198,7 +204,7 @@ export default function Header() {
                   href={item.path}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base font-normal px-[6px] py-1 2xl:px-[11px] 2xl:py-[4px] rounded-[41px] flex items-center text-[#3B3885] hover:text-[#6B5B95] md:text-base 2xl:text-lg text-center"
+                  className="text-base font-normal px-[6px] py-1 2xl:px-[11px] 2xl:py-[4px] rounded-[41px] flex items-center  hover:text-[#6B5B95] md:text-base 2xl:text-lg text-center"
                 >
                   <Image
                     src="/images/platform.png"
@@ -274,12 +280,12 @@ export default function Header() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="xl:hidden overflow-auto pt-[100px] w-full h-screen bg-white fixed top-0 left-0 z-[19] rounded-b-2xl">
-          <div className="flex flex-col justify-between h-full p-4 space-y-3 mt-4">
-            <div className="flex flex-col items-center space-y-11">
+          <div className="flex flex-col  justify-between h-full p-4 space-y-3 mt-4">
+            <div className="flex flex-col  items-center space-y-11">
               {menuItems.map((item, index) => (
                 <div key={index}>
-                  {item.name === t("navbar.services") ? (
-                    <div key={index} className="">
+                  {item.name === t("services") ? (
+                    <div key={index} className="bg-white">
                       <button
                         onClick={() =>
                           setIsMobileServicesOpen(!isMobileServicesOpen)
@@ -352,7 +358,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="w-full text-center capitalize bg-primary-gradient text-white px-6 py-3 rounded-full ease-out hover:scale-105 transition-all duration-300 inline-block font-medium !mb-[70px]"
             >
-              {t("navbar.contactUs")}
+              {t("contactUs")}
             </Link>
           </div>
         </div>

@@ -18,7 +18,7 @@ const ComingSoonSmallSection = () => {
     setStatus("");
 
     try {
-      const response = await fetch("https://api.kreatoors.com/mailchimp/waitlist", {
+      const response = await fetch("api/newsletter", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -50,15 +50,25 @@ const ComingSoonSmallSection = () => {
   };
 
   return (
-    <div className={`w-full bg-cta-gradient md:py-20 px-4 md:px-8 rounded-t-[50px]`}>
+    <div
+      className={`w-full bg-cta-gradient md:py-20 px-4 md:px-8 rounded-t-[50px]`}
+    >
       <div className="max-w-6xl mx-auto">
         <div className="relative bg-primary-gradient rounded-3xl p-8 md:p-12 flex md:gap-10">
           <div className="max-w-4xl mx-auto flex flex-col text-center justify-center w-full">
-            <h2 className="text-2xl md:text-[34px] md:leading-[50px] font-medium text-white w-full">{renderText(t("coming-soon.heading"))}</h2>
+            <h2 className="text-2xl md:text-[34px] md:leading-[50px] font-medium text-white w-full">
+              {renderText(t("coming-soon.heading"))}
+            </h2>
 
-            <p className="text-white/90 text-base md:text-lg my-8 max-w-xl mx-auto text-center">{renderText(t("coming-soon.subheading"))}</p>
-            {status === "success" && <p className="text-white">Thank you for subscribing!</p>}
-            {status === "error" && <p className="text-red-300">{errorMessage}</p>}
+            <p className="text-white/90 text-base md:text-lg my-8 max-w-xl mx-auto text-center">
+              {renderText(t("coming-soon.subheading"))}
+            </p>
+            {status === "success" && (
+              <p className="text-white">Thank you for subscribing!</p>
+            )}
+            {status === "error" && (
+              <p className="text-red-300">{errorMessage}</p>
+            )}
             <div className="mb-2 flex flex-col sm:flex-row items-center justify-center max-w-2xl mx-auto">
               <form
                 onSubmit={handleSubmit}
@@ -77,7 +87,9 @@ const ComingSoonSmallSection = () => {
                   type="submit"
                   className="bg-white w-auto hover:bg-gray-200 text-blue-custom-700 px-6 py-2 rounded-full md:font-semibold transition-colors"
                 >
-                  {loading ? renderText(t("Loading...")) : renderText(t("join"))}
+                  {loading
+                    ? renderText(t("Loading..."))
+                    : renderText(t("join"))}
                 </button>
               </form>
             </div>
