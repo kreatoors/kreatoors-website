@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Poppins, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import ClarityAnalytics from "@/components/extra/Clarity";
 import I18nProvider from "@/providers/I18nProvider";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/layout/Footer";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   title: "Kreatoors AI",
   description: "Kreatoors AI - AI-powered Employee Content Creation",
 };
-
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -86,7 +86,8 @@ export default function RootLayout({
               },
             }}
           />
-          <ClarityAnalytics />
+          <GoogleTagManager gtmId={GTM_ID} />
+          {/* <ClarityAnalytics />   KRISTIEN - CAN'T YET CONFIRM THE NECESSITY OF THIS   */}
           <I18nProvider>
             {children}
             <Footer />
