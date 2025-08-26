@@ -39,39 +39,30 @@
     "services": [
       {
         "id": 1,
-        "slug": "corporate-influencing",
-        "heading": "Corporate \n Influencing",
-        "subheading": "Inspire Thought Leadership, \n Shape Conversations"
+        "slug": "employer-content-enablement",
+        "heading": "Employee Content Enablement",
+        "subheading": "Harness Authentic Employee \n Voices"
       },
-      {
-        "id": 3,
-        "slug": "employer-content-creation",
-        "heading": "Employee Content \n Creation",
-        "subheading": "Harness Authentic \n Employee Voices"
-      },
-      {
-        "id": 5,
-        "slug": "advocacy-content-governance",
-        "heading": "Advocacy & Content \n Governance",
-        "subheading": "Safeguarding Your \n Brand's Integrity "
-      },
+
       {
         "id": 2,
-        "slug": "employee-brand-development",
-        "heading": "Employer Brand \n Development",
-        "subheading": "Craft a Brand That \n People Love"
+        "slug": "advocacy-programme-design",
+        "heading": "Advocacy Programme Design",
+        "subheading": "Framework Development \n & Delivery "
       },
+
+      {
+        "id": 3,
+        "slug": "executive-thought",
+        "heading": "Executive Thought  Leadership \n Development & Ghostwriting",
+        "subheading": "Activate Voices & Shape \n Conversations"
+      },
+
       {
         "id": 4,
-        "slug": "internal-communications-culture",
-        "heading": "Internal Communications \n & Culture",
-        "subheading": "Break Your Silos & \n Connect Teams"
-      },
-      {
-        "id": 6,
-        "slug": "community-building-management",
-        "heading": "Community Building \n & Management",
-        "subheading": "Foster Communities, \n Ignite Collaboration"
+        "slug": "governance-brand-safety",
+        "heading": "Governance & Brand Safety",
+        "subheading": "Safeguarding Your \n Brand's Integrity  "
       }
     ]
   },
@@ -170,9 +161,9 @@
   },
   "whatItLooksLike": "What This Looks Like:",
   "coming-soon": {
-    "heading": "Join Our Beta Community: AI-Powered <i class='font-playfair'>Employee Advocacy</i> With Tailored <i class='font-playfair'>Personal Branding</i>",
-    "subheading": "Redefine and build your brand's influence with our AI-driven Employee Advocacy Platform.",
+    "heading": "Coming Soon: AI-Powered Employee Advocacy Meets  <i class='font-playfair'>Personal Branding</i>",
+    "subheading": "Revolutionize how you build and manage your personal brand with our AI-Powered Personal Branding Platform",
     "waitlist": "Your Email Address"
   },
-  "join": "Request Beta Access"
+  "join": "Join the Waitlist"
 }

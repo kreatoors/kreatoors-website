@@ -17,12 +17,12 @@ const BrandSolutionsLanding = ({ isPage }: { isPage: boolean }) => {
 
   // Mapping the services to the solutions array
   const icons = [
-    SERVICES_ICONS.services["1"],
     SERVICES_ICONS.services["2"],
-    SERVICES_ICONS.services["3"],
-    SERVICES_ICONS.services["4"],
-    SERVICES_ICONS.services["5"],
     SERVICES_ICONS.services["6"],
+    SERVICES_ICONS.services["1"],
+    SERVICES_ICONS.services["3"],
+    // SERVICES_ICONS.services["5"],
+    // SERVICES_ICONS.services["6"],
   ];
 
   const solutions = services.map((service: any, index: any) => ({
@@ -43,17 +43,28 @@ const BrandSolutionsLanding = ({ isPage }: { isPage: boolean }) => {
 
   return (
     <section id="services">
-      <div className={`py-5 md:py-20 ${isPage === true ? "pb-0" : "bg-blue-custom-400 px-4"} md:px-0 w-full`} id="strategic-solutions">
+      <div
+        className={`py-5  md:py-20 ${
+          isPage === true ? "pb-0" : "bg-blue-custom-400 px-4"
+        } md:px-0 w-full`}
+        id="strategic-solutions"
+      >
         <div className="w-full">
           <div className="text-center mb-5 md:mb-16">
             <div>
               <h2 className="hidden md:block text-4xl md:text-5xl mb-6 mx-auto text-center">
                 {renderText(t("services-section.heading"))}
-                {!isPage && <span className="inline-block md:block mt-3 text-4xl md:text-2xl">{renderText(t("services-section.subheading"))}</span>}
+                {!isPage && (
+                  <span className="inline-block md:block mt-3 text-4xl md:text-2xl">
+                    {renderText(t("services-section.subheading"))}
+                  </span>
+                )}
               </h2>
               <h2 className="block md:hidden text-[29px] md:text-5xl mx-auto text-center">
                 {isPage ? (
-                  <div className="mt-[100px] text-[40px]">{renderText(t("services-section.heading"))}</div>
+                  <div className="mt-[100px] text-[40px]">
+                    {renderText(t("services-section.heading"))}
+                  </div>
                 ) : (
                   renderText(t("services-section.heading2"))
                 )}
@@ -62,22 +73,30 @@ const BrandSolutionsLanding = ({ isPage }: { isPage: boolean }) => {
           </div>
 
           {/* Solutions Grid */}
-          <div className={`${isPage === true && "bg-white md:pb-12 px-4"} w-full`}>
-            <div className={`max-w-6xl mx-auto ${isPage === true && "py-4 md:pt-[70px]"}`}>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-5 gap-4">
+          <div
+            className={`${isPage === true && "bg-white md:pb-12 px-4"} w-full`}
+          >
+            <div
+              className={`max-w-6xl mx-auto ${
+                isPage === true && "py-4 md:pt-[70px]"
+              }`}
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:mx-5 gap-4">
                 {solutions.map((solution: any) => {
                   const formattedTitle = true
-                    ? solution.title.split("\n").map((part: any, index: any) => (
-                        <React.Fragment key={index}>
-                          {index === 0 ? (
-                            <>
-                              {part} <br />
-                            </>
-                          ) : (
-                            part + " "
-                          )}
-                        </React.Fragment>
-                      ))
+                    ? solution.title
+                        .split("\n")
+                        .map((part: any, index: any) => (
+                          <React.Fragment key={index}>
+                            {index === 0 ? (
+                              <>
+                                {part} <br />
+                              </>
+                            ) : (
+                              part + " "
+                            )}
+                          </React.Fragment>
+                        ))
                     : solution.title;
                   return (
                     <div
@@ -108,8 +127,12 @@ const BrandSolutionsLanding = ({ isPage }: { isPage: boolean }) => {
                       /> */}
                           </div>
                           <h3 className="text-[18px] ml-3 md:ml-0 md:my-6 font-medium text-black transition-colors duration-100 ease-in-out group-hover:text-white">
-                            <span className="block md:hidden">{solution.title}</span>
-                            <span className="hidden md:block">{formattedTitle}</span>
+                            <span className="block md:hidden">
+                              {solution.title}
+                            </span>
+                            <span className="hidden md:block">
+                              {formattedTitle}
+                            </span>
                           </h3>
                         </div>
                         <div className="flex justify-between items-center mt-4 md:mt-0">
@@ -117,7 +140,11 @@ const BrandSolutionsLanding = ({ isPage }: { isPage: boolean }) => {
                             {solution.buttonText}
                           </p>
                           <div className="bg-blue-custom-800 p-2 cursor-pointer rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 transform translate-x-0 rotate-[45deg] transition-all duration-500 ease-in-out group-hover:rotate-0">
-                            <ArrowUpRight size={24} strokeWidth={1} color="#ffffff" />
+                            <ArrowUpRight
+                              size={24}
+                              strokeWidth={1}
+                              color="#ffffff"
+                            />
                           </div>
                         </div>
                       </div>

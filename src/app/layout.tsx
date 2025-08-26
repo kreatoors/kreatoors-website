@@ -67,7 +67,7 @@ export default function RootLayout({
                 className: "bg-green-500",
                 duration: 3000,
                 style: {
-                  color: "#fff",
+                  color: "#333",
                 },
                 iconTheme: {
                   primary: "white",
@@ -78,7 +78,7 @@ export default function RootLayout({
                 className: "bg-red-500",
                 duration: 3000,
                 style: {
-                  color: "#fff",
+                  color: "#333",
                 },
                 iconTheme: {
                   primary: "white",

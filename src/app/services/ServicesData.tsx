@@ -4,12 +4,14 @@ const service_3 = "/images/services/hero3.png";
 const service_4 = "/images/services/hero4.png";
 const service_5 = "/images/services/hero5.png";
 const service_6 = "/images/services/hero6.png";
+const service_7 = "/images/services/hero7.png";
 
 export const servicesData = {
   "corporate-influencing": {
     h1: (
       <h1 className="text-[34px] sm:text-3xl md:text-4xl lg:text-[42px] leading-tight">
-        <span className="font-playfair italic ">Corporate</span> <span>Influencing</span>
+        <span className="font-playfair italic ">Corporate</span>{" "}
+        <span>Influencing</span>
       </h1>
     ),
     description:
@@ -19,27 +21,43 @@ export const servicesData = {
       {
         id: "brand-strategy",
         title: "Personal Brand Strategy & Positioning",
-        description: "We create comprehensive programs that drive real impact through:",
-        content: ["Program strategy goals and alignment", "AI-optimized templates", "Strategic content calendars and themes"],
+        description:
+          "We create comprehensive programs that drive real impact through:",
+        content: [
+          "Program strategy goals and alignment",
+          "AI-optimized templates",
+          "Strategic content calendars and themes",
+        ],
       },
 
       {
         id: "digital-presence",
         title: "Digital Leadership Presence ",
         description: "We enhance your online impact by: ",
-        content: ["Optimizing executive profiles and leadership stories.", "Creating visual identities and building media presence."],
+        content: [
+          "Optimizing executive profiles and leadership stories.",
+          "Creating visual identities and building media presence.",
+        ],
       },
       {
         id: "content-strategy",
         title: "Content Strategy & Creation",
-        description: "We transform your expertise into actionable thought leadership with:",
-        content: ["Tailored content strategies aligned with your goals.", "Leadership content calendars backed by data-driven performance insights"],
+        description:
+          "We transform your expertise into actionable thought leadership with:",
+        content: [
+          "Tailored content strategies aligned with your goals.",
+          "Leadership content calendars backed by data-driven performance insights",
+        ],
       },
       {
         id: "thought-leadership",
         title: "Thought Leadership Development",
-        description: "We position you as a leading voice in your industry through::",
-        content: ["Speaking engagements, event placements, and strategic media outreach.", "Expanding your influence via curated expert networks."],
+        description:
+          "We position you as a leading voice in your industry through::",
+        content: [
+          "Speaking engagements, event placements, and strategic media outreach.",
+          "Expanding your influence via curated expert networks.",
+        ],
       },
     ],
     impactItems: [
@@ -51,7 +69,8 @@ export const servicesData = {
     buttontxt: "Build Corporate Influencer Programme Now",
     ctaTitle: (
       <h1 className="text-[29px] sm:text-3xl md:text-4xl lg:text-[42px]  md:leading-[65px] lg:leading-[70px] text-white">
-        Ready to Turn Your Expertise into Influence that means <span className="font-playfair">Business Success?</span>
+        Ready to Turn Your Expertise into Influence that means{" "}
+        <span className="font-playfair">Business Success?</span>
       </h1>
     ),
   },
@@ -59,7 +78,9 @@ export const servicesData = {
   "employee-brand-development": {
     h1: (
       <h1 className="text-[34px] sm:text-3xl md:text-4xl lg:text-5xl lg:leading-[60px]">
-        <span className="inline-block font-playfair italic  mr-2">Employer</span>
+        <span className="inline-block font-playfair italic  mr-2">
+          Employer
+        </span>
         <span>Brand Development</span>
       </h1>
     ),
@@ -91,16 +112,26 @@ export const servicesData = {
         id: "impact",
         title: "Candidate Experience ",
         description: "We optimize touchpoints with: ",
-        content: ["Journey mapping, strategic content, and onboarding narratives.", "Alumni advocacy and employee experience programs."],
+        content: [
+          "Journey mapping, strategic content, and onboarding narratives.",
+          "Alumni advocacy and employee experience programs.",
+        ],
       },
     ],
-    impactItems: ["Enhanced talent attraction", "Improved candidate quality", "Stronger culture alignment", "Reduced recruitment costs"],
+    impactItems: [
+      "Enhanced talent attraction",
+      "Improved candidate quality",
+      "Stronger culture alignment",
+      "Reduced recruitment costs",
+    ],
     buttontxt: "Activate Employee Voices Now",
     ctaTitle: (
       <h1 className="text-[29px] sm:text-3xl md:text-4xl lg:text-[42px] md:leading-[64px] text-white">
         Ready to Build a Standout
         <br />
-        <span className="font-playfair italic inline-block mt-2">Employer Brand?</span>
+        <span className="font-playfair italic inline-block mt-2">
+          Employer Brand?
+        </span>
       </h1>
     ),
   },
@@ -108,8 +139,11 @@ export const servicesData = {
   "employer-content-creation": {
     h1: (
       <h1 className="text-[34px] sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
-        <span className="inline-block font-playfair italic  mr-2">Employee</span>
-        <span className="mt-4 block">Content Creation</span>
+        <span className="inline-block font-playfair italic  mr-2">
+          Employee
+        </span>
+        Content
+        <span className="mt-4 block"> Creation</span>
       </h1>
     ),
     description:
@@ -140,13 +174,19 @@ export const servicesData = {
         id: "candidate-experience",
         title: "Engage & Amplify",
         description: "We help you sustain content creation momentum with: ",
-        content: ["Onboarding, training, and motivational incentives. ", "Recognition systems that highlight standout contributions. "],
+        content: [
+          "Onboarding, training, and motivational incentives. ",
+          "Recognition systems that highlight standout contributions. ",
+        ],
       },
       {
         id: "candidate-experience-",
         title: "Measure & Optimise",
         description: "We track EGC success by providing:",
-        content: ["Data-driven insights and ROI analysis.", "Continuous improvement recommendations to maximise impact.  "],
+        content: [
+          "Data-driven insights and ROI analysis.",
+          "Continuous improvement recommendations to maximise impact.  ",
+        ],
       },
     ],
     impactItems: [
@@ -158,7 +198,11 @@ export const servicesData = {
     buttontxt: "Activate Employee Voices Now",
     ctaTitle: (
       <h1 className="text-[29px] max-w-2xl space-y-3 sm:text-3xl md:text-4xl lg:text-[42px] leading-tight  text-white">
-        Ready to <i className="font-playfair italic inline-block">Build Employee Stories</i> <div className="mt-2">Into Brand Power?</div>
+        Ready to{" "}
+        <i className="font-playfair italic inline-block">
+          Build Employee Stories
+        </i>{" "}
+        <div className="mt-2">Into Brand Power?</div>
       </h1>
     ),
   },
@@ -171,7 +215,9 @@ export const servicesData = {
         </div>
         <div className="hidden md:block">
           Internal
-          <span className="font-playfair italic px-3 mt-4 ">Communications</span>
+          <span className="font-playfair italic px-3 mt-4 ">
+            Communications
+          </span>
           <span className=" block mt-2 md:mt-4"> & Culture</span>
         </div>
       </h1>
@@ -197,13 +243,19 @@ export const servicesData = {
         id: "knowledge-learning",
         title: "Content & Change Management",
         description: "We drive engagement and clarity through: ",
-        content: ["  Strategic campaigns and change management communications.", "Culture initiatives and crisis response protocols. "],
+        content: [
+          "  Strategic campaigns and change management communications.",
+          "Culture initiatives and crisis response protocols. ",
+        ],
       },
       {
         id: "events-networking",
         title: "Channel Optimization",
         description: "We enhance communication impact by: ",
-        content: ["Auditing channel effectiveness and integrating platforms.", "Optimizing message delivery and tracking with analytics."],
+        content: [
+          "Auditing channel effectiveness and integrating platforms.",
+          "Optimizing message delivery and tracking with analytics.",
+        ],
       },
       {
         id: "community-management",
@@ -216,13 +268,22 @@ export const servicesData = {
       },
     ],
 
-    impactItems: ["Enhanced team alignment", "Increased engagement", "Improved information flow", "Higher Talent Retention"],
+    impactItems: [
+      "Enhanced team alignment",
+      "Increased engagement",
+      "Improved information flow",
+      "Higher Talent Retention",
+    ],
     buttontxt: "Break Your Silos Today",
-    ctaDescription: "Let's create a personal brand strategy that sets you apart.",
+    ctaDescription:
+      "Let's create a personal brand strategy that sets you apart.",
     ctaTitle: (
       <h1 className="text-[29px] sm:text-3xl md:text-4xl lg:text-[42px] md:leading-[60px] text-white">
         <span className="">
-          Ready to Break Down Silos and Build a<span className=" block mt-3 font-playfair italic ">Connected Workforce?</span>
+          Ready to Break Down Silos and Build a
+          <span className=" block mt-3 font-playfair italic ">
+            Connected Workforce?
+          </span>
         </span>
       </h1>
     ),
@@ -231,7 +292,11 @@ export const servicesData = {
   "advocacy-content-governance": {
     h1: (
       <h1 className="text-[34px] sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
-        Advocacy &<span className="font-playfair italic   pr-3 mt-4 block">Content Governance</span>
+        {" "}
+        <span className="font-playfair italic   pr-3 mt-4 block">
+          Content Governance
+        </span>
+        & Brand Safety
       </h1>
     ),
     description:
@@ -241,17 +306,18 @@ export const servicesData = {
     coreServices: [
       {
         id: "strategic-foundation",
-        title: "Build Strategic Advocacy ",
-        description: "We establish frameworks to mobilise advocacy efforts while maintaining control with:",
+        title: "Governance ",
+        description:
+          "We establish frameworks to mobilise advocacy efforts while maintaining control with:",
         content: [
           "Advocacy governance structures that ensure consistency and alignment with brand values. ",
-          "Defined roles and responsibilities for employees as brand advocates. ",
+          // "Defined roles and responsibilities for employees as brand advocates. ",
           "Strategies to scale advocacy across the organisation while protecting the brand’s integrity. ",
         ],
       },
       {
         id: "content-change-management ",
-        title: "Governance & Brand Protection ",
+        title: "Brand Protection ",
         description: "We safeguard your brand with: ",
         content: [
           "Robust policies, workflows, and compliance tools. ",
@@ -262,7 +328,8 @@ export const servicesData = {
       {
         id: "channel-optimization",
         title: "Educate & Empower",
-        description: "We ensure advocates are ready to represent your brand through:",
+        description:
+          "We ensure advocates are ready to represent your brand through:",
         content: [
           "Advocacy training workshops and leadership coaching. ",
           "Tools and resources to guide compliant content creation. ",
@@ -274,7 +341,10 @@ export const servicesData = {
         id: "resource-development",
         title: "Monitor & Refine",
         description: "We optimize touchpoints with:",
-        content: ["Journey mapping, strategic content, and onboarding narratives.", "Alumni advocacy and employee experience programs. "],
+        content: [
+          "Journey mapping, strategic content, and onboarding narratives.",
+          "Alumni advocacy and employee experience programs. ",
+        ],
       },
     ],
     impactItems: [
@@ -284,7 +354,8 @@ export const servicesData = {
       "Measurable advocacy-driven growth and engagement",
     ],
     buttontxt: "Build Advocacy with Integrity",
-    ctaDescription: "Let's create a personal brand strategy that sets you apart.",
+    ctaDescription:
+      "Let's create a personal brand strategy that sets you apart.",
     ctaTitle: (
       <h1 className="text-[29px] sm:text-3xl md:text-4xl lg:text-[42px] md:leading-[60px] text-white">
         Ready to
@@ -320,13 +391,19 @@ export const servicesData = {
         id: "content-change-management ",
         title: "Knowledge & Learning",
         description: "We deliver growth experiences through:",
-        content: ["Expert-led masterclasses, peer mentorships, and resource hubs. ", "Knowledge-sharing systems and best practice libraries."],
+        content: [
+          "Expert-led masterclasses, peer mentorships, and resource hubs. ",
+          "Knowledge-sharing systems and best practice libraries.",
+        ],
       },
       {
         id: "channel-optimization",
         title: "Events & Networking",
         description: "We create meaningful connections via:",
-        content: ["Roundtables, expert panels, workshops, and virtual meetups. ", "Networking programs that foster collaboration and trust. "],
+        content: [
+          "Roundtables, expert panels, workshops, and virtual meetups. ",
+          "Networking programs that foster collaboration and trust. ",
+        ],
       },
 
       {
@@ -339,12 +416,82 @@ export const servicesData = {
         ],
       },
     ],
-    impactItems: ["Network effects activated", "Knowledge multiplication", "Stronger industry presence", "Enhanced professional development"],
+    impactItems: [
+      "Network effects activated",
+      "Knowledge multiplication",
+      "Stronger industry presence",
+      "Enhanced professional development",
+    ],
     buttontxt: "Build Your Community Today",
     ctaDescription: "Ready to Maximise Community Network Effects?",
     ctaTitle: (
       <h1 className="text-[29px] max-w-2xl mx-auto sm:text-3xl md:text-4xl lg:text-[42px] md:leading-[60px] text-white">
-        Ready to Maximise <span className="font-playfair italic  ">Community Network Effects?</span>
+        Ready to Maximise{" "}
+        <span className="font-playfair italic  ">
+          Community Network Effects?
+        </span>
+      </h1>
+    ),
+  },
+  "employee-advocacy-programme-design": {
+    h1: (
+      <h1 className="text-[34px] sm:text-3xl md:text-4xl lg:text-5xl lg:leading-[60px]">
+        <span className="font-playfair italic ">Employee Advocacy </span>
+        Programme Design
+      </h1>
+    ),
+    description:
+      "We work with you to co-create the frameworks, incentives, and internal alignment needed for sustainable advocacy — built for real-world activation and growth.",
+    heroImage: service_7,
+
+    coreServices: [
+      {
+        id: "building-advocacy-from-within",
+        title: "Building Advocacy from Within",
+        description:
+          "We collaborate with your team to create the foundations, incentives, and infrastructure to embed employee advocacy into your culture and operations.",
+        content: [
+          "This includes establising tailored frameworks and structures to mobilise advocacy",
+          "Defined roles and responsibilities for employees as brand advocates.",
+        ],
+      },
+
+      {
+        id: "create-incentive-models",
+        title: "Create Incentive Models (even with no budget)",
+        description:
+          "Design motivational systems — from recognition to rewards — that encourage ongoing, authentic participation.",
+        content: [""],
+      },
+
+      {
+        id: "stakeholder-buy-in",
+        title: "Stakeholder Buy-In & Activation Planning",
+        description:
+          "Run workshops to align leaders, managers, and key functions around advocacy success, launch planning, and long-term commitment.",
+
+        content: [""],
+      },
+      {
+        id: "define-success-metrics",
+        title: "Define Success Metrics",
+        description:
+          "Shape KPIs that align to your business goals — including reach, engagement, internal adoption, and impact on brand trust.",
+        content: [""],
+      },
+    ],
+    impactItems: [
+      "Stronger alignment across Leadership, Comms & HR",
+      "Clear frameworks that scale ",
+      "Increase internal engagement & retention",
+      "Faster time-to-launch & improved adoption",
+    ],
+    buttontxt: "Build Your Community Today",
+    ctaDescription: "Ready to Maximise Community Network Effects?",
+    ctaTitle: (
+      <h1 className="text-[29px] max-w-2xl mx-auto sm:text-3xl md:text-4xl lg:text-[42px] md:leading-[60px] text-white">
+        Ready to Build a Standout <br />
+        <span className="font-playfair italic  "> Advocacy Programme?</span>
       </h1>
     ),
   },
@@ -354,7 +501,8 @@ export const servicesDataDe = {
   "corporate-influencing": {
     h1: (
       <h1 className="text-[34px] sm:text-3xl md:text-4xl lg:text-[42px] lg:leading-[58px]">
-        <span className="font-playfair italic ">Unternehmens</span> <span>Beeinflussung</span>
+        <span className="font-playfair italic ">Unternehmens</span>{" "}
+        <span>Beeinflussung</span>
       </h1>
     ),
     description:
@@ -375,12 +523,16 @@ export const servicesDataDe = {
         id: "digital-presence",
         title: "Digitale Führungspräsenz ",
         description: "Wir steigern Ihre Online-Wirkung durch: ",
-        content: ["Optimierung von Executive-Profilen und Führungsgeschichten.", "Erstellung visueller Identitäten und Aufbau einer Medienpräsenz."],
+        content: [
+          "Optimierung von Executive-Profilen und Führungsgeschichten.",
+          "Erstellung visueller Identitäten und Aufbau einer Medienpräsenz.",
+        ],
       },
       {
         id: "content-strategy",
         title: "Content-Strategie & Erstellung",
-        description: "Wir verwandeln Ihre Expertise in umsetzbare Thought Leadership mit:",
+        description:
+          "Wir verwandeln Ihre Expertise in umsetzbare Thought Leadership mit:",
         content: [
           "Maßgeschneiderte Content-Strategien, die auf Ihre Ziele abgestimmt sind.",
           "Führungskalender für Inhalte mit datengestützten Leistungskennzahlen.",
@@ -389,8 +541,12 @@ export const servicesDataDe = {
       {
         id: "thought-leadership",
         title: "Entwicklung von Thought Leadership",
-        description: "Wir positionieren Sie als führende Stimme in Ihrer Branche durch:",
-        content: ["Vorträge, Veranstaltungen und strategische Medienkontakte.", "Erweiterung Ihres Einflusses durch kuratierte Expertennetzwerke."],
+        description:
+          "Wir positionieren Sie als führende Stimme in Ihrer Branche durch:",
+        content: [
+          "Vorträge, Veranstaltungen und strategische Medienkontakte.",
+          "Erweiterung Ihres Einflusses durch kuratierte Expertennetzwerke.",
+        ],
       },
     ],
     impactItems: [
@@ -402,7 +558,8 @@ export const servicesDataDe = {
     buttontxt: "Jetzt Corporate Influencer Programm aufbauen",
     ctaTitle: (
       <h1 className="text-[29px] sm:text-3xl md:text-4xl lg:text-[42px]  md:leading-[65px] lg:leading-[70px] text-white">
-        Bereit, Ihre Expertise in Einfluss zu verwandeln, der Erfolg bedeutet <span className="font-playfair">Business?</span>
+        Bereit, Ihre Expertise in Einfluss zu verwandeln, der Erfolg bedeutet{" "}
+        <span className="font-playfair">Business?</span>
       </h1>
     ),
   },
@@ -410,7 +567,9 @@ export const servicesDataDe = {
   "employee-brand-development": {
     h1: (
       <h1 className="text-[34px] sm:text-3xl md:text-4xl lg:text-5xl lg:leading-[60px]">
-        <span className="inline-block font-playfair italic  mr-2">Mitarbeiter</span>
+        <span className="inline-block font-playfair italic  mr-2">
+          Mitarbeiter
+        </span>
         <span>Markenentwicklung</span>
       </h1>
     ),
@@ -442,16 +601,26 @@ export const servicesDataDe = {
         id: "impact",
         title: "Kandidatenerfahrung ",
         description: "Wir optimieren Berührungspunkte mit: ",
-        content: ["Reiseführer, strategische Inhalte und Onboarding-Narrative.", "Alumni-Advocacy und Mitarbeitererfahrungsprogramme."],
+        content: [
+          "Reiseführer, strategische Inhalte und Onboarding-Narrative.",
+          "Alumni-Advocacy und Mitarbeitererfahrungsprogramme.",
+        ],
       },
     ],
-    impactItems: ["Erhöhte Talentanziehung", "Verbesserte Kandidatenqualität", "Stärkere Kulturübereinstimmung", "Reduzierte Rekrutierungskosten"],
+    impactItems: [
+      "Erhöhte Talentanziehung",
+      "Verbesserte Kandidatenqualität",
+      "Stärkere Kulturübereinstimmung",
+      "Reduzierte Rekrutierungskosten",
+    ],
     buttontxt: "Aktivieren Sie Mitarbeiterstimmen jetzt",
     ctaTitle: (
       <h1 className="text-[29px] sm:text-3xl md:text-4xl lg:text-[42px] md:leading-[64px] text-white">
         Bereit, eine herausragende
         <br />
-        <span className="font-playfair italic inline-block mt-2">Arbeitgebermarke zu schaffen?</span>
+        <span className="font-playfair italic inline-block mt-2">
+          Arbeitgebermarke zu schaffen?
+        </span>
       </h1>
     ),
   },
@@ -459,7 +628,9 @@ export const servicesDataDe = {
   "employer-content-creation": {
     h1: (
       <h1 className="text-[34px] sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
-        <span className="inline-block font-playfair italic  mr-2">Arbeitgeber</span>
+        <span className="inline-block font-playfair italic  mr-2">
+          Arbeitgeber
+        </span>
         <span className="mt-4 block">Content-Erstellung</span>
       </h1>
     ),
@@ -480,7 +651,8 @@ export const servicesDataDe = {
       {
         id: "culture-storytelling",
         title: "Content-Exzellenz vorantreiben",
-        description: "Wir befähigen Mitarbeiter, ihre Geschichten zu teilen durch: ",
+        description:
+          "Wir befähigen Mitarbeiter, ihre Geschichten zu teilen durch: ",
         content: [
           "Storytelling-Workshops und praxisorientiertes Content-Training.",
           "Benutzerfreundliche Tools und Best-Practice-Ressourcen.",
@@ -490,14 +662,21 @@ export const servicesDataDe = {
       {
         id: "candidate-experience",
         title: "Engagieren & Verstärken",
-        description: "Wir helfen Ihnen, die Content-Erstellung mit folgenden Maßnahmen fortzusetzen:",
-        content: ["Onboarding, Schulungen und motivierende Anreize.", "Anerkennungssysteme, die herausragende Beiträge hervorheben."],
+        description:
+          "Wir helfen Ihnen, die Content-Erstellung mit folgenden Maßnahmen fortzusetzen:",
+        content: [
+          "Onboarding, Schulungen und motivierende Anreize.",
+          "Anerkennungssysteme, die herausragende Beiträge hervorheben.",
+        ],
       },
       {
         id: "candidate-experience-",
         title: "Messen & Optimieren",
         description: "Wir verfolgen den Erfolg von EGC mit:",
-        content: ["Datenbasierte Einblicke und ROI-Analyse.", "Empfehlungen zur kontinuierlichen Verbesserung, um die Wirkung zu maximieren."],
+        content: [
+          "Datenbasierte Einblicke und ROI-Analyse.",
+          "Empfehlungen zur kontinuierlichen Verbesserung, um die Wirkung zu maximieren.",
+        ],
       },
     ],
     impactItems: [
@@ -509,7 +688,10 @@ export const servicesDataDe = {
     buttontxt: "Aktivieren Sie Mitarbeiterstimmen jetzt",
     ctaTitle: (
       <h1 className="text-[29px] max-w-2xl space-y-3 sm:text-3xl md:text-4xl lg:text-[42px] leading-tight  text-white">
-        Bereit, <i className="font-playfair italic inline-block">Mitarbeitergeschichten zu</i>{" "}
+        Bereit,{" "}
+        <i className="font-playfair italic inline-block">
+          Mitarbeitergeschichten zu
+        </i>{" "}
         <div className="mt-2">In Markenstärke umzuwandeln?</div>
       </h1>
     ),
@@ -547,18 +729,25 @@ export const servicesDataDe = {
         id: "knowledge-learning",
         title: "Content & Change Management",
         description: "Wir fördern Engagement und Klarheit durch: ",
-        content: ["Strategische Kampagnen und Change-Management-Kommunikation.", "Kulturinitiativen und Krisenreaktionsprotokolle."],
+        content: [
+          "Strategische Kampagnen und Change-Management-Kommunikation.",
+          "Kulturinitiativen und Krisenreaktionsprotokolle.",
+        ],
       },
       {
         id: "events-networking",
         title: "Channel-Optimierung",
         description: "Wir steigern die Kommunikationswirkung durch: ",
-        content: ["Audits der Kanalwirkung und Plattformintegration.", "Optimierung der Nachrichtenlieferung und Tracking mit Analytik."],
+        content: [
+          "Audits der Kanalwirkung und Plattformintegration.",
+          "Optimierung der Nachrichtenlieferung und Tracking mit Analytik.",
+        ],
       },
       {
         id: "community-management",
         title: "Ressourcenentwicklung",
-        description: "Wir statten Teams mit Tools für den Erfolg aus, einschließlich:",
+        description:
+          "Wir statten Teams mit Tools für den Erfolg aus, einschließlich:",
         content: [
           "Kommunikationstools, Handbücher, Vorlagen und Schulungsmaterialien.",
           "Führungsressourcen zur Stärkung von Ausrichtung und Engagement.",
@@ -566,14 +755,22 @@ export const servicesDataDe = {
       },
     ],
 
-    impactItems: ["Erhöhte Teamabstimmung", "Erhöhtes Engagement", "Verbesserter Informationsfluss", "Höhere Talentbindung"],
+    impactItems: [
+      "Erhöhte Teamabstimmung",
+      "Erhöhtes Engagement",
+      "Verbesserter Informationsfluss",
+      "Höhere Talentbindung",
+    ],
     buttontxt: "Brechen Sie Ihre Silos heute auf",
-    ctaDescription: "Lassen Sie uns eine persönliche Markenstrategie entwickeln, die Sie abhebt.",
+    ctaDescription:
+      "Lassen Sie uns eine persönliche Markenstrategie entwickeln, die Sie abhebt.",
     ctaTitle: (
       <h1 className="text-[29px] sm:text-3xl md:text-4xl lg:text-[42px] md:leading-[60px] text-white">
         <span className="">
           Bereit, Silos aufzubrechen und eine
-          <span className=" block mt-3 font-playfair italic ">Verbundene Arbeitskraft aufzubauen?</span>
+          <span className=" block mt-3 font-playfair italic ">
+            Verbundene Arbeitskraft aufzubauen?
+          </span>
         </span>
       </h1>
     ),
@@ -583,7 +780,9 @@ export const servicesDataDe = {
     h1: (
       <h1 className="text-[34px] sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
         Interessenvertretung
-        <span className="font-playfair italic   pr-3 mt-4 block">& Content-Governance</span>
+        <span className="font-playfair italic   pr-3 mt-4 block">
+          & Content-Governance
+        </span>
       </h1>
     ),
     description:
@@ -594,7 +793,8 @@ export const servicesDataDe = {
       {
         id: "strategic-foundation",
         title: "Strategische Advocacy aufbauen",
-        description: "Wir etablieren Frameworks, um Advocacy-Aktivitäten zu mobilisieren und gleichzeitig die Kontrolle zu wahren mit:",
+        description:
+          "Wir etablieren Frameworks, um Advocacy-Aktivitäten zu mobilisieren und gleichzeitig die Kontrolle zu wahren mit:",
         content: [
           "Advocacy-Governance-Strukturen, die Konsistenz und Übereinstimmung mit den Markenwerten sicherstellen.",
           "Definierte Rollen und Verantwortlichkeiten für Mitarbeiter als Markenbotschafter.",
@@ -614,7 +814,8 @@ export const servicesDataDe = {
       {
         id: "channel-optimization",
         title: "Ausbildung & Befähigung",
-        description: "Wir stellen sicher, dass Ihre Befürworter bereit sind, Ihre Marke zu vertreten durch:",
+        description:
+          "Wir stellen sicher, dass Ihre Befürworter bereit sind, Ihre Marke zu vertreten durch:",
         content: [
           "Advocacy-Schulungen und Führungskräfte-Coaching.",
           "Tools und Ressourcen, um die Erstellung konformer Inhalte zu unterstützen.",
@@ -626,7 +827,10 @@ export const servicesDataDe = {
         id: "resource-development",
         title: "Überwachung & Verfeinerung",
         description: "Wir optimieren Touchpoints mit:",
-        content: ["Journey Mapping, strategische Inhalte und Onboarding-Narrative.", "Alumni-Advocacy und Mitarbeitererfahrungsprogramme."],
+        content: [
+          "Journey Mapping, strategische Inhalte und Onboarding-Narrative.",
+          "Alumni-Advocacy und Mitarbeitererfahrungsprogramme.",
+        ],
       },
     ],
     impactItems: [
@@ -636,7 +840,8 @@ export const servicesDataDe = {
       "Messbares Wachstum und Engagement durch Advocacy",
     ],
     buttontxt: "Advocacy mit Integrität aufbauen",
-    ctaDescription: "Lassen Sie uns eine persönliche Markenstrategie entwickeln, die Sie abhebt.",
+    ctaDescription:
+      "Lassen Sie uns eine persönliche Markenstrategie entwickeln, die Sie abhebt.",
     ctaTitle: (
       <h1 className="text-[29px] sm:text-3xl md:text-4xl lg:text-[42px] md:leading-[60px] text-white">
         Bereit zu
@@ -672,13 +877,19 @@ export const servicesDataDe = {
         id: "content-change-management ",
         title: "Wissen & Lernen",
         description: "Wir bieten Wachstums-Erfahrungen durch:",
-        content: ["Expertengestützte Masterclasses, Peer-Mentorships und Ressourcen-Hubs.", "Wissensteilungssysteme und Best-Practice-Bibliotheken."],
+        content: [
+          "Expertengestützte Masterclasses, Peer-Mentorships und Ressourcen-Hubs.",
+          "Wissensteilungssysteme und Best-Practice-Bibliotheken.",
+        ],
       },
       {
         id: "channel-optimization",
         title: "Veranstaltungen & Networking",
         description: "Wir schaffen sinnvolle Verbindungen durch:",
-        content: ["Runde Tische, Expertengruppen, Workshops und virtuelle Meetups.", "Netzwerkprogramme, die Zusammenarbeit und Vertrauen fördern."],
+        content: [
+          "Runde Tische, Expertengruppen, Workshops und virtuelle Meetups.",
+          "Netzwerkprogramme, die Zusammenarbeit und Vertrauen fördern.",
+        ],
       },
 
       {
@@ -691,12 +902,83 @@ export const servicesDataDe = {
         ],
       },
     ],
-    impactItems: ["Aktivierte Netzwerkeffekte", "Wissensmultiplikation", "Stärkere Branchenpräsenz", "Erweiterte berufliche Entwicklung"],
+    impactItems: [
+      "Aktivierte Netzwerkeffekte",
+      "Wissensmultiplikation",
+      "Stärkere Branchenpräsenz",
+      "Erweiterte berufliche Entwicklung",
+    ],
     buttontxt: "Bauen Sie Ihre Community noch heute auf",
-    ctaDescription: "Bereit, die Netzwerkeffekte Ihrer Community zu maximieren?",
+    ctaDescription:
+      "Bereit, die Netzwerkeffekte Ihrer Community zu maximieren?",
     ctaTitle: (
       <h1 className="text-[29px] max-w-2xl mx-auto sm:text-3xl md:text-4xl lg:text-[42px] md:leading-[60px] text-white">
-        Bereit, <span className="font-playfair italic  ">Netzwerkeffekte Ihrer Community zu maximieren?</span>
+        Bereit,{" "}
+        <span className="font-playfair italic  ">
+          Netzwerkeffekte Ihrer Community zu maximieren?
+        </span>
+      </h1>
+    ),
+  },
+  "employee-advocacy-programme-design": {
+    h1: (
+      <h1 className="text-[34px] sm:text-3xl md:text-4xl lg:text-5xl lg:leading-[60px]">
+        <span className="font-playfair italic ">Employee Advocacy </span>
+        Programme Design
+      </h1>
+    ),
+    description:
+      "We work with you to co-create the frameworks, incentives, and internal alignment needed for sustainable advocacy — built for real-world activation and growth.",
+    heroImage: service_7,
+
+    coreServices: [
+      {
+        id: "building-advocacy-from-within",
+        title: "Building Advocacy from Within",
+        description:
+          "We collaborate with your team to create the foundations, incentives, and infrastructure to embed employee advocacy into your culture and operations.",
+        content: [
+          "This includes establising tailored frameworks and structures to mobilise advocacy",
+          "Defined roles and responsibilities for employees as brand advocates.",
+        ],
+      },
+
+      {
+        id: "create-incentive-models",
+        title: "Create Incentive Models (even with no budget)",
+        description:
+          "Design motivational systems — from recognition to rewards — that encourage ongoing, authentic participation.",
+        content: [""],
+      },
+
+      {
+        id: "stakeholder-buy-in",
+        title: "Stakeholder Buy-In & Activation Planning",
+        description:
+          "Run workshops to align leaders, managers, and key functions around advocacy success, launch planning, and long-term commitment.",
+
+        content: [""],
+      },
+      {
+        id: "define-success-metrics",
+        title: "Define Success Metrics",
+        description:
+          "Shape KPIs that align to your business goals — including reach, engagement, internal adoption, and impact on brand trust.",
+        content: [""],
+      },
+    ],
+    impactItems: [
+      "Stronger alignment across Leadership, Comms & HR",
+      "Clear frameworks that scale ",
+      "Increase internal engagement & retention",
+      "Faster time-to-launch & improved adoption",
+    ],
+    buttontxt: "Build Your Community Today",
+    ctaDescription: "Ready to Maximise Community Network Effects?",
+    ctaTitle: (
+      <h1 className="text-[29px] max-w-2xl mx-auto sm:text-3xl md:text-4xl lg:text-[42px] md:leading-[60px] text-white">
+        Ready to Build a Standout <br />
+        <span className="font-playfair italic  "> Advocacy Programme?</span>
       </h1>
     ),
   },
