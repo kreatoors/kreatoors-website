@@ -5,6 +5,7 @@ import ClarityAnalytics from "@/components/extra/Clarity";
 import I18nProvider from "@/providers/I18nProvider";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/layout/Footer";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   title: "Kreatoors AI",
   description: "Kreatoors AI - AI-powered Employee Content Creation",
 };
-
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -37,10 +38,19 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body className={`${inter.variable} ${poppins.variable} ${playfairDisplay.variable} antialiased`}>
+      <body
+        className={`${inter.variable} ${poppins.variable} ${playfairDisplay.variable} antialiased`}
+      >
         <>
           <Toaster
             position="bottom-right"
@@ -77,7 +87,8 @@ export default function RootLayout({
               },
             }}
           />
-          <ClarityAnalytics />
+          <GoogleTagManager gtmId={GTM_ID} />
+          {/* <ClarityAnalytics />   KRISTIEN - CAN'T YET CONFIRM THE NECESSITY OF THIS   */}
           <I18nProvider>
             {children}
             <Footer />
