@@ -162,9 +162,9 @@ const Footer = () => {
                 <li className=" md:block font-semibold">
                   {renderText(t("H.title3.point1"))}
                 </li>
-                <li className=" md:block">
+                {/* <li className=" md:block">
                   {renderText(t("H.title3.point2"))}
-                </li>
+                </li> */}
 
                 {/* <li className="block md:hidden">
                   {renderText(t("H.title3.point4"))}
