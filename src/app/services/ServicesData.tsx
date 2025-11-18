@@ -461,7 +461,7 @@ export const servicesData = {
         title: "Create Incentive Models (even with no budget)",
         description:
           "Design motivational systems — from recognition to rewards — that encourage ongoing, authentic participation.",
-        content: [""],
+        content: [],
       },
 
       {
@@ -470,14 +470,14 @@ export const servicesData = {
         description:
           "Run workshops to align leaders, managers, and key functions around advocacy success, launch planning, and long-term commitment.",
 
-        content: [""],
+        content: [],
       },
       {
         id: "define-success-metrics",
         title: "Define Success Metrics",
         description:
           "Shape KPIs that align to your business goals — including reach, engagement, internal adoption, and impact on brand trust.",
-        content: [""],
+        content: [],
       },
     ],
     impactItems: [
