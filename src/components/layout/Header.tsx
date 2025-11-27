@@ -236,7 +236,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <div className="hidden xl:block">
             <Link
-              href="https://calendly.com/coachingwitharzo/free-discovery-call"
+              href="https://calendly.com/meetwitharzo/intro-call"
               target="_blank"
               rel="noopener noreferrer"
               className="capitalize bg-primary-gradient text-white px-6 py-3 rounded-full transition-colors duration-300 hover:scale-95 inline-block font-medium"
