@@ -3,7 +3,7 @@ import ComingSoonSection from "./components/ComingSoon";
 import EGCSection from "./components/Egc";
 import Hero from "./components/HeroSection";
 import Stats from "./components/Stats";
-import BrandSolutionsLanding from "./components/StrategicSolution";
+// import BrandSolutionsLanding from "./components/StrategicSolution";
 import ValueStats from "./components/Values";
 
 import { Metadata } from "next";
@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Hero />
       <ComingSoonSection />
-      <BrandSolutionsLanding isPage={false} />
+      {/* <BrandSolutionsLanding isPage={false} /> */}
       <ValueStats />
       <EGCSection />
       <Stats />
