@@ -123,7 +123,9 @@ const AudienceSection = () => {
   return (
     <div className="w-full bg-white py-8 md:py-20">
       <div className="max-w-6xl mx-auto px-0">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl text-center ">{renderText(t("empower.heading"))}</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl text-center ">
+          {renderText(t("empower.heading"))}
+        </h1>
 
         <div className="flex sm:flex-col text-[14px] md:flex-row flex-wrap bg-blue-custom-500 justify-start md:justify-between my-10 md:bg-blue-custom-400 py-4 px-4 rounded-lg md:rounded-full">
           {Object.keys(tabContent).map((tab) => (
@@ -132,7 +134,11 @@ const AudienceSection = () => {
               onClick={() => handleTabChange(tab)}
               className={`font-medium cursor-pointer px-3 py-3 md:px-5 md:py-3 w-full md:w-auto rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 text-left md:text-center md:text-auto text-${
                 i18n.language === "de" ? "[15px]" : "[18px]"
-              } ${activeTab === tab ? "bg-primary-gradient text-white" : "text-black hover:bg-gray-200"}`}
+              } ${
+                activeTab === tab
+                  ? "bg-primary-gradient text-white"
+                  : "text-black hover:bg-gray-200"
+              }`}
             >
               {tab}
             </button>
@@ -142,17 +148,30 @@ const AudienceSection = () => {
         <div className="relative">
           <div
             className={` bg-blue-custom-500 p-5 md:p-10 rounded-lg shadow-sm border border-gray-100 transition-all duration-300 ease-in-out transform ${
-              isContentVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              isContentVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
             }`}
           >
-            <h2 className="text-[23px] md:text-3xl font-medium mb-4">{tabContent[activeTab]?.title}</h2>
-            <p className="text-sub-gray mb-6 max-w-4xl">{tabContent[activeTab]?.description}</p>
+            <h2 className="text-[23px] md:text-3xl font-medium mb-4">
+              {tabContent[activeTab]?.title}
+            </h2>
+            <p className="text-sub-gray mb-6 max-w-4xl">
+              {tabContent[activeTab]?.description}
+            </p>
 
             <div className="mb-8">
-              <h3 className="text-blue-custom-600 font-medium mb-4 text-[20px]">{t("what It Looks Like")}</h3>
+              <h3 className="text-blue-custom-600 font-medium mb-4 text-[20px]">
+                {t("what It Looks Like")}
+              </h3>
               <ul className="space-y-3">
                 {tabContent[activeTab]?.features?.map((feature, index) => (
-                  <li key={index} className={`text-sub-gray px-3 transform transition-all duration-300 ease-in-out delay-${index * 100}`}>
+                  <li
+                    key={index}
+                    className={`text-sub-gray px-3 transform transition-all duration-300 ease-in-out delay-${
+                      index * 100
+                    }`}
+                  >
                     <div className="flex gap-2"> • {renderText(feature)}</div>
                   </li>
                 ))}
@@ -160,7 +179,11 @@ const AudienceSection = () => {
             </div>
 
             <button className="w-full md:w-auto bg-primary-gradient text-sm md:text-lg text-white px-6 py-4 md:py-3 rounded-full transition-colors duration-500 hover:shadow-lg hover:scale-95">
-              <a href="https://calendly.com/coachingwitharzo/free-discovery-call" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://calendly.com/meetwitharzo/intro-call"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {tabContent[activeTab]?.ctaText}
               </a>
             </button>

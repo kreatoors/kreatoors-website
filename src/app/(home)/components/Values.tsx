@@ -1,7 +1,7 @@
 "use client";
 import { renderText } from "@/utils/misc";
 import Link from "next/link";
-import React, { useState, useEffect, useRef} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 const useCounter = (end: number, duration = 10000, shouldStart: boolean) => {
@@ -74,14 +74,16 @@ const useInView = () => {
 };
 
 const ValueStats = () => {
-   
   const { t } = useTranslation("home");
 
   const [ref, isInView] = useInView();
   const animatedValue = useCounter(92, 3000, isInView as boolean);
 
   return (
-    <section className="w-full bg-white py-16" ref={ref as React.RefObject<HTMLDivElement | null>}>
+    <section
+      className="w-full bg-white py-16"
+      ref={ref as React.RefObject<HTMLDivElement | null>}
+    >
       <div className="max-w-6xl px-5 bg-primary-gradient text-white py-10 mx-5 md:mx-auto rounded-3xl">
         <div className="text-center">
           <h1 className="text-[25px] sm:text-2xl md:text-3xl lg:text-4xl md:mx-10 tracking-wide md:tracking-normal lg:leading-[58px]">
@@ -94,7 +96,7 @@ const ValueStats = () => {
         </div>
         <div className="flex justify-center">
           <Link
-            href={"https://calendly.com/coachingwitharzo/free-discovery-call"}
+            href="https://calendly.com/meetwitharzo/intro-call"
             target="_blank"
             className="px-6 py-4 mt-10 rounded-full font-medium bg-white border border-border-gradient flex items-center justify-center space-x-2  transition-colors duration-500 hover:scale-95  "
           >
@@ -119,11 +121,9 @@ const ValueStats = () => {
                 <path d="m12 5 7 7-7 7" />
               </svg>
             </span>
-          </Link>   
+          </Link>
         </div>
-          <div className="flex justify-center items-center">
-          
-          </div>
+        <div className="flex justify-center items-center"></div>
       </div>
     </section>
   );

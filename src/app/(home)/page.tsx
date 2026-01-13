@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Hero />
       <ComingSoonSection />
-      <BrandSolutionsLanding isPage={false} />
+      {/* <BrandSolutionsLanding isPage={false} /> */}
       <ValueStats />
       <EGCSection />
       <Stats />

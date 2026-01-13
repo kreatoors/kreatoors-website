@@ -85,7 +85,7 @@ export default function Header() {
       name: "AI Platform",
       path: "/platform",
     },
-    { name: t("services"), path: "#" },
+    { name: t("services"), path: "/services" },
     { name: t("aboutUs"), path: "/about-us" },
     { name: t("blog"), path: "/blog" },
   ];
@@ -116,74 +116,87 @@ export default function Header() {
         <ul className="hidden xl:flex items-center space-x-8 absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
           {menuItems.map((item, index) =>
             item.name === t("services") ? (
-              <li
-                key={index}
-                className="relative "
-                onMouseEnter={() => setIsServicesHovered(true)}
-                onMouseLeave={() => setIsServicesHovered(false)}
-              >
-                <button
-                  onClick={() => handleServiceClick}
-                  className={`text-lg font-normal text-sub-gray hover:text-[#6B5B95] md:text-base lg:text-lg flex items-center space-x-1 ${
-                    pathname.startsWith("/services")
-                      ? "text-transparent bg-clip-text bg-primary-gradient font-semibold"
-                      : ""
+              //old services with dropown
+              // <li
+              //   key={index}
+              //   className="relative "
+              //   onMouseEnter={() => setIsServicesHovered(true)}
+              //   onMouseLeave={() => setIsServicesHovered(false)}
+              // >
+              //   <button
+              //     onClick={() => handleServiceClick}
+              //     className={`text-lg font-normal text-sub-gray hover:text-[#6B5B95] md:text-base lg:text-lg flex items-center space-x-1 ${
+              //       pathname.startsWith("/services")
+              //         ? "text-transparent bg-clip-text bg-primary-gradient font-semibold"
+              //         : ""
+              //     }`}
+              //   >
+              //     <span
+              //       className={`flex-1 ${
+              //         pathname.startsWith("/services")
+              //           ? "text-transparent"
+              //           : "text-gray-900 hover:text-[#6B5B95]"
+              //       }`}
+              //     >
+              //       {item.name}
+              //     </span>
+              //     <svg
+              //       className={`w-4 h-4 transform transition-transform ${
+              //         isServicesHovered ? "rotate-180" : ""
+              //       } ${
+              //         pathname.startsWith("/services")
+              //           ? "text-[#6B5B95]"
+              //           : "text-gray-600"
+              //       }`}
+              //       fill="none"
+              //       stroke="currentColor"
+              //       viewBox="0 0 24 24"
+              //     >
+              //       <path
+              //         strokeLinecap="round"
+              //         strokeLinejoin="round"
+              //         strokeWidth={2}
+              //         d="M19 9l-7 7-7-7"
+              //       />
+              //     </svg>
+              //   </button>
+
+              //   {isServicesHovered && (
+              //     <div className="absolute top-full md:-left-40 w-fit bg-white rounded-2xl shadow-xl p-4 grid grid-cols-1 gap-3">
+              //       {servicesDropdownItems.map((subItem) => (
+              //         <Link
+              //           key={subItem.path}
+              //           href={subItem.path}
+              //           className={` flex items-center space-x-3 px-4 py-1.5 text-sm transition-colors ${
+              //             pathname === subItem.path
+              //               ? "text-[#6B5B95] bg-purple-50"
+              //               : "text-gray-700 hover:bg-purple-50 hover:text-[#6B5B95]"
+              //           }`}
+              //         >
+              //           <div className="bg-blue-custom-400 p-3 rounded-full">
+              //             {subItem.icon}
+              //           </div>
+              //           <span className="font-normal max-w-40 text-sub-gray break-words leading-snug">
+              //             {i18n.language === "de"
+              //               ? subItem.nameDe
+              //               : subItem.name}
+              //           </span>
+              //         </Link>
+              //       ))}
+              //     </div>
+              //   )}
+              // </li>
+              <li key={index}>
+                <Link
+                  href={item.path}
+                  className={` text-lg font-normal ${
+                    pathname.includes(item.path)
+                      ? "text-transparent bg-clip-text bg-primary-gradient font-semibold md:text-base lg:text-lg text-center whitespace-nowrap"
+                      : "text-sub-gray hover:text-[#6B5B95] md:text-base lg:text-lg text-center whitespace-nowrap"
                   }`}
                 >
-                  <span
-                    className={`flex-1 ${
-                      pathname.startsWith("/services")
-                        ? "text-transparent"
-                        : "text-gray-900 hover:text-[#6B5B95]"
-                    }`}
-                  >
-                    {item.name}
-                  </span>
-                  <svg
-                    className={`w-4 h-4 transform transition-transform ${
-                      isServicesHovered ? "rotate-180" : ""
-                    } ${
-                      pathname.startsWith("/services")
-                        ? "text-[#6B5B95]"
-                        : "text-gray-600"
-                    }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </button>
-
-                {isServicesHovered && (
-                  <div className="absolute top-full md:-left-40 w-fit bg-white rounded-2xl shadow-xl p-4 grid grid-cols-1 gap-3">
-                    {servicesDropdownItems.map((subItem) => (
-                      <Link
-                        key={subItem.path}
-                        href={subItem.path}
-                        className={` flex items-center space-x-3 px-4 py-1.5 text-sm transition-colors ${
-                          pathname === subItem.path
-                            ? "text-[#6B5B95] bg-purple-50"
-                            : "text-gray-700 hover:bg-purple-50 hover:text-[#6B5B95]"
-                        }`}
-                      >
-                        <div className="bg-blue-custom-400 p-3 rounded-full">
-                          {subItem.icon}
-                        </div>
-                        <span className="font-normal max-w-40 text-sub-gray break-words leading-snug">
-                          {i18n.language === "de"
-                            ? subItem.nameDe
-                            : subItem.name}
-                        </span>
-                      </Link>
-                    ))}
-                  </div>
-                )}
+                  {item.name}
+                </Link>
               </li>
             ) : item.name === t("blog") ? (
               <li key={index}>
@@ -285,56 +298,69 @@ export default function Header() {
               {menuItems.map((item, index) => (
                 <div key={index}>
                   {item.name === t("services") ? (
-                    <div key={index} className="bg-white">
-                      <button
-                        onClick={() =>
-                          setIsMobileServicesOpen(!isMobileServicesOpen)
-                        }
-                        className="flex items-center justify-center gap-3 w-full text-gray-600"
-                      >
-                        <span className="text-[22px]">{item.name}</span>
-                        <svg
-                          className={`w-4 h-4 transform transition-transform ${
-                            isMobileServicesOpen ? "rotate-180" : ""
-                          }`}
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
-                      </button>
-                      {isMobileServicesOpen && (
-                        <div className="space-y-2 border rounded-md shadow-md mt-4">
-                          {servicesDropdownItems.map((subItem) => (
-                            <Link
-                              key={subItem.path}
-                              href={subItem.path}
-                              onClick={() => {
-                                setIsMobileMenuOpen(false);
-                                setIsMobileServicesOpen(false);
-                              }}
-                              className={`flex items-center space-x-3 px-4 py-2 text-sm rounded-lg ${
-                                pathname === subItem.path
-                                  ? "text-[#6B5B95] bg-purple-50"
-                                  : "text-gray-600 hover:bg-purple-50 hover:text-[#6B5B95]"
-                              }`}
-                            >
-                              <div className="bg-blue-custom-400 p-3 rounded-full">
-                                {subItem.icon}{" "}
-                                {/* <img src={subItem.icon} className="w-6 h-6" /> */}
-                              </div>
-                              <span>{subItem.name}</span>
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </div>
+                    //old mobile service drropdown
+                    // <div key={index} className="bg-white">
+                    //   <button
+                    //     onClick={() =>
+                    //       setIsMobileServicesOpen(!isMobileServicesOpen)
+                    //     }
+                    //     className="flex items-center justify-center gap-3 w-full text-gray-600"
+                    //   >
+                    //     <span className="text-[22px]">{item.name}</span>
+                    //     <svg
+                    //       className={`w-4 h-4 transform transition-transform ${
+                    //         isMobileServicesOpen ? "rotate-180" : ""
+                    //       }`}
+                    //       fill="none"
+                    //       stroke="currentColor"
+                    //       viewBox="0 0 24 24"
+                    //     >
+                    //       <path
+                    //         strokeLinecap="round"
+                    //         strokeLinejoin="round"
+                    //         strokeWidth={2}
+                    //         d="M19 9l-7 7-7-7"
+                    //       />
+                    //     </svg>
+                    //   </button>
+                    //   {isMobileServicesOpen && (
+                    //     <div className="space-y-2 border rounded-md shadow-md mt-4">
+                    //       {servicesDropdownItems.map((subItem) => (
+                    //         <Link
+                    //           key={subItem.path}
+                    //           href={subItem.path}
+                    //           onClick={() => {
+                    //             setIsMobileMenuOpen(false);
+                    //             setIsMobileServicesOpen(false);
+                    //           }}
+                    //           className={`flex items-center space-x-3 px-4 py-2 text-sm rounded-lg ${
+                    //             pathname === subItem.path
+                    //               ? "text-[#6B5B95] bg-purple-50"
+                    //               : "text-gray-600 hover:bg-purple-50 hover:text-[#6B5B95]"
+                    //           }`}
+                    //         >
+                    //           <div className="bg-blue-custom-400 p-3 rounded-full">
+                    //             {subItem.icon}{" "}
+                    //             {/* <img src={subItem.icon} className="w-6 h-6" /> */}
+                    //           </div>
+                    //           <span>{subItem.name}</span>
+                    //         </Link>
+                    //       ))}
+                    //     </div>
+                    //   )}
+                    // </div>
+                    <Link
+                      key={index}
+                      href={item.path}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className={`block text-[22px] ${
+                        pathname === item.path
+                          ? "text-[#6B5B95]"
+                          : "text-gray-600 hover:text-[#6B5B95]"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
                   ) : (
                     <Link
                       key={index}
@@ -354,7 +380,7 @@ export default function Header() {
               ))}
             </div>
             <Link
-              href="/contact-us"
+              href="https://calendly.com/meetwitharzo/intro-call"
               rel="noopener noreferrer"
               className="w-full text-center capitalize bg-primary-gradient text-white px-6 py-3 rounded-full ease-out hover:scale-105 transition-all duration-300 inline-block font-medium !mb-[70px]"
             >

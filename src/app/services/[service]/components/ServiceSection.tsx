@@ -136,6 +136,16 @@ const ServiceSection = ({
                     }`}
                   >
                     <div className="overflow-hidden">
+                      {service.subtitle && (
+                        <p className="pb-4  p-2 md:px-10 italic font-playfair text-lg">
+                          {service.subtitle}
+                        </p>
+                      )}
+                      {service.description2 && (
+                        <p className="pb-4 text-sub-gray-500 p-2 md:px-10">
+                          {service.description2}
+                        </p>
+                      )}
                       <p className="pb-4 text-sub-gray p-2 md:px-10">
                         {service.description}
                       </p>
@@ -450,7 +460,7 @@ const ServiceSection = ({
               {t("serviceCta.subheading")}
             </p>
             <Link
-              href="https://calendly.com/coachingwitharzo/free-discovery-call"
+              href="https://calendly.com/meetwitharzo/intro-call"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -481,7 +491,7 @@ const ServiceSection = ({
       <HeroSection />
       <ImpactItems />
       <CTASection />
-      <OtherServices slug={slug} />
+      {/* <OtherServices slug={slug} /> */}
     </div>
   );
 };

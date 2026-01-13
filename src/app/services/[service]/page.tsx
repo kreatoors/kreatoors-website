@@ -1,13 +1,21 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
+
 import { useTranslation } from "react-i18next";
 import { servicesData, servicesDataDe } from "../ServicesData";
 import ServiceSection from "./components/ServiceSection";
 import BrandSolutionsLanding from "@/app/(home)/components/StrategicSolution";
+import React from "react";
 
-export default function SingleService({ params }: any) {
+export default function SingleService({
+  paramsPromise,
+}: {
+  paramsPromise: Promise<any>;
+}) {
   const { i18n } = useTranslation("service");
+  const params = React.use(paramsPromise);
   const slug = params.service;
+
   const currentData = i18n.language === "de" ? servicesDataDe : servicesData;
 
   const renderContent = (slug: string) => {
