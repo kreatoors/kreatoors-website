@@ -13,16 +13,16 @@ export default function Hero() {
   // const navigate = useNavigate();
   const { t } = useTranslation("home");
 
-  const handleButtonClick = () => {
-    const section = document.getElementById("strategic-solutions");
-    if (section) {
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest",
-      });
-    }
-  };
+  // const handleButtonClick = () => {
+  //   const section = document.getElementById("strategic-solutions");
+  //   if (section) {
+  //     section.scrollIntoView({
+  //       behavior: "smooth",
+  //       block: "start",
+  //       inline: "nearest",
+  //     });
+  //   }
+  // };
   return (
     <>
       <section className="py-16 pt-24 md:pt-44 px-4 bg-blue-to-white-gradient ">
@@ -36,51 +36,64 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 pt-5 justify-center items-center">
-            <Link href={"/platform"} className="min-w-[250px] md:w-auto hover:scale-95 flex items-center gap-x-2 relative">
+            <Link
+              href={"/platform"}
+              className="min-w-[250px] md:w-auto hover:scale-95 flex items-center gap-x-2 relative"
+            >
               <div className="relative z-10 flex items-center gap-x-1 md:gap-x-2  text-white font-medium rounded-full px-6 py-4 bg-primary-gradient">
-                <Image src={"/images/ai.svg"} color="white" height={25} width={25} alt="ai" className="w-[18px] h-[17px]" />
-                <span className="whitespace-nowrap pr-1 md:pr-0 capitalize font-medium">Discover Platform Features</span>
+                <Image
+                  src={"/images/ai.svg"}
+                  color="white"
+                  height={25}
+                  width={25}
+                  alt="ai"
+                  className="w-[18px] h-[17px]"
+                />
+                <span className="whitespace-nowrap pr-1 md:pr-0 capitalize font-medium">
+                  Discover Platform Features
+                </span>
               </div>
               {/* <div className="absolute inset-0 rounded-full pointer-events-none bg-gradient-to-r from-[#D4D3F9] to-[#F5F2FB] to-100% -m-1.5"></div> */}
             </Link>
-            <button
-              onClick={handleButtonClick}
-              className="min-w-[250px] md:w-auto group p-4 flex items-center hover:scale-95 justify-center px-6 py-4 rounded-full font-medium transition-colors duration-300 relative cursor-pointer"
-              style={{
-                background: "transparent",
-                border: "none",
-                padding: "3px",
-              }}
-            >
-              <span
-                className="relative z-10 text-[#6C69B1] w-full"
+            <Link href="/services">
+              <button
+                className="min-w-[250px] md:w-auto group p-4 flex items-center hover:scale-95 justify-center px-6 py-4 rounded-full font-medium transition-colors duration-300 relative cursor-pointer"
                 style={{
-                  background: "white",
-                  borderRadius: "inherit",
-                  padding: "16px 24px",
-                  display: "inline-flex",
-                  alignItems: "center",
+                  background: "transparent",
+                  border: "none",
+                  padding: "3px",
                 }}
               >
-                {renderText(t("hero.secondary-button"))}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#6C69B1"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-arrow-right ml-2"
+                <span
+                  className="relative z-10 text-[#6C69B1] w-full"
+                  style={{
+                    background: "white",
+                    borderRadius: "inherit",
+                    padding: "16px 24px",
+                    display: "inline-flex",
+                    alignItems: "center",
+                  }}
                 >
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </span>
-              <div className="absolute inset-0 rounded-full pointer-events-none bg-gradient-to-l from-[#E2E1FF] to-[#B9B6E9]"></div>
-            </button>
+                  {renderText(t("hero.secondary-button"))}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#6C69B1"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-arrow-right ml-2"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </span>
+                <div className="absolute inset-0 rounded-full pointer-events-none bg-gradient-to-l from-[#E2E1FF] to-[#B9B6E9]"></div>
+              </button>
+            </Link>
           </div>
         </div>
       </section>
