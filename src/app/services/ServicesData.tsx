@@ -1,9 +1,9 @@
 const service_1 = "/images/services/hero1.png";
-const service_2 = "/images/services/hero2.png";
+// const service_2 = "/images/services/hero2.png";
 const service_3 = "/images/services/hero3.png";
-const service_4 = "/images/services/hero4.png";
+// const service_4 = "/images/services/hero4.png";
 const service_5 = "/images/services/hero5.png";
-const service_6 = "/images/services/hero6.png";
+// const service_6 = "/images/services/hero6.png";
 const service_7 = "/images/services/hero7.png";
 
 // export const servicesData = {

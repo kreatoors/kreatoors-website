@@ -4,77 +4,77 @@ import React, { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { X } from "lucide-react";
 import Image from "next/image";
-import { SERVICES_ICONS } from "@/assets/icons/ServicesIcons";
+// import { SERVICES_ICONS } from "@/assets/icons/ServicesIcons";
 import Logo from "../extra/Logo";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const servicesDropdownItems = [
-  {
-    name: "Executive Thought Leadership Development",
-    nameDe: "Unternehmens-beeinflussung",
-    path: "/services/corporate-influencing",
-    icon: SERVICES_ICONS.services["1"],
-  },
-  // {
-  //   name: "Employer Brand Development",
-  //   nameDe: "Mitarbeiter-Markenentwicklung",
-  //   path: "/services/employee-brand-development",
-  //   icon: SERVICES_ICONS.services["2"],
-  // },
-  {
-    name: "Employee Content Enablement",
-    nameDe: "Mitarbeiter-Inhaltserstellung",
-    path: "/services/employer-content-creation",
-    icon: SERVICES_ICONS.services["3"],
-  },
-  // {
-  //   name: "Internal Communications & Culture",
-  //   nameDe: "Interne Kommunikation & Kultur",
-  //   path: "/services/internal-communications-culture",
-  //   icon: SERVICES_ICONS.services["4"],
-  // },
-  {
-    name: "Governance & Brand Safety",
-    nameDe: "Befürwortung & Inhaltsgovernance",
-    path: "/services/advocacy-content-governance",
-    icon: SERVICES_ICONS.services["5"],
-  },
-  // {
-  //   name: "Community Building & Management",
-  //   nameDe: "Gemeinschaftsaufbau & -management",
-  //   path: "/services/community-building-management",
-  //   icon: SERVICES_ICONS.services["6"],
-  // },
-  {
-    name: "Employee Advocacy Programme Design",
-    nameDe: "Employee Advocacy Programme Design",
-    path: "/services/employee-advocacy-programme-design",
-    icon: SERVICES_ICONS.services["6"],
-  },
-];
+// const servicesDropdownItems = [
+//   {
+//     name: "Executive Thought Leadership Development",
+//     nameDe: "Unternehmens-beeinflussung",
+//     path: "/services/corporate-influencing",
+//     icon: SERVICES_ICONS.services["1"],
+//   },
+//   // {
+//   //   name: "Employer Brand Development",
+//   //   nameDe: "Mitarbeiter-Markenentwicklung",
+//   //   path: "/services/employee-brand-development",
+//   //   icon: SERVICES_ICONS.services["2"],
+//   // },
+//   {
+//     name: "Employee Content Enablement",
+//     nameDe: "Mitarbeiter-Inhaltserstellung",
+//     path: "/services/employer-content-creation",
+//     icon: SERVICES_ICONS.services["3"],
+//   },
+//   // {
+//   //   name: "Internal Communications & Culture",
+//   //   nameDe: "Interne Kommunikation & Kultur",
+//   //   path: "/services/internal-communications-culture",
+//   //   icon: SERVICES_ICONS.services["4"],
+//   // },
+//   {
+//     name: "Governance & Brand Safety",
+//     nameDe: "Befürwortung & Inhaltsgovernance",
+//     path: "/services/advocacy-content-governance",
+//     icon: SERVICES_ICONS.services["5"],
+//   },
+//   // {
+//   //   name: "Community Building & Management",
+//   //   nameDe: "Gemeinschaftsaufbau & -management",
+//   //   path: "/services/community-building-management",
+//   //   icon: SERVICES_ICONS.services["6"],
+//   // },
+//   {
+//     name: "Employee Advocacy Programme Design",
+//     nameDe: "Employee Advocacy Programme Design",
+//     path: "/services/employee-advocacy-programme-design",
+//     icon: SERVICES_ICONS.services["6"],
+//   },
+// ];
 
 export default function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isServicesHovered, setIsServicesHovered] = useState(false);
-  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  // const [isServicesHovered, setIsServicesHovered] = useState(false);
+  // const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
-  const { t, i18n } = useTranslation("navbar");
+  const { t } = useTranslation("navbar");
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setIsMobileMenuOpen(false);
-        setIsMobileServicesOpen(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleClickOutside = (event: MouseEvent) => {
+  //     if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+  //       setIsMobileMenuOpen(false);
+  //       setIsMobileServicesOpen(false);
+  //     }
+  //   };
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  //   document.addEventListener("mousedown", handleClickOutside);
+  //   return () => document.removeEventListener("mousedown", handleClickOutside);
+  // }, []);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -90,13 +90,13 @@ export default function Header() {
     { name: t("blog"), path: "/blog" },
   ];
 
-  const handleServiceClick = () => {
-    const servicesSection = document.getElementById("services-section");
-    if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: "smooth" });
-    }
-    return false;
-  };
+  // const handleServiceClick = () => {
+  //   const servicesSection = document.getElementById("services-section");
+  //   if (servicesSection) {
+  //     servicesSection.scrollIntoView({ behavior: "smooth" });
+  //   }
+  //   return false;
+  // };
 
   useEffect(() => {
     if (isMobileMenuOpen) {

@@ -1,14 +1,13 @@
 "use client";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useEffect, useRef } from "react";
-import {
-  // ChevronLeft,
-  // ChevronRight,
-  // PlusIcon,
-  // MinusIcon,
-  // CheckIcon,
-  ArrowUpRight,
-} from "lucide-react";
+import // ChevronLeft,
+// ChevronRight,
+// PlusIcon,
+// MinusIcon,
+// CheckIcon,
+// ArrowUpRight,
+"lucide-react";
 import { useTranslation } from "react-i18next";
 // import personal_branding from "../../../assets/images/strategic-solution/personal branding.jpg";
 // import employee_advocacy from "../../../assets/images/strategic-solution/employee_adocarcy.jpg";
@@ -24,13 +23,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { SERVICES_ICONS } from "@/assets/icons/ServicesIcons";
 
-const service_1 = "/images/services/hero1.png";
+// const service_1 = "/images/services/hero1.png";
 // const service_2 = "/images/services/hero2.png";
-const service_3 = "/images/services/hero3.png";
+// const service_3 = "/images/services/hero3.png";
 // const service_4 = "/images/services/hero4.png";
-const service_5 = "/images/services/hero5.png";
+// const service_5 = "/images/services/hero5.png";
 // const service_6 = "/images/services/hero6.png";
-const service_7 = "/images/services/hero7.png";
+// const service_7 = "/images/services/hero7.png";
 
 const ServiceSection = ({
   h1,
@@ -42,7 +41,7 @@ const ServiceSection = ({
   ctaTitle,
   slug,
 }: any) => {
-  const { t, i18n } = useTranslation("service");
+  const { t } = useTranslation("service");
   const [openSection, setOpenSection] = useState(coreServices[0]?.id || "");
   const [hasAnimated, setHasAnimated] = useState(false);
 
@@ -179,160 +178,160 @@ const ServiceSection = ({
     </section>
   );
 
-  const OtherServices = ({ slug }: { slug: string }) => {
-    //const currentIndex = parseInt(slug);
-    const scrollContainerRef = useRef<HTMLDivElement>(null);
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [isScrolling, setIsScrolling] = useState(false);
+  // const OtherServices = ({ slug }: { slug: string }) => {
+  //   //const currentIndex = parseInt(slug);
+  //   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  //   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  //   const [isScrolling, setIsScrolling] = useState(false);
 
-    const services = [
-      {
-        id: 1,
-        title: "Executive Thought Leadership Development",
-        titleDe: "Unternehmensbeeinflussung",
-        image: service_1,
-        link: "/services/corporate-influencing",
-      },
-      // {
-      //   id: 2,
-      //   title: "Employee Brand Development",
-      //   titleDe: "Mitarbeiter-Markenentwicklung",
-      //   image: service_2,
-      //   link: "/services/employee-brand-development",
-      // },
-      {
-        id: 2,
-        title: "Employee Content Enablement",
-        titleDe: "Mitarbeiter-Content-Erstellung",
-        image: service_3,
-        link: "/services/employer-content-creation",
-      },
-      // {
-      //   id: 4,
-      //   title: "Internal Communications & Culture",
-      //   titleDe: "Interne Kommunikation & Kultur",
-      //   image: service_4,
-      //   link: "/services/internal-communications-culture",
-      // },
-      {
-        id: 3,
-        title: "Governance & Brand Safety",
-        titleDe: "Advocacy & Content-Governance",
-        image: service_5,
-        link: "/services/advocacy-content-governance",
-      },
-      // {
-      //   id: 6,
-      //   title: "Community Building & Management",
-      //   titleDe: "Community-Aufbau & Management",
-      //   image: service_6,
-      //   link: "/services/community-building-management",
-      // },
-      {
-        id: 4,
-        title: "Employee Advocacy Programme Design",
-        titleDe: "Employee Advocacy Programme Design",
-        image: service_7,
-        link: "/services/employee-advocacy-programme-design",
-      },
-    ];
+  //   const services = [
+  //     {
+  //       id: 1,
+  //       title: "Executive Thought Leadership Development",
+  //       titleDe: "Unternehmensbeeinflussung",
+  //       image: service_1,
+  //       link: "/services/corporate-influencing",
+  //     },
+  //     // {
+  //     //   id: 2,
+  //     //   title: "Employee Brand Development",
+  //     //   titleDe: "Mitarbeiter-Markenentwicklung",
+  //     //   image: service_2,
+  //     //   link: "/services/employee-brand-development",
+  //     // },
+  //     {
+  //       id: 2,
+  //       title: "Employee Content Enablement",
+  //       titleDe: "Mitarbeiter-Content-Erstellung",
+  //       image: service_3,
+  //       link: "/services/employer-content-creation",
+  //     },
+  //     // {
+  //     //   id: 4,
+  //     //   title: "Internal Communications & Culture",
+  //     //   titleDe: "Interne Kommunikation & Kultur",
+  //     //   image: service_4,
+  //     //   link: "/services/internal-communications-culture",
+  //     // },
+  //     {
+  //       id: 3,
+  //       title: "Governance & Brand Safety",
+  //       titleDe: "Advocacy & Content-Governance",
+  //       image: service_5,
+  //       link: "/services/advocacy-content-governance",
+  //     },
+  //     // {
+  //     //   id: 6,
+  //     //   title: "Community Building & Management",
+  //     //   titleDe: "Community-Aufbau & Management",
+  //     //   image: service_6,
+  //     //   link: "/services/community-building-management",
+  //     // },
+  //     {
+  //       id: 4,
+  //       title: "Employee Advocacy Programme Design",
+  //       titleDe: "Employee Advocacy Programme Design",
+  //       image: service_7,
+  //       link: "/services/employee-advocacy-programme-design",
+  //     },
+  //   ];
 
-    const otherServices = services.filter(
-      (service) => !service.link.includes(slug)
-    );
+  //   const otherServices = services.filter(
+  //     (service) => !service.link.includes(slug)
+  //   );
 
-    useEffect(() => {
-      const container = scrollContainerRef.current;
+  //   useEffect(() => {
+  //     const container = scrollContainerRef.current;
 
-      const checkScroll = () => {
-        if (container) {
-          setIsScrolling(container.scrollLeft > 0);
-        }
-      };
+  //     const checkScroll = () => {
+  //       if (container) {
+  //         setIsScrolling(container.scrollLeft > 0);
+  //       }
+  //     };
 
-      container?.addEventListener("scroll", checkScroll);
-      return () => container?.removeEventListener("scroll", checkScroll);
-    }, []);
+  //     container?.addEventListener("scroll", checkScroll);
+  //     return () => container?.removeEventListener("scroll", checkScroll);
+  //   }, []);
 
-    const renderComponent = (service: any, index: number) => (
-      <Link
-        key={index}
-        className="flex-none my-3 md:my-0 group cursor-pointer"
-        onClick={() => {
-          window.scrollTo({
-            top: 0,
-            behavior: "instant",
-          });
-        }}
-        href={service.link}
-      >
-        <div className="h-full w-full">
-          <div className="relative overflow-hidden rounded-2xl h-[300px] w-full">
-            <Image
-              height={440}
-              width={300}
-              src={service.image}
-              alt={i18n.language === "de" ? service.titleDe : service.title}
-              className="h-full w-full object-contain"
-            />
-          </div>
-          <div className="py-2 md:py-7">
-            <div className="flex justify-between w-full">
-              <h3 className="text-xl font-normal max-w-[200px] md:max-w-[80%]">
-                {i18n.language === "de" ? service.titleDe : service.title}
-              </h3>
-              <div
-                className="shadow-lg p-2 cursor-pointer rounded-full w-12 h-12 flex items-center justify-center bg-white
-                      transition-transform duration-300 transform hover:scale-110 hover:bg-blue-custom-100"
-              >
-                <ArrowUpRight className="text-blue-custom-700 h-7 w-7" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </Link>
-    );
+  //   const renderComponent = (service: any, index: number) => (
+  //     <Link
+  //       key={index}
+  //       className="flex-none my-3 md:my-0 group cursor-pointer"
+  //       onClick={() => {
+  //         window.scrollTo({
+  //           top: 0,
+  //           behavior: "instant",
+  //         });
+  //       }}
+  //       href={service.link}
+  //     >
+  //       <div className="h-full w-full">
+  //         <div className="relative overflow-hidden rounded-2xl h-[300px] w-full">
+  //           <Image
+  //             height={440}
+  //             width={300}
+  //             src={service.image}
+  //             alt={i18n.language === "de" ? service.titleDe : service.title}
+  //             className="h-full w-full object-contain"
+  //           />
+  //         </div>
+  //         <div className="py-2 md:py-7">
+  //           <div className="flex justify-between w-full">
+  //             <h3 className="text-xl font-normal max-w-[200px] md:max-w-[80%]">
+  //               {i18n.language === "de" ? service.titleDe : service.title}
+  //             </h3>
+  //             <div
+  //               className="shadow-lg p-2 cursor-pointer rounded-full w-12 h-12 flex items-center justify-center bg-white
+  //                     transition-transform duration-300 transform hover:scale-110 hover:bg-blue-custom-100"
+  //             >
+  //               <ArrowUpRight className="text-blue-custom-700 h-7 w-7" />
+  //             </div>
+  //           </div>
+  //         </div>
+  //       </div>
+  //     </Link>
+  //   );
 
-    return (
-      <div className="w-full py-7 md:py-16">
-        <div className="mx-auto px-4">
-          <h2 className="text-4xl mb-6 md:mb-12 text-left max-w-6xl mx-auto">
-            {t("other")}{" "}
-            <span className="font-playfair italic">{t("services")}</span>
-          </h2>
+  //   return (
+  //     <div className="w-full py-7 md:py-16">
+  //       <div className="mx-auto px-4">
+  //         <h2 className="text-4xl mb-6 md:mb-12 text-left max-w-6xl mx-auto">
+  //           {t("other")}{" "}
+  //           <span className="font-playfair italic">{t("services")}</span>
+  //         </h2>
 
-          <div className="relative overflow-hidden w-full">
-            <div className="hidden md:flex flex-row gap-10 animate-marquee w-full">
-              {Array(50).fill(otherServices).flat().map(renderComponent)}
-            </div>
-            <div className="flex flex-col md:hidden gap-10 w-full">
-              {otherServices.map(renderComponent)}
-            </div>
-          </div>
+  //         <div className="relative overflow-hidden w-full">
+  //           <div className="hidden md:flex flex-row gap-10 animate-marquee w-full">
+  //             {Array(50).fill(otherServices).flat().map(renderComponent)}
+  //           </div>
+  //           <div className="flex flex-col md:hidden gap-10 w-full">
+  //             {otherServices.map(renderComponent)}
+  //           </div>
+  //         </div>
 
-          <style jsx>{`
-            .animate-marquee {
-              display: flex;
-              animation: marquee 50s linear infinite;
-            }
+  //         <style jsx>{`
+  //           .animate-marquee {
+  //             display: flex;
+  //             animation: marquee 50s linear infinite;
+  //           }
 
-            @keyframes marquee {
-              0% {
-                transform: translateX(0);
-              }
-              100% {
-                transform: translateX(-100%);
-              }
-            }
+  //           @keyframes marquee {
+  //             0% {
+  //               transform: translateX(0);
+  //             }
+  //             100% {
+  //               transform: translateX(-100%);
+  //             }
+  //           }
 
-            .relative.overflow-hidden > .animate-marquee {
-              width: 200%;
-            }
-          `}</style>
-        </div>
-      </div>
-    );
-  };
+  //           .relative.overflow-hidden > .animate-marquee {
+  //             width: 200%;
+  //           }
+  //         `}</style>
+  //       </div>
+  //     </div>
+  //   );
+  // };
 
   const ImpactItems = () => {
     const sectionRef = useRef(null);
