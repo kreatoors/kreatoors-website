@@ -1069,10 +1069,8 @@ export const servicesData = {
     buttontxt: "Activate Employee Voices Now",
     ctaTitle: (
       <h1 className="text-[29px] max-w-2xl space-y-3 sm:text-3xl md:text-4xl lg:text-[42px] leading-tight  text-white">
-        Ready to{" "}
-        <i className="font-playfair italic inline-block">
-          Build Employee Stories
-        </i>{" "}
+        Ready to turn{" "}
+        <i className="font-playfair italic inline-block">Employee Stories</i>{" "}
         <div className="mt-2">Into Brand Power?</div>
       </h1>
     ),
@@ -1165,9 +1163,9 @@ export const servicesDataDe = {
     buttontxt: "Activate Employee Voices Now",
     ctaTitle: (
       <h1 className="text-[29px] max-w-2xl space-y-3 sm:text-3xl md:text-4xl lg:text-[42px] leading-tight  text-white">
-        Ready to{" "}
+        Ready to turn
         <i className="font-playfair italic inline-block">
-          Build Employee Stories
+          Employee Stories
         </i>{" "}
         <div className="mt-2">Into Brand Power?</div>
       </h1>
